@@ -11,5 +11,6 @@
         <file>image/cancel.png</file>
         <file>image/add.png</file>
         <file>image/minus.png</file>
+        <file>image/app.ico</file>
     </qresource>
 </RCC>

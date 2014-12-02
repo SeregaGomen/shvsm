@@ -1,3 +1,4 @@
+#include <QMenu>
 #include <QMessageBox>
 #include <QSqlQuery>
 #include <QSqlQueryModel>
@@ -12,6 +13,7 @@ ArchiveSurveyedSHVSMIntegralDialog::ArchiveSurveyedSHVSMIntegralDialog(QSqlDatab
 {
     ui->setupUi(this);
     db = pdb;
+    isLegend = isGraph[0] = isGraph[1] = true;
     setupForm();
 }
 
@@ -82,7 +84,7 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     ui->twSurveyedOutput1->setModel(modelSurvey);
     ui->twSurveyedOutput1->verticalHeader()->setDefaultSectionSize(ui->twSurveyed->verticalHeader()->minimumSectionSize());
 
-    for (int i = 10; i < 26; i++)
+    for (int i = 11; i < 26; i++)
         ui->twSurveyedOutput1->setColumnHidden(i, true);
 
     ui->twSurveyedOutput1->resizeColumnsToContents();
@@ -93,9 +95,9 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     ui->twSurveyedOutput2->verticalHeader()->setDefaultSectionSize(ui->twSurveyed->verticalHeader()->minimumSectionSize());
     for (int i = 0; i < 13; i++)
         ui->twSurveyedOutput2->setColumnHidden(i, true);
-    ui->twSurveyedOutput1->setColumnHidden(22, true);
-    ui->twSurveyedOutput1->setColumnHidden(23, true);
-    ui->twSurveyedOutput1->setColumnHidden(25, true);
+    ui->twSurveyedOutput2->setColumnHidden(22, true);
+    ui->twSurveyedOutput2->setColumnHidden(23, true);
+    ui->twSurveyedOutput2->setColumnHidden(25, true);
 
     ui->twSurveyedOutput2->resizeColumnsToContents();
     ui->twSurveyedOutput2->setCurrentIndex(ui->twSurveyedOutput2->model()->index(0, 0));
@@ -109,9 +111,9 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     ui->twSurveyedOutput3->verticalHeader()->setDefaultSectionSize(ui->twSurveyed->verticalHeader()->minimumSectionSize());
     for (int i = 0; i < 22; i++)
         ui->twSurveyedOutput3->setColumnHidden(i, true);
-    ui->twSurveyedOutput2->setColumnHidden(24, true);
-    ui->twSurveyedOutput2->setColumnHidden(11, false);
-    ui->twSurveyedOutput2->setColumnHidden(12, false);
+    ui->twSurveyedOutput3->setColumnHidden(24, true);
+    ui->twSurveyedOutput3->setColumnHidden(11, false);
+    ui->twSurveyedOutput3->setColumnHidden(12, false);
 
     ui->twSurveyedOutput3->resizeColumnsToContents();
     ui->twSurveyedOutput3->setCurrentIndex(ui->twSurveyedOutput3->model()->index(0, 0));
@@ -126,7 +128,6 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     connect(ui->twSurveyedOutput2->selectionModel(), SIGNAL(selectionChanged(const QItemSelection&, const QItemSelection&)), this, SLOT(slotSelectionChangedSurvey2(const QItemSelection&, const QItemSelection&)));
     connect(ui->twSurveyedOutput3->selectionModel(), SIGNAL(selectionChanged(const QItemSelection&, const QItemSelection&)), this, SLOT(slotSelectionChangedSurvey3(const QItemSelection&, const QItemSelection&)));
 
-    ui->widgetPlot->legend->setVisible(true);
     ui->widgetPlot->setInteractions(QCP::iRangeDrag | QCP::iRangeZoom | QCP::iSelectAxes | QCP::iSelectLegend | QCP::iSelectPlottables);
     ui->widgetPlot->xAxis->setAutoTickLabels(false);
     ui->widgetPlot->xAxis->setAutoTicks(false);
@@ -134,6 +135,10 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     ui->widgetPlot->yAxis->setLabel(tr("Point"));
 
     connect(ui->widgetPlot, SIGNAL(selectionChangedByUser()), this, SLOT(selectionChanged()));
+
+    ui->widgetPlot->setContextMenuPolicy(Qt::CustomContextMenu);
+    connect(ui->widgetPlot, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenuRequest(QPoint)));
+
 
     rePlot();
 
@@ -146,7 +151,7 @@ void ColorDelegateSurveyedSHVSMIntegral::paint(QPainter* painter, const QStyleOp
 
     if (qVariantCanConvert<float>(index.data()))
         val = qVariantValue<float>(index.data());
-    if ((index.column() == 25 || index.column() == 26) && val)
+    if (((index.column() >= 12 && index.column() <= 14) || (index.column() >= 16 && index.column() <= 19) || (index.column() >= 22 && index.column() <= 25)) && val)
         painter->fillRect(option.rect, ptr->getIndicatorColor(val,33.0,49.6,66.1,82.6));
     QItemDelegate::paint(painter,option,index);
 }
@@ -221,6 +226,7 @@ void ArchiveSurveyedSHVSMIntegralDialog::rePlot(void)
                     y[2];
 
 
+    ui->widgetPlot->legend->setVisible(isLegend);
     ui->widgetPlot->clearGraphs();
     // Считываем данные для графика
     if (!query.exec(QString("SELECT dt,v12,v13 FROM surveySHVSMIntegral WHERE surveyed_id = %1 ORDER BY dt").arg(surveyedId)))
@@ -248,14 +254,17 @@ void ArchiveSurveyedSHVSMIntegralDialog::rePlot(void)
     ui->widgetPlot->xAxis->setTickVectorLabels(dt);
 
     for (unsigned i = 0; i < 2; i++)
-    {
-        ui->widgetPlot->addGraph();
-        ui->widgetPlot->graph()->setName(grName[i]);
-        ui->widgetPlot->graph(i)->setData(x[i], y[i]);
-        graphPen.setColor(color[i]);
-        graphPen.setWidthF(2);
-        ui->widgetPlot->graph(i)->setPen(graphPen);
-    }
+        if (isGraph[i])
+        {
+            ui->widgetPlot->addGraph();
+            ui->widgetPlot->graph()->setName(grName[i]);
+//            ui->widgetPlot->graph(i)->setData(x[i], y[i]);
+            ui->widgetPlot->graph()->setData(x[i], y[i]);
+            graphPen.setColor(color[i]);
+            graphPen.setWidthF(2);
+//            ui->widgetPlot->graph(i)->setPen(graphPen);
+            ui->widgetPlot->graph()->setPen(graphPen);
+        }
     ui->widgetPlot->replot();
 }
 
@@ -288,4 +297,73 @@ void ArchiveSurveyedSHVSMIntegralDialog::selectionChanged()
       graph->setSelected(true);
     }
   }
+}
+
+void ArchiveSurveyedSHVSMIntegralDialog::contextMenuRequest(QPoint pos)
+{
+    QMenu* menu = new QMenu(this);
+//    QAction* action;
+
+    menu->setAttribute(Qt::WA_DeleteOnClose);
+    if (ui->widgetPlot->legend->selectTest(pos, false) >= 0) // context menu on legend requested
+    {
+        menu->addAction(tr("Move to top left"), this, SLOT(moveLegend()))->setData((int)(Qt::AlignTop|Qt::AlignLeft));
+        menu->addAction(tr("Move to top center"), this, SLOT(moveLegend()))->setData((int)(Qt::AlignTop|Qt::AlignHCenter));
+        menu->addAction(tr("Move to top right"), this, SLOT(moveLegend()))->setData((int)(Qt::AlignTop|Qt::AlignRight));
+        menu->addAction(tr("Move to bottom right"), this, SLOT(moveLegend()))->setData((int)(Qt::AlignBottom|Qt::AlignRight));
+        menu->addAction(tr("Move to bottom left"), this, SLOT(moveLegend()))->setData((int)(Qt::AlignBottom|Qt::AlignLeft));
+    }
+    else  // general context menu on graphs requested
+    {
+
+        menu->addAction(tr("Circulatory system"),this, SLOT(shovGraph1()));
+        menu->actions()[0]->setCheckable(true);
+        menu->actions()[0]->setChecked(isGraph[0]);
+
+        menu->addAction(tr("System of external respiration"),this, SLOT(shovGraph2()));
+        menu->actions()[1]->setCheckable(true);
+        menu->actions()[1]->setChecked(isGraph[1]);
+
+        menu->addSeparator();
+
+        menu->addAction(tr("Show legend"),this, SLOT(shovLegend()));
+        menu->actions()[3]->setCheckable(true);
+        menu->actions()[3]->setChecked(isLegend);
+    }
+
+    menu->popup(ui->widgetPlot->mapToGlobal(pos));
+}
+
+void ArchiveSurveyedSHVSMIntegralDialog::moveLegend(void)
+{
+    bool ok;
+    int dataInt;
+
+    if (QAction* contextAction = qobject_cast<QAction*>(sender())) // make sure this slot is really called by a context menu action, so it carries the data we need
+    {
+        dataInt = contextAction->data().toInt(&ok);
+        if (ok)
+        {
+            ui->widgetPlot->axisRect()->insetLayout()->setInsetAlignment(0, (Qt::Alignment)dataInt);
+            ui->widgetPlot->replot();
+        }
+    }
+}
+
+void ArchiveSurveyedSHVSMIntegralDialog::shovGraph1(void)
+{
+    isGraph[0] = !isGraph[0];
+    rePlot();
+}
+
+void ArchiveSurveyedSHVSMIntegralDialog::shovGraph2(void)
+{
+    isGraph[1] = !isGraph[1];
+    rePlot();
+}
+
+void ArchiveSurveyedSHVSMIntegralDialog::shovLegend(void)
+{
+    isLegend = !isLegend;
+    rePlot();
 }

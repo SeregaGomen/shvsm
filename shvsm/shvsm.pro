@@ -59,3 +59,7 @@ TRANSLATIONS += shvsm_RU.ts
 RESOURCES += \
     shvsm.qrc
 
+win32 {
+
+    RC_FILE += shvsm.rc
+}

@@ -43,12 +43,19 @@ private slots:
     void slotSelectionChangedSurvey2(const QItemSelection&, const QItemSelection&);
     void slotSelectionChangedSurvey3(const QItemSelection&, const QItemSelection&);
     void selectionChanged(void);
+    void contextMenuRequest(QPoint);
+    void moveLegend(void);
+    void shovGraph1(void);
+    void shovGraph2(void);
+    void shovLegend(void);
 
 private:
     Ui::ArchiveSurveyedSHVSMIntegralDialog *ui;
     QSqlDatabase* db;
     QSqlQueryModel* modelSurveyed;
     QSqlQueryModel* modelSurvey;
+    bool isLegend;
+    bool isGraph[2];
     int surveyedId;
     int currentRow;
     void setupForm(void);
