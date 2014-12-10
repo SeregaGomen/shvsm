@@ -135,7 +135,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>Average</string>
+        <string>Middle</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -245,7 +245,7 @@
      <item>
       <widget class="QLabel" name="label">
        <property name="text">
-        <string>Date of survey:</string>
+        <string>Date of examination:</string>
        </property>
       </widget>
      </item>

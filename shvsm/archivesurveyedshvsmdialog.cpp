@@ -65,21 +65,21 @@ void ArchiveSurveyedSHVSMDialog::setupForm(void)
 
     modelSurvey->setHeaderData(11, Qt::Horizontal, tr("aPWC170"));
     modelSurvey->setHeaderData(12, Qt::Horizontal, tr("oPWC170"));
-    modelSurvey->setHeaderData(13, Qt::Horizontal, tr("aMPK"));
-    modelSurvey->setHeaderData(14, Qt::Horizontal, tr("oMPK"));
-    modelSurvey->setHeaderData(15, Qt::Horizontal, tr("ALAKm"));
-    modelSurvey->setHeaderData(16, Qt::Horizontal, tr("ALAKe"));
-    modelSurvey->setHeaderData(17, Qt::Horizontal, tr("LAKm"));
-    modelSurvey->setHeaderData(18, Qt::Horizontal, tr("LAKe"));
-    modelSurvey->setHeaderData(19, Qt::Horizontal, tr("PANO"));
-    modelSurvey->setHeaderData(20, Qt::Horizontal, tr("CHSSpano"));
-    modelSurvey->setHeaderData(21, Qt::Horizontal, tr("OME"));
-    modelSurvey->setHeaderData(22, Qt::Horizontal, tr("TE"));
+    modelSurvey->setHeaderData(13, Qt::Horizontal, tr("aVo2max"));
+    modelSurvey->setHeaderData(14, Qt::Horizontal, tr("rVo2max"));
+    modelSurvey->setHeaderData(15, Qt::Horizontal, tr("ALAKp"));
+    modelSurvey->setHeaderData(16, Qt::Horizontal, tr("ALAKс"));
+    modelSurvey->setHeaderData(17, Qt::Horizontal, tr("LAKp"));
+    modelSurvey->setHeaderData(18, Qt::Horizontal, tr("LAKc"));
+    modelSurvey->setHeaderData(19, Qt::Horizontal, tr("AMT"));
+    modelSurvey->setHeaderData(20, Qt::Horizontal, tr("CRamt"));
+    modelSurvey->setHeaderData(21, Qt::Horizontal, tr("GMC"));
+    modelSurvey->setHeaderData(22, Qt::Horizontal, tr("GE"));
     modelSurvey->setHeaderData(23, Qt::Horizontal, tr("SE"));
-    modelSurvey->setHeaderData(24, Qt::Horizontal, tr("SPE"));
+    modelSurvey->setHeaderData(24, Qt::Horizontal, tr("SSE"));
     modelSurvey->setHeaderData(25, Qt::Horizontal, tr("SPS"));
-    modelSurvey->setHeaderData(26, Qt::Horizontal, tr("RP"));
-    modelSurvey->setHeaderData(27, Qt::Horizontal, tr("UFP"));
+    modelSurvey->setHeaderData(26, Qt::Horizontal, tr("RC"));
+    modelSurvey->setHeaderData(27, Qt::Horizontal, tr("FPL"));
 
 
     // -------------------------------------------------------

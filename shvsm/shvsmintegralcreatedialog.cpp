@@ -656,7 +656,7 @@ void SHVSMIntegralCreateDialog::showIndicatorTxt(QLabel* labelF, QLabel* labelT,
     {
         if (labelF)
             labelF->setStyleSheet("QLabel { background-color : yellow; }");
-        labelT->setText(tr("Average"));
+        labelT->setText(tr("Middle"));
         labelT->setStyleSheet("QLabel { background-color : yellow; }");
     }
     else if (indicator > val3 && indicator <= val4)
@@ -698,7 +698,7 @@ void SHVSMIntegralCreateDialog::showIndicatorTxtI(QLabel* labelF, QLabel* labelT
     {
         if (labelF)
             labelF->setStyleSheet("QLabel { background-color : yellow; }");
-        labelT->setText(tr("Average"));
+        labelT->setText(tr("Moddle"));
         labelT->setStyleSheet("QLabel { background-color : yellow; }");
     }
     else if (indicator < val3 && indicator >= val4)

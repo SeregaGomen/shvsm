@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -124,53 +124,31 @@
         <translation>oPWC170</translation>
     </message>
     <message>
-        <location filename="archivesurveyedshvsmdialog.cpp" line="68"/>
-        <source>aMPK</source>
-        <translation>aMПK</translation>
-    </message>
-    <message>
-        <location filename="archivesurveyedshvsmdialog.cpp" line="69"/>
-        <source>oMPK</source>
-        <translation>оMПK</translation>
-    </message>
-    <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="70"/>
-        <source>ALAKm</source>
+        <source>ALAKp</source>
         <translation>АЛАКм</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="71"/>
-        <source>ALAKe</source>
+        <source>ALAKc</source>
         <translation>АЛАКе</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="72"/>
-        <source>LAKm</source>
+        <source>LAKp</source>
+        <oldsource>LAKm</oldsource>
         <translation>ЛАКм</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="73"/>
-        <source>LAKe</source>
+        <source>LAKc</source>
+        <oldsource>LAKe</oldsource>
         <translation>ЛАКе</translation>
     </message>
     <message>
-        <location filename="archivesurveyedshvsmdialog.cpp" line="74"/>
-        <source>PANO</source>
-        <translation>ПАНО</translation>
-    </message>
-    <message>
-        <location filename="archivesurveyedshvsmdialog.cpp" line="75"/>
-        <source>CHSSpano</source>
-        <translation>ЧССпано</translation>
-    </message>
-    <message>
-        <location filename="archivesurveyedshvsmdialog.cpp" line="76"/>
-        <source>OME</source>
-        <translation>ОМЕ</translation>
-    </message>
-    <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="77"/>
-        <source>TE</source>
+        <source>GE</source>
+        <oldsource>TE</oldsource>
         <translation>ОВ</translation>
     </message>
     <message>
@@ -180,7 +158,8 @@
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="79"/>
-        <source>SPE</source>
+        <source>SSE</source>
+        <oldsource>SPE</oldsource>
         <translation>ССВ</translation>
     </message>
     <message>
@@ -190,11 +169,11 @@
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="81"/>
-        <source>RP</source>
+        <source>RC</source>
+        <oldsource>RP</oldsource>
         <translation>РВ</translation>
     </message>
     <message>
-        <location filename="archivesurveyedshvsmdialog.cpp" line="82"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="252"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="345"/>
         <source>UFP</source>
@@ -204,6 +183,36 @@
         <location filename="archivesurveyedshvsmdialog.cpp" line="133"/>
         <source>Point</source>
         <translation>Балл</translation>
+    </message>
+    <message>
+        <location filename="archivesurveyedshvsmdialog.cpp" line="68"/>
+        <source>aVO2max</source>
+        <translation>aMПK</translation>
+    </message>
+    <message>
+        <location filename="archivesurveyedshvsmdialog.cpp" line="69"/>
+        <source>rVO2max</source>
+        <translation>оMПK</translation>
+    </message>
+    <message>
+        <location filename="archivesurveyedshvsmdialog.cpp" line="74"/>
+        <source>AMT</source>
+        <translation type="unfinished">AMT</translation>
+    </message>
+    <message>
+        <location filename="archivesurveyedshvsmdialog.cpp" line="75"/>
+        <source>CRAMT</source>
+        <translation type="unfinished">ЧССпано</translation>
+    </message>
+    <message>
+        <location filename="archivesurveyedshvsmdialog.cpp" line="76"/>
+        <source>GMC</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="archivesurveyedshvsmdialog.cpp" line="82"/>
+        <source>FPL</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="229"/>
@@ -926,12 +935,12 @@
         <source>Current language</source>
         <translation>Текущий язык</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="languagesetupdialog.ui" line="66"/>
         <source>Russian (Русский)</source>
         <translation>Russian (Русский)</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="languagesetupdialog.ui" line="82"/>
         <source>Ukrainian (Українська)</source>
         <translation>Ukrainian (Українська)</translation>
@@ -1268,18 +1277,34 @@
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="537"/>
-        <source>oPWC170</source>
-        <translation>oPWC170</translation>
+        <source>rPWC170</source>
+        <oldsource>oPWC170</oldsource>
+        <translation type="unfinished">oPWC170</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="643"/>
-        <source>aMPK</source>
-        <translation>aMПK</translation>
+        <source>aVO2max</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="665"/>
-        <source>oMPK</source>
-        <translation>оMПK</translation>
+        <source>rVO2max</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="990"/>
+        <source>AMT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1012"/>
+        <source>CRAMT</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1090"/>
+        <source>GMC</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="724"/>
@@ -1293,43 +1318,32 @@
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="777"/>
-        <source>ALAKm</source>
-        <translation>АЛАКм</translation>
+        <source>ALAKp</source>
+        <oldsource>ALAKm</oldsource>
+        <translation type="unfinished">АЛАКм</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="827"/>
-        <source>ALAKe</source>
-        <translation>АЛАКе</translation>
+        <source>ALAKc</source>
+        <oldsource>ALAKe</oldsource>
+        <translation type="unfinished">АЛАКе</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="877"/>
-        <source>LAKm</source>
-        <translation>ЛАКм</translation>
+        <source>LAKp</source>
+        <oldsource>LAKm</oldsource>
+        <translation type="unfinished">ЛАКм</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="927"/>
-        <source>LAKe</source>
-        <translation>ЛАКе</translation>
+        <source>LAKc</source>
+        <oldsource>LAKe</oldsource>
+        <translation type="unfinished">ЛАКе</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="975"/>
         <source>Cost of power supply and backup capabilities</source>
         <translation>Экономичность энергообеспечения и резервные возможности</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="990"/>
-        <source>PANO</source>
-        <translation>ПАНО</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="1012"/>
-        <source>CHSSpano</source>
-        <translation>ЧССпано</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="1090"/>
-        <source>OME</source>
-        <translation>ОМЕ</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1138"/>
@@ -1338,7 +1352,8 @@
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1153"/>
-        <source>Total endurance</source>
+        <source>General endurance</source>
+        <oldsource>Total endurance</oldsource>
         <translation>Общая выносливость</translation>
     </message>
     <message>
@@ -1358,17 +1373,130 @@
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1366"/>
-        <source>Speed and power endurance</source>
+        <source>Speed-strength endurance</source>
+        <oldsource>Speed and power endurance</oldsource>
         <translation>Скоростно-силовая выносливость</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1410"/>
-        <source>Cost of power supply</source>
+        <source>Energetic system economy</source>
         <translation>Экономичность системы энергообеспечения</translation>
+    </message>
+    <message utf8="true">
+        <location filename="shvsmcreatedialog.ui" line="1797"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для аэробных возможностей организма (величины оPWC170 и оМПК)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12 км - 15 км). ЧСС = 120 - 140 уд/мин. (подготовительный этап учебно-тренировочного процесса - далее ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный, равномерный бег (до 4-10 км). ЧСС до 180 уд/мин (ПЭ+СЭ (соревноватедьный этап).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170 -175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Интервальный бег на отрезках 200-300м со скоростью 80% от максимальной и ЧСС=180 уд/мин. Отдых между отрезками до ЧСС=120-130 уд/мин или около 30с. Объем - 3000 - 4500м за тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 2000м - 3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем - 5000м - 8000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Ритмичный легкий бег (в лесу или по пересеченной местности) в течение 1 часа. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 60-70% от максимальной в течение 30-40 мин. Скорость педалирования 60 об/мин. ЧСС=120-130 уд/мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной мощности (АЛАКм):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Прыжки с максимальной интенсивностью на двух ногах и с ноги на ногу на отрезках 30-60м (на ровной местности или в гору). Интервалы отдыха между отрезками - 30-40с, между сериями - 3-4 мин. В серии - 5-6 отрезков при общем количестве в тренировочном занятии - 15. Паузы между сериями - медленный бег, ходьба трусцой. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег с максимальной скоростью на отрезках 30-50м в гору, по песку и на дорожке. Количество отрезков - 15 за занятие. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на коротких отрезках с околопредельной (90% от максимальной) скоростью (&amp;quot;спринтерская тренировка&amp;quot;). Серии отрезков: 10 по 100 м; 6 по 150 м. Количество серий - 4 за тренировку. Паузы отдыха между отрезками 20-25 сек., между сериями - 2-3 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Прыжковые упражнения продолжительностью до 10с. 2-3 серии по 6-8 повторений. Отдых между повторениями - 10-15с, между сериями - 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 90-95% от максимальной в течение 10с. 2-3 серии по 4-5 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями 10-15с. Между сериями 5-7 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной емкости (АЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег со скоросью 90% от максимальной на отрезках 60-80м. Отдых между отрезками - 60с. За тренировку - 10-12 при отрезках 70-80м; 15 - при 50м. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег со скоростью 90% от максимальной на отрезках 100-150м. Отдых между отрезками - 2,5-3 мин. К-во отрезков за тренировку - 8-10. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа с отягощениями средней интенсивности до 20-30с. 2-3 серии/тренировку. В каждой серии 10-15 повторений. Отдых между повторениями - 30-60с, между сериями - 10-12 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Прыжковые упражнения умеренной интенсивности продолжительностью до 20-30с. 2-3 серии по 4-6 повторений. Отдых между повторениями - 1 мин., между сериями - 10-12 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для лактатной анаэробной мощности и емкости (ЛАКм и ЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег 200-400м со скоростью 85-90% от максимальной. Серии: при 200м - 5-6 повторений; при 400м - 4. Отдых между отрезками - 2,5-3 мин (заполняется ходьбой), между сериями (заполняется бегом &amp;quot;трусцой&amp;quot;) - 5 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Серии бега: четыре по 200м, три по 300м или два по 400м. За тренировку - не более двух серий. Отдых между отрезками - 30с, между сериями - 5-6 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Интервальный бег 500-600м со скоростью 80-85% от максимальной. Отдых между отрезками 2,5-3,5 минуты. Общий объем: 3000м - 4800м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторно-интервальный бег 500-600м со скоростью 85-90% от максимальной. Две серии по 3 отрезка. Отдых между отрезками - 3-3,5 мин., между сериями - 6-7 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках от 200 до 600м со скоростью 87-90% от максимальной. Отрезки располагаются либо в порядке возрастания (200+300+400+500), либо в порядке убывания. Продолжительность отдыха между отрезками до ЧСС=120-130 уд/мин. Общий объем - 2-3 серии/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-1200м со скоростью 90-95% от максимальной. Общий объем: 3600м - 5000м / тренировку. Продолжительность отдыха между отрезками - 4-6 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег в гору 150-300м. 2-3 серии по 3-4 повторения. Отдых между повторениями - 1,5-2 мин., между сериями - 8-10мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 80-85% от максимальной в течение 30с. 2-3 серии по 5-6 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями - 1 мин., между сериями 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для порога анаэробного обмена (ПАНО) и ЧССпано:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170-175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку - 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем: до 5000м - 8000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для аэробных возможностей организма (величины оPWC170 и оМПК)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12 км - 15 км). ЧСС = 120 - 140 уд/мин. (подготовительный этап учебно-тренировочного процесса - далее ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный, равномерный бег (до 4-10 км). ЧСС до 180 уд/мин (ПЭ+СЭ (соревноватедьный этап).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170 -175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Интервальный бег на отрезках 200-300м со скоростью 80% от максимальной и ЧСС=180 уд/мин. Отдых между отрезками до ЧСС=120-130 уд/мин или около 30с. Объем - 3000 - 4500м за тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 2000м - 3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем - 5000м - 8000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Ритмичный легкий бег (в лесу или по пересеченной местности) в течение 1 часа. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 60-70% от максимальной в течение 30-40 мин. Скорость педалирования 60 об/мин. ЧСС=120-130 уд/мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной мощности (АЛАКм):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Прыжки с максимальной интенсивностью на двух ногах и с ноги на ногу на отрезках 30-60м (на ровной местности или в гору). Интервалы отдыха между отрезками - 30-40с, между сериями - 3-4 мин. В серии - 5-6 отрезков при общем количестве в тренировочном занятии - 15. Паузы между сериями - медленный бег, ходьба трусцой. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег с максимальной скоростью на отрезках 30-50м в гору, по песку и на дорожке. Количество отрезков - 15 за занятие. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на коротких отрезках с околопредельной (90% от максимальной) скоростью (&amp;quot;спринтерская тренировка&amp;quot;). Серии отрезков: 10 по 100 м; 6 по 150 м. Количество серий - 4 за тренировку. Паузы отдыха между отрезками 20-25 сек., между сериями - 2-3 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Прыжковые упражнения продолжительностью до 10с. 2-3 серии по 6-8 повторений. Отдых между повторениями - 10-15с, между сериями - 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 90-95% от максимальной в течение 10с. 2-3 серии по 4-5 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями 10-15с. Между сериями 5-7 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной емкости (АЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег со скоросью 90% от максимальной на отрезках 60-80м. Отдых между отрезками - 60с. За тренировку - 10-12 при отрезках 70-80м; 15 - при 50м. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег со скоростью 90% от максимальной на отрезках 100-150м. Отдых между отрезками - 2,5-3 мин. К-во отрезков за тренировку - 8-10. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа с отягощениями средней интенсивности до 20-30с. 2-3 серии/тренировку. В каждой серии 10-15 повторений. Отдых между повторениями - 30-60с, между сериями - 10-12 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Прыжковые упражнения умеренной интенсивности продолжительностью до 20-30с. 2-3 серии по 4-6 повторений. Отдых между повторениями - 1 мин., между сериями - 10-12 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для лактатной анаэробной мощности и емкости (ЛАКм и ЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег 200-400м со скоростью 85-90% от максимальной. Серии: при 200м - 5-6 повторений; при 400м - 4. Отдых между отрезками - 2,5-3 мин (заполняется ходьбой), между сериями (заполняется бегом &amp;quot;трусцой&amp;quot;) - 5 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Серии бега: четыре по 200м, три по 300м или два по 400м. За тренировку - не более двух серий. Отдых между отрезками - 30с, между сериями - 5-6 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Интервальный бег 500-600м со скоростью 80-85% от максимальной. Отдых между отрезками 2,5-3,5 минуты. Общий объем: 3000м - 4800м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторно-интервальный бег 500-600м со скоростью 85-90% от максимальной. Две серии по 3 отрезка. Отдых между отрезками - 3-3,5 мин., между сериями - 6-7 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках от 200 до 600м со скоростью 87-90% от максимальной. Отрезки располагаются либо в порядке возрастания (200+300+400+500), либо в порядке убывания. Продолжительность отдыха между отрезками до ЧСС=120-130 уд/мин. Общий объем - 2-3 серии/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-1200м со скоростью 90-95% от максимальной. Общий объем: 3600м - 5000м / тренировку. Продолжительность отдыха между отрезками - 4-6 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег в гору 150-300м. 2-3 серии по 3-4 повторения. Отдых между повторениями - 1,5-2 мин., между сериями - 8-10мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 80-85% от максимальной в течение 30с. 2-3 серии по 5-6 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями - 1 мин., между сериями 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для порога анаэробного обмена (ПАНО) и ЧССпано:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170-175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку - 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем: до 5000м - 8000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <source>Cost of power supply</source>
+        <translation type="obsolete">Экономичность системы энергообеспечения</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1479"/>
-        <source>Reserve possibilities</source>
+        <source>Reserve capability</source>
+        <oldsource>Reserve possibilities</oldsource>
         <translation>Резервные возможности</translation>
     </message>
     <message>
@@ -1427,7 +1555,6 @@
         <translation>Рекомендации</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.ui" line="1797"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
@@ -1480,7 +1607,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ+СЭ).&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <translation type="obsolete">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
@@ -2061,10 +2188,6 @@ p, li { white-space: pre-wrap; }
         <location filename="surveyedcreatedialog.ui" line="166"/>
         <source>Sex:</source>
         <translation>Пол:</translation>
-    </message>
-    <message>
-        <source>Age:</source>
-        <translation type="obsolete">Возраст:</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.ui" line="200"/>

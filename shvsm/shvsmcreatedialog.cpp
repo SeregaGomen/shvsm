@@ -517,7 +517,7 @@ void SHVSMCreateDialog::showIndicatorTxt(QLabel* labelF, QLabel* labelT,float in
     else if (indicator > 49.6 && indicator <= 66.1)
     {
         labelF->setStyleSheet("QLabel { background-color : yellow; }");
-        labelT->setText(tr("Average"));
+        labelT->setText(tr("Middle"));
         labelT->setStyleSheet("QLabel { background-color : yellow; }");
     }
     else if (indicator > 66.1 && indicator <= 82.6)
