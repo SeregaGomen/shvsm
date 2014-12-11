@@ -61,7 +61,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>List of survehed</string>
+    <string>List of examinees</string>
    </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
@@ -135,7 +135,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>Middle</string>
+        <string>Average</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -230,7 +230,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Basic parameters of the calculation</string>
+    <string>Inital characteristics</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
@@ -256,7 +256,7 @@
      <rect>
       <x>150</x>
       <y>20</y>
-      <width>91</width>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -275,7 +275,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>51</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -283,7 +283,7 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Weight:</string>
+        <string>Weight (kg):</string>
        </property>
       </widget>
      </item>
@@ -292,9 +292,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>90</x>
       <y>60</y>
-      <width>56</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
@@ -307,9 +307,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_5">
     <property name="geometry">
      <rect>
-      <x>140</x>
+      <x>130</x>
       <y>60</y>
-      <width>51</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -317,7 +317,7 @@
      <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Growth:</string>
+        <string>Height (sm):</string>
        </property>
       </widget>
      </item>
@@ -326,9 +326,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_6">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>60</y>
-      <width>51</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
@@ -341,9 +341,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_7">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>100</y>
-      <width>51</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
@@ -366,7 +366,7 @@
      <item>
       <widget class="QLabel" name="label_4">
        <property name="text">
-        <string>Cardiac systole frequency:</string>
+        <string>Heart rate:</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -378,9 +378,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_9">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>140</y>
-      <width>51</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
@@ -437,9 +437,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_12">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>210</x>
       <y>180</y>
-      <width>51</width>
+      <width>41</width>
       <height>31</height>
      </rect>
     </property>
@@ -460,7 +460,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Vital capacity of lungs</string>
+    <string>Vital lung capacity</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget_13">
     <property name="geometry">
@@ -475,7 +475,7 @@
      <item>
       <widget class="QLabel" name="label_7">
        <property name="text">
-        <string>Actual</string>
+        <string>Due</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -667,7 +667,7 @@
      <rect>
       <x>10</x>
       <y>10</y>
-      <width>191</width>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -675,7 +675,7 @@
      <item>
       <widget class="QLabel" name="label_11">
        <property name="text">
-        <string>Delay time exhalations:</string>
+        <string>Breath-holding inhalation time:</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -689,7 +689,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>191</width>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -697,7 +697,7 @@
      <item>
       <widget class="QLabel" name="label_12">
        <property name="text">
-        <string>Delay time breathing exhalation:</string>
+        <string>Breath-holding exhalation time:</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -872,7 +872,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>Cardiac index:</string>
+        <string>Heart index:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -928,7 +928,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>The volume of the heart:</string>
+        <string>Heart volume:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -956,7 +956,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>Index Robinson (the efficiency of the cardiovascular system):</string>
+        <string>Robinson index (Functional effectiveness of cardiovascular system):</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -984,7 +984,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>The coefficient of efficiency of blood circulation:</string>
+        <string>Circulation of blood economizing coefficient:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1068,7 +1068,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>Hypoxia index (level of fitness and respiratory CVS):</string>
+        <string>Hypoxia index (Adaptive level of cardiovascular and breathing systems):</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1096,7 +1096,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>Index Skibinski (efficiency of the cardiorespiratory system):</string>
+        <string>Skibinski index (effectiveness of the cardiorespiratory system functioning):</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1120,11 +1120,17 @@
     <layout class="QHBoxLayout" name="horizontalLayout_44">
      <item>
       <widget class="QLabel" name="label_27">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>The level of the functional state of the cardiovascular system:</string>
+        <string>Level of functional state of cardiovascular system:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1148,11 +1154,17 @@
     <layout class="QHBoxLayout" name="horizontalLayout_45">
      <item>
       <widget class="QLabel" name="label_28">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>The level of the functional state of the system of external respiration:</string>
+        <string>Level of functional state of external breathing system:</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -1759,6 +1771,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout_68">
      <item>
       <widget class="QLabel" name="labelT12">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -1787,6 +1805,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout_69">
      <item>
       <widget class="QLabel" name="labelV12">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -1812,6 +1836,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout_70">
      <item>
       <widget class="QLabel" name="labelT13">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -1840,6 +1870,12 @@
     <layout class="QHBoxLayout" name="horizontalLayout_71">
      <item>
       <widget class="QLabel" name="labelV13">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>

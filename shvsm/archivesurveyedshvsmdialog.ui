@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Archive survey people 'SHVSM'</string>
+   <string>Archive of examinees 'SHVSM'</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>List of surveyed</string>
+    <string>List of examinees</string>
    </property>
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">

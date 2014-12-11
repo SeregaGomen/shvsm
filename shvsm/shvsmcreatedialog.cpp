@@ -62,7 +62,7 @@ void SHVSMCreateDialog::setupForm(void)
     model->setHeaderData(2, Qt::Horizontal, tr("Team"));
     model->setHeaderData(3, Qt::Horizontal, tr("Sex"));
     model->setHeaderData(4, Qt::Horizontal, tr("Qualification"));
-    model->setHeaderData(5, Qt::Horizontal, tr("DOB"));
+    model->setHeaderData(5, Qt::Horizontal, tr("DoB"));
     ui->tableView->setModel(model);
     ui->tableView->setColumnHidden(0, true);
     ui->tableView->setColumnHidden(6, true);
@@ -517,7 +517,7 @@ void SHVSMCreateDialog::showIndicatorTxt(QLabel* labelF, QLabel* labelT,float in
     else if (indicator > 49.6 && indicator <= 66.1)
     {
         labelF->setStyleSheet("QLabel { background-color : yellow; }");
-        labelT->setText(tr("Middle"));
+        labelT->setText(tr("Average"));
         labelT->setStyleSheet("QLabel { background-color : yellow; }");
     }
     else if (indicator > 66.1 && indicator <= 82.6)
@@ -586,23 +586,23 @@ void SHVSMCreateDialog::calcNn12(void)
         N1 = 133;
 
     if (sex == 1) // M
-        n1 = int(((N1*6.12)/(1.33*0.4*weight)));
+        n1 = (N1*6.12)/(1.33*0.4*weight);
     else
-        n1 = int(((N1*6.12)/(1.33*0.2*weight)));
+        n1 = (N1*6.12)/(1.33*0.2*weight);
 
     if (isSportsman)
     {
-        N2 = int((N1 + 0.75*N1));
-        n2 = int(n1 + n1*0.75);
+        N2 = (N1 + 0.75*N1);
+        n2 = n1 + n1*0.75;
     }
     else
     {
-        N2 = int((N1 + 0.5*N1));
-        n2 = int(n1 + n1*0.5);
+        N2 = N1 + 0.5*N1;
+        n2 = n1 + n1*0.5;
     }
-    ui->leN1->setText(QString("%1").arg(N1));
-    ui->leN2->setText(QString("%1").arg(N2));
-    ui->len1->setText(QString("%1").arg(n1));
-    ui->len2->setText(QString("%1").arg(n2));
+    ui->leN1->setText(QString("%1").arg(int(N1)));
+    ui->leN2->setText(QString("%1").arg(int(N2)));
+    ui->len1->setText(QString("%1").arg(int(n1)));
+    ui->len2->setText(QString("%1").arg(int(n2)));
 }
 

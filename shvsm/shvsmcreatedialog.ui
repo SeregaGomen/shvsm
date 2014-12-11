@@ -35,7 +35,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>List of survehed</string>
+    <string>List of examinees</string>
    </property>
    <widget class="QWidget" name="verticalLayoutWidget">
     <property name="geometry">
@@ -63,7 +63,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Basic parameters of the calculation</string>
+    <string>Initial characteristics</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
@@ -89,7 +89,7 @@
      <rect>
       <x>150</x>
       <y>20</y>
-      <width>91</width>
+      <width>101</width>
       <height>31</height>
      </rect>
     </property>
@@ -108,7 +108,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>51</width>
+      <width>81</width>
       <height>31</height>
      </rect>
     </property>
@@ -116,7 +116,7 @@
      <item>
       <widget class="QLabel" name="label_2">
        <property name="text">
-        <string>Weight:</string>
+        <string>Weight (kg):</string>
        </property>
       </widget>
      </item>
@@ -125,9 +125,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_4">
     <property name="geometry">
      <rect>
-      <x>70</x>
+      <x>95</x>
       <y>60</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -142,7 +142,7 @@
      <rect>
       <x>140</x>
       <y>60</y>
-      <width>51</width>
+      <width>77</width>
       <height>31</height>
      </rect>
     </property>
@@ -150,7 +150,7 @@
      <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>Growth:</string>
+        <string>Height (sm):</string>
        </property>
       </widget>
      </item>
@@ -159,9 +159,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_6">
     <property name="geometry">
      <rect>
-      <x>200</x>
+      <x>220</x>
       <y>60</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -182,14 +182,14 @@
     </rect>
    </property>
    <property name="title">
-    <string>The load on the veloergometer</string>
+    <string>The loading on the veloergometer</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget_13">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>220</x>
       <y>50</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -208,7 +208,7 @@
      <rect>
       <x>10</x>
       <y>50</y>
-      <width>171</width>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
@@ -216,7 +216,7 @@
      <item>
       <widget class="QLabel" name="label_7">
        <property name="text">
-        <string>The first loading intensity(N1):</string>
+        <string>The first loading intensity (N1):</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -228,9 +228,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_15">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>220</x>
       <y>90</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -249,7 +249,7 @@
      <rect>
       <x>10</x>
       <y>90</y>
-      <width>171</width>
+      <width>211</width>
       <height>31</height>
      </rect>
     </property>
@@ -276,7 +276,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>Manual input</string>
+     <string>Input manually</string>
     </property>
    </widget>
   </widget>
@@ -290,14 +290,14 @@
     </rect>
    </property>
    <property name="title">
-    <string>The loading ascents on a step amount </string>
+    <string>Number of ascents to a step</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget_17">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>220</x>
       <y>20</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -316,7 +316,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>292</width>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -333,9 +333,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_19">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>220</x>
       <y>60</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -354,7 +354,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>171</width>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -379,14 +379,14 @@
     </rect>
    </property>
    <property name="title">
-    <string>Cardiac systole frequency</string>
+    <string>Heart rate</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget_21">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>220</x>
       <y>20</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -401,7 +401,7 @@
      <rect>
       <x>10</x>
       <y>20</y>
-      <width>171</width>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -421,9 +421,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_23">
     <property name="geometry">
      <rect>
-      <x>190</x>
+      <x>220</x>
       <y>60</y>
-      <width>56</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -438,7 +438,7 @@
      <rect>
       <x>10</x>
       <y>60</y>
-      <width>174</width>
+      <width>201</width>
       <height>31</height>
      </rect>
     </property>
@@ -490,7 +490,7 @@
         <enum>QFrame::WinPanel</enum>
        </property>
        <property name="text">
-        <string>Total</string>
+        <string>General</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -512,7 +512,7 @@
      <item>
       <widget class="QLabel" name="label_5">
        <property name="text">
-        <string>aPWC170</string>
+        <string>aPWC&lt;sub&gt;170</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -534,7 +534,7 @@
      <item>
       <widget class="QLabel" name="label_6">
        <property name="text">
-        <string>rPWC170</string>
+        <string>rPWC&lt;sub&gt;170</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -640,7 +640,7 @@
      <item>
       <widget class="QLabel" name="label_15">
        <property name="text">
-        <string>aVo2max</string>
+        <string>aVO&lt;sub&gt;2max</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -662,7 +662,7 @@
      <item>
       <widget class="QLabel" name="label_16">
        <property name="text">
-        <string>rVo2max</string>
+        <string>rVO&lt;sub&gt;2max</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -752,7 +752,7 @@
         <enum>QFrame::WinPanel</enum>
        </property>
        <property name="text">
-        <string>Speed and power</string>
+        <string>Speed-strength</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -972,7 +972,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Cost of power supply and backup capabilities</string>
+    <string>Energetic system economy and reserve capability</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget_31">
     <property name="geometry">
@@ -1009,7 +1009,7 @@
      <item>
       <widget class="QLabel" name="label_25">
        <property name="text">
-        <string>CRamt</string>
+        <string>HR&lt;sub&gt;AMT</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1135,7 +1135,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>The level of functional training</string>
+    <string>Level of functional preparedness</string>
    </property>
    <widget class="QWidget" name="gridLayoutWidget">
     <property name="geometry">
@@ -1544,8 +1544,14 @@
     <layout class="QGridLayout" name="gridLayout_18">
      <item row="0" column="0">
       <widget class="QLabel" name="label_32">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="text">
-        <string>FPL</string>
+        <string>Level of functional preparedness (LFP)</string>
        </property>
        <property name="wordWrap">
         <bool>true</bool>
@@ -1566,6 +1572,12 @@
     <layout class="QGridLayout" name="gridLayout_19">
      <item row="0" column="0">
       <widget class="QLabel" name="labelF6">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -1591,6 +1603,12 @@
     <layout class="QGridLayout" name="gridLayout_20">
      <item row="0" column="0">
       <widget class="QLabel" name="labelV6">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
        <property name="frameShape">
         <enum>QFrame::Box</enum>
        </property>
@@ -1658,7 +1676,7 @@
         <enum>QFrame::Box</enum>
        </property>
        <property name="text">
-        <string>Middle</string>
+        <string>Average</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Man create dialog</string>
+   <string>Examinee create dialog</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">
@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Surveyed</string>
+    <string>Exameniee</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
@@ -122,7 +122,7 @@
      <item>
       <widget class="QLabel" name="label_3">
        <property name="text">
-        <string>DOB:</string>
+        <string>DoB:</string>
        </property>
       </widget>
      </item>

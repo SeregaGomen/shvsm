@@ -51,7 +51,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Team name</string>
+    <string>Name of ths team</string>
    </property>
    <widget class="QLineEdit" name="lineEdit">
     <property name="geometry">

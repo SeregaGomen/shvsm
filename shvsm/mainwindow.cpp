@@ -134,14 +134,14 @@ bool MainWindow::createDB(QString fileName)
         db.close();
         return false;
     }
-    if (!query.exec(QString("INSERT INTO qualification (name) VALUES ('%1')").arg(tr("Sportsman"))))
+    if (!query.exec(QString("INSERT INTO qualification (name) VALUES ('%1')").arg(tr("Athlete"))))
     {
         QMessageBox::critical(this, tr("Error"),tr("Error creating database!"), QMessageBox::Ok);
         qDebug() << db.lastError();
         db.close();
         return false;
     }
-    if (!query.exec(QString("INSERT INTO qualification (name) VALUES ('%1')").arg(tr("Not sportsman"))))
+    if (!query.exec(QString("INSERT INTO qualification (name) VALUES ('%1')").arg(tr("Non-athlete"))))
     {
         QMessageBox::critical(this, tr("Error"),tr("Error creating database!"), QMessageBox::Ok);
         qDebug() << db.lastError();

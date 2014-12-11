@@ -24,7 +24,7 @@
      <x>0</x>
      <y>0</y>
      <width>595</width>
-     <height>21</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu_File">
@@ -40,7 +40,7 @@
        <string>Create a new survey 'SHVSM'</string>
       </property>
       <property name="title">
-       <string>S&amp;urvey</string>
+       <string>E&amp;xamination</string>
       </property>
       <addaction name="actionSHVSM"/>
       <addaction name="actionSHVSM_integral"/>
@@ -134,13 +134,13 @@
      <normaloff>:/image/user.png</normaloff>:/image/user.png</iconset>
    </property>
    <property name="text">
-    <string>&amp;Surveyed...</string>
+    <string>E&amp;xaminee...</string>
    </property>
    <property name="toolTip">
-    <string>Create a new surveyed</string>
+    <string>Create a new examinee</string>
    </property>
    <property name="statusTip">
-    <string>Create a new surveyed</string>
+    <string>Create a new examinee</string>
    </property>
   </action>
   <action name="actionExit">
@@ -166,7 +166,7 @@
     <string>&amp;SHVSM...</string>
    </property>
    <property name="toolTip">
-    <string>Create a new survey 'SHVSM'</string>
+    <string>Create a new examination 'SHVSM'</string>
    </property>
    <property name="statusTip">
     <string>Create a new survey 'SHVSM'</string>
@@ -181,7 +181,7 @@
     <string>S&amp;HVSM-integral...</string>
    </property>
    <property name="toolTip">
-    <string>Create a new survey 'SHVSM-integral'</string>
+    <string>Create a new examination 'SHVSM-integral'</string>
    </property>
    <property name="statusTip">
     <string>Create a new survey 'SHVSM-integral'</string>
@@ -211,13 +211,13 @@
   </action>
   <action name="action_ArchiveSurveyedSHVSMIntegral">
    <property name="text">
-    <string>&amp;Surveyed...</string>
+    <string>&amp;Examinee...</string>
    </property>
    <property name="toolTip">
-    <string>Archive of surveys of people 'ShVSM-integral'</string>
+    <string>Archive of examinee 'SHVSM-integral'</string>
    </property>
    <property name="statusTip">
-    <string>Archive of surveys of people 'ShVSM-integral'</string>
+    <string>Archive of examinee 'SHVSM-integral'</string>
    </property>
   </action>
   <action name="action_ArchiveTeamSHVSMIntegral">
@@ -225,21 +225,21 @@
     <string>&amp;Team...</string>
    </property>
    <property name="toolTip">
-    <string>Archive survey teams 'SHVSM-integral'</string>
+    <string>Archive of examination teams 'SHVSM-integral'</string>
    </property>
    <property name="statusTip">
-    <string>Archive survey teams 'SHVSM-integral'</string>
+    <string>Archive of examination teams 'SHVSM-integral'</string>
    </property>
   </action>
   <action name="action_ArchiveSurveyedSHVSM">
    <property name="text">
-    <string>&amp;Surveyed...</string>
+    <string>&amp;Examinee...</string>
    </property>
    <property name="toolTip">
-    <string>Archive of surveys of people 'ShVSM'</string>
+    <string>Archive of examinee 'SHVSM'</string>
    </property>
    <property name="statusTip">
-    <string>Archive of surveys of people 'ShVSM'</string>
+    <string>Archive of examinee 'SHVSM'</string>
    </property>
   </action>
   <action name="action_ArchiveTeamSHVSM">
@@ -247,10 +247,10 @@
     <string>&amp;Team...</string>
    </property>
    <property name="toolTip">
-    <string>Archive survey teams 'SHVSM'</string>
+    <string>Archive of examination teams 'SHVSM'</string>
    </property>
    <property name="statusTip">
-    <string>Archive survey teams 'SHVSM'</string>
+    <string>Archive of examination teams 'SHVSM'</string>
    </property>
   </action>
   <action name="actionArchiveTeam">
@@ -266,13 +266,13 @@
   </action>
   <action name="actionArchiveSurveyed">
    <property name="text">
-    <string>&amp;Surveyed...</string>
+    <string>&amp;Examinee...</string>
    </property>
    <property name="toolTip">
-    <string>Archive of surveyed</string>
+    <string>Archive of examinee</string>
    </property>
    <property name="statusTip">
-    <string>Archive of surveyed</string>
+    <string>Archive of examinee</string>
    </property>
   </action>
  </widget>
