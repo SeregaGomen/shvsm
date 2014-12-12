@@ -1509,13 +1509,13 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmcreatedialog.ui" line="515"/>
         <source>aPWC&lt;sub&gt;170</source>
         <oldsource>aPWC170</oldsource>
-        <translation>aPWC170</translation>
+        <translation>aPWC&lt;sub&gt;170</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="537"/>
         <source>rPWC&lt;sub&gt;170</source>
         <oldsource>oPWC170</oldsource>
-        <translation>вPWC170</translation>
+        <translation>вPWC&lt;sub&gt;170</translation>
     </message>
     <message>
         <source>aMPK</source>
