@@ -39,7 +39,7 @@
     </rect>
    </property>
    <property name="title">
-    <string>Exameniee</string>
+    <string>Examinee</string>
    </property>
    <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">

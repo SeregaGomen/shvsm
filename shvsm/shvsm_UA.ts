@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="aboutdialog.ui" line="26"/>
         <source>About program</source>
-        <translation>О программе</translation>
+        <translation>Про програму</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="77"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Integrated rapid assessment of functional status and functional training organism (&amp;quot;SHVSM&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Комплексная экспресс-оценка функционального состояния и функциональной подготовленности
-организма (&amp;quot;ШВСМ&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Комплексна експрес-оцінка функціонального стану та функціональної підготовленості
+організму(&amp;quot;ШВСМ&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="103"/>
         <source>Zaporizhzhya national university</source>
-        <translation>Запорожский национальный университет</translation>
+        <translation>Запорізький національний університет</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="119"/>
         <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Malikov N.V., Malikova A.N., Svatyev A.V.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Маликов Н.В., Маликова А.Н., Сватьев А.В.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+        <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Маліков М.В., Малікова А.М., Сват’єв А.В.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
         <location filename="aboutdialog.ui" line="135"/>
@@ -41,23 +41,23 @@
         <location filename="archivesurveyedshvsmdialog.ui" line="14"/>
         <source>Archive of examinees &apos;SHVSM&apos;</source>
         <oldsource>Archive survey people &apos;SHVSM&apos;</oldsource>
-        <translation>Архив обследований людей &quot;ШВСМ&quot;</translation>
+        <translation>Архів обстежень людей &quot;ШВСМ&quot;</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.ui" line="42"/>
         <source>List of examinees</source>
         <oldsource>List of surveyed</oldsource>
-        <translation>Список обследованных</translation>
+        <translation>Список обстежених</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="38"/>
         <source>Name</source>
-        <translation>ФИО</translation>
+        <translation>ПІБ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="39"/>
         <source>Sex</source>
-        <translation>Пол</translation>
+        <translation>Стать</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="54"/>
@@ -68,22 +68,22 @@
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="55"/>
         <source>Qualification</source>
-        <translation>Квалификация</translation>
+        <translation>Кваліфікація</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="56"/>
         <source>Old</source>
-        <translation>Возраст</translation>
+        <translation>Вік</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="57"/>
         <source>Weight</source>
-        <translation>Вес</translation>
+        <translation>Вага</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="58"/>
         <source>Height</source>
-        <translation>Рост</translation>
+        <translation>Зріст</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="59"/>
@@ -124,46 +124,68 @@
         <location filename="archivesurveyedshvsmdialog.cpp" line="67"/>
         <source>rPWC170</source>
         <oldsource>oPWC170</oldsource>
-        <translation>oPWC170</translation>
+        <translation>вPWC170</translation>
+    </message>
+    <message>
+        <source>aMPK</source>
+        <translation type="obsolete">аМСК</translation>
+    </message>
+    <message>
+        <source>oMPK</source>
+        <translation type="obsolete">вМСК</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="70"/>
         <source>ALAKp</source>
-        <translation>АЛАКм</translation>
+        <oldsource>ALAKm</oldsource>
+        <translation>АЛАКп</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="71"/>
         <source>ALAKc</source>
-        <translation>АЛАКе</translation>
+        <oldsource>ALAKe</oldsource>
+        <translation>АЛАКє</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="72"/>
         <source>LAKp</source>
         <oldsource>LAKm</oldsource>
-        <translation>ЛАКм</translation>
+        <translation>ЛАКп</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="73"/>
         <source>LAKc</source>
         <oldsource>LAKe</oldsource>
-        <translation>ЛАКе</translation>
+        <translation>ЛАКє</translation>
+    </message>
+    <message>
+        <source>PANO</source>
+        <translation type="obsolete">ПАНО</translation>
+    </message>
+    <message>
+        <source>CHSSpano</source>
+        <translation type="obsolete">ЧССпано</translation>
+    </message>
+    <message>
+        <source>OME</source>
+        <translation type="obsolete">ЗМЄ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="77"/>
         <source>GE</source>
         <oldsource>TE</oldsource>
-        <translation>ОВ</translation>
+        <translation>ЗВ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="78"/>
         <source>SE</source>
-        <translation>СВ</translation>
+        <translation>ШВ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="79"/>
         <source>SSE</source>
         <oldsource>SPE</oldsource>
-        <translation>ССВ</translation>
+        <translation>ЕСЕ</translation>
     </message>
     <message>
         <source>SPS</source>
@@ -173,125 +195,123 @@
         <location filename="archivesurveyedshvsmdialog.cpp" line="81"/>
         <source>RC</source>
         <oldsource>RP</oldsource>
-        <translation>РВ</translation>
+        <translation>РМ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="252"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="345"/>
         <source>UFP</source>
-        <translation>УФП</translation>
+        <translation>РФП</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="133"/>
         <source>Point</source>
-        <translation>Балл</translation>
+        <translation>Бал</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="68"/>
         <source>aVO2max</source>
-        <translation>aMПK</translation>
+        <translation>аМСК</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="69"/>
         <source>rVO2max</source>
-        <translation>оMПK</translation>
+        <translation>вМСК</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="74"/>
         <source>AMT</source>
-        <translation>AMT</translation>
+        <translation>ПАНО</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="75"/>
         <source>HRamt</source>
-        <oldsource>CRAMT</oldsource>
         <translation>ЧССпано</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="76"/>
         <source>GMC</source>
-        <translation>ОМЕ</translation>
+        <translation>ЗМЄ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="80"/>
         <source>ESE</source>
-        <translation>ЭС</translation>
+        <translation>ЕСЕ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="82"/>
         <source>LFP</source>
-        <oldsource>FPL</oldsource>
-        <translation>УФП</translation>
+        <translation>РФП</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="229"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="229"/>
         <source>Error accessing to database!</source>
-        <translation>Ошибка доступа к базе данных!</translation>
+        <translation>Помилка доступу до бази даних!</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="247"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="325"/>
         <source>Total endurance</source>
-        <translation>Общая выносливость</translation>
+        <translation>Загальна витривалість</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="248"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="329"/>
         <source>Speed endurance</source>
-        <translation>Скоростная выносливость</translation>
+        <translation>Швидкісна витривалість</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="249"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="333"/>
         <source>Speed and power endurance</source>
-        <translation>Скоростно-силовая выносливость</translation>
+        <translation>Швидкісно-силова витривалість</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="250"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="337"/>
         <source>Cost of power supply</source>
-        <translation>Экономичность системы энергообеспечения</translation>
+        <translation>Економічність системи енергозабезпечення</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="251"/>
         <location filename="archivesurveyedshvsmdialog.cpp" line="341"/>
         <source>Reserve possibilities</source>
-        <translation>Резервные возможности</translation>
+        <translation>Резервні можливості</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="316"/>
         <source>Move to top left</source>
-        <translation>Переместить в лево вверх</translation>
+        <translation>Перемістити в ліво вгору</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="317"/>
         <source>Move to top center</source>
-        <translation>Переместить в центр вверх</translation>
+        <translation>Перемістити в центр вгору</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="318"/>
         <source>Move to top right</source>
-        <translation>Переместить вправо верх </translation>
+        <translation>Перемістити вправо верх</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="319"/>
         <source>Move to bottom right</source>
-        <translation>Переместить в центр вниз</translation>
+        <translation>Перемістити в центр вниз</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="320"/>
         <source>Move to bottom left</source>
-        <translation>Переместить влево вниз</translation>
+        <translation>Перемістити вліво вниз</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmdialog.cpp" line="351"/>
         <source>Show legend</source>
-        <translation>Показать легенду</translation>
+        <translation>Показати легенду</translation>
     </message>
 </context>
 <context>
@@ -300,23 +320,23 @@
         <location filename="archivesurveyedshvsmintegraldialog.ui" line="14"/>
         <source>Archive of examinees &apos;SHVSM-Integral&apos;</source>
         <oldsource>Archive survey people &apos;SHVSM-Integral&apos;</oldsource>
-        <translation>Архив обследований людей &quot;ШВСМ-интеграл&quot;</translation>
+        <translation>Архів обстежень людей &quot;ШВСМ-інтеграл&quot;</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.ui" line="42"/>
         <source>List of examinees</source>
         <oldsource>List of surveyed</oldsource>
-        <translation>Список обследованных</translation>
+        <translation>Список обстежених</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="38"/>
         <source>Name</source>
-        <translation>ФИО</translation>
+        <translation>ПІБ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="39"/>
         <source>Sex</source>
-        <translation>Пол</translation>
+        <translation>Стать</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="55"/>
@@ -327,22 +347,22 @@
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="56"/>
         <source>Qualification</source>
-        <translation>Квалификация</translation>
+        <translation>Кваліфікація</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="57"/>
         <source>Old</source>
-        <translation>Возраст</translation>
+        <translation>Вік</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="58"/>
         <source>Weight</source>
-        <translation>Вес</translation>
+        <translation>Вага</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="59"/>
         <source>Height</source>
-        <translation>Рост</translation>
+        <translation>Зріст</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="60"/>
@@ -352,12 +372,12 @@
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="61"/>
         <source>SBP</source>
-        <translation>АДс</translation>
+        <translation>СОК</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="62"/>
         <source>DBP</source>
-        <translation>АДд</translation>
+        <translation>АТд</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="63"/>
@@ -367,22 +387,22 @@
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="64"/>
         <source>DTBE</source>
-        <translation>Твыд</translation>
+        <translation>Твид</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="65"/>
         <source>VCL</source>
-        <translation>фЖЕЛ</translation>
+        <translation>ЖЄЛ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="66"/>
         <source>VCLN</source>
-        <translation>дЖЕЛ</translation>
+        <translation>ЖЄЛн</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="67"/>
         <source>VCLD</source>
-        <translation>оЖЕЛ</translation>
+        <translation>ЖЄЛв</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="68"/>
@@ -392,17 +412,17 @@
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="69"/>
         <source>MVB</source>
-        <translation>МОК</translation>
+        <translation>ХОК</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="70"/>
         <source>CI</source>
-        <translation>СИ</translation>
+        <translation>СІ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="71"/>
         <source>TPR</source>
-        <translation>ОППС</translation>
+        <translation>ЗПОС</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="72"/>
@@ -412,99 +432,99 @@
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="73"/>
         <source>IR</source>
-        <translation>ИР</translation>
+        <translation>ІР</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="74"/>
         <source>CEBC</source>
-        <translation>КЭК</translation>
+        <translation>КЕК</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="75"/>
         <source>DSBP</source>
-        <translation>оАДс</translation>
+        <translation>АТс</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="76"/>
         <source>DDBP</source>
-        <translation>оАДд</translation>
+        <translation>АТд</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="77"/>
         <source>HI</source>
-        <translation>ИГ</translation>
+        <translation>ІГ</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="78"/>
         <source>IS</source>
-        <translation>ИС</translation>
+        <translation>ІС</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="79"/>
         <source>LFSCS</source>
-        <translation>УФСссс</translation>
+        <translation>РФСссс</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="80"/>
         <source>LFSSER</source>
-        <translation>УФСвд</translation>
+        <translation>РФСзд</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="135"/>
         <source>Point</source>
-        <translation>Балл</translation>
+        <translation>Бал</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="234"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="234"/>
         <source>Error accessing to database!</source>
-        <translation>Ошибка доступа к базе данных!</translation>
+        <translation>Помилка доступу до бази даних!</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="252"/>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="319"/>
         <source>Circulatory system</source>
-        <translation>Cердечно-сосудистая система</translation>
+        <translation>Серцево-судинна система</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="253"/>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="323"/>
         <source>System of external respiration</source>
-        <translation>Система внешнего дыхания</translation>
+        <translation>Система зовнішнього дихання</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="310"/>
         <source>Move to top left</source>
-        <translation>Переместить в лево вверх</translation>
+        <translation>Перемістити в ліво вгору</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="311"/>
         <source>Move to top center</source>
-        <translation>Переместить в центр вверх</translation>
+        <translation>Перемістити в центр вгору</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="312"/>
         <source>Move to top right</source>
-        <translation>Переместить вправо верх</translation>
+        <translation>Перемістити вправо верх</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="313"/>
         <source>Move to bottom right</source>
-        <translation>Переместить в центр вниз</translation>
+        <translation>Перемістити в центр вниз</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="314"/>
         <source>Move to bottom left</source>
-        <translation>Переместить влево вниз</translation>
+        <translation>Перемістити вліво вниз</translation>
     </message>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.cpp" line="329"/>
         <source>Show legend</source>
-        <translation>Показать легенду</translation>
+        <translation>Показати легенду</translation>
     </message>
 </context>
 <context>
@@ -512,12 +532,12 @@
     <message>
         <location filename="archivetabledialog.ui" line="14"/>
         <source>Dialog</source>
-        <translation>Диалог</translation>
+        <translation>Діалог</translation>
     </message>
     <message>
         <location filename="archivetabledialog.ui" line="27"/>
         <source>Add new row</source>
-        <translation>Добавить новую запись</translation>
+        <translation>Додати новий запис</translation>
     </message>
     <message>
         <location filename="archivetabledialog.ui" line="30"/>
@@ -530,17 +550,17 @@
     <message>
         <location filename="archivetabledialog.ui" line="47"/>
         <source>Remove current row</source>
-        <translation>Удалить текущую запись</translation>
+        <translation>Вилучити поточний запис</translation>
     </message>
     <message>
         <location filename="archivetabledialog.ui" line="67"/>
         <source>Save data</source>
-        <translation>Сохранить изменения</translation>
+        <translation>Зберегти зміни</translation>
     </message>
     <message>
         <location filename="archivetabledialog.ui" line="87"/>
         <source>Cancel changes</source>
-        <translation>Отменить изменения</translation>
+        <translation>Скасувати зміни</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="38"/>
@@ -557,32 +577,32 @@
     <message>
         <location filename="archivetabledialog.cpp" line="50"/>
         <source>Name</source>
-        <translation>ФИО</translation>
+        <translation>ПІБ</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="51"/>
         <source>Sex</source>
-        <translation>Пол</translation>
+        <translation>Стать</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="53"/>
         <source>Qualification</source>
-        <translation>Квалификация</translation>
+        <translation>Кваліфікація</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="54"/>
         <source>DOB</source>
-        <translation>Дата рождения</translation>
+        <translation>Дата народження</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="72"/>
         <source>Archive of team</source>
-        <translation>Архив команд</translation>
+        <translation>Архів команд</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="74"/>
         <source>Archive of surveyed</source>
-        <translation>Архив обследованных</translation>
+        <translation>Архів обстежених</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="99"/>
@@ -592,17 +612,17 @@
     <message>
         <location filename="archivetabledialog.cpp" line="99"/>
         <source>Are you sure?</source>
-        <translation>Вы уверены?</translation>
+        <translation>Ви впевнені?</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="99"/>
         <source>Yes</source>
-        <translation>Да</translation>
+        <translation>Так</translation>
     </message>
     <message>
         <location filename="archivetabledialog.cpp" line="99"/>
         <source>No</source>
-        <translation>Нет</translation>
+        <translation>Ні</translation>
     </message>
 </context>
 <context>
@@ -610,7 +630,7 @@
     <message>
         <location filename="archiveteamshvsmdialog.ui" line="14"/>
         <source>Archive survey teams &apos;SHVSM&apos;</source>
-        <translation>Архив обследований команд &apos;ШВСМ&apos;</translation>
+        <translation>Архів обстежень команд &apos;ШВСМ&apos;</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="35"/>
@@ -625,32 +645,32 @@
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="63"/>
         <source>Name</source>
-        <translation>ФИО</translation>
+        <translation>ПІБ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="64"/>
         <source>Sex</source>
-        <translation>Пол</translation>
+        <translation>Стать</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="65"/>
         <source>Qualification</source>
-        <translation>Квалификация</translation>
+        <translation>Кваліфікація</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="66"/>
         <source>Old</source>
-        <translation>Возраст</translation>
+        <translation>Вік</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="67"/>
         <source>Weight</source>
-        <translation>Вес</translation>
+        <translation>Вага</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="68"/>
         <source>Height</source>
-        <translation>Рост</translation>
+        <translation>Зріст</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="69"/>
@@ -691,37 +711,37 @@
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="77"/>
         <source>oPWC170</source>
-        <translation>oPWC170</translation>
+        <translation>вPWC170</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="78"/>
         <source>aMPK</source>
-        <translation>aMПK</translation>
+        <translation>аМСК</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="79"/>
         <source>oMPK</source>
-        <translation>оMПK</translation>
+        <translation>вМСК</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="80"/>
         <source>ALAKm</source>
-        <translation>АЛАКм</translation>
+        <translation>АЛАКп</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="81"/>
         <source>ALAKe</source>
-        <translation>АЛАКе</translation>
+        <translation>АЛАКє</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="82"/>
         <source>LAKm</source>
-        <translation>ЛАКм</translation>
+        <translation>ЛАКп</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="83"/>
         <source>LAKe</source>
-        <translation>ЛАКе</translation>
+        <translation>ЛАКє</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="84"/>
@@ -736,37 +756,37 @@
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="86"/>
         <source>OME</source>
-        <translation>ОМЕ</translation>
+        <translation>ЗМЄ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="87"/>
         <source>TE</source>
-        <translation>ОВ</translation>
+        <translation>ЗВ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="88"/>
         <source>SE</source>
-        <translation>СВ</translation>
+        <translation>ШВ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="89"/>
         <source>SPE</source>
-        <translation>ССВ</translation>
+        <translation>ШСВ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="90"/>
         <source>SPS</source>
-        <translation>ЭС</translation>
+        <translation>ЕСЕ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="91"/>
         <source>RP</source>
-        <translation>РВ</translation>
+        <translation>РМ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmdialog.cpp" line="92"/>
         <source>UFP</source>
-        <translation>УФП</translation>
+        <translation>РФС</translation>
     </message>
 </context>
 <context>
@@ -774,17 +794,17 @@
     <message>
         <location filename="archiveteamshvsmintegraldialog.ui" line="14"/>
         <source>Archive survey teams &apos;SHVSM-integral&apos;</source>
-        <translation>Архив обследований команд &apos;ШВСМ-интеграл&apos;</translation>
+        <translation>Архів обстежень команд &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.ui" line="108"/>
         <source>The level of the functional state of the cardiovascular system</source>
-        <translation>Уровень функционального состояния сердечно-сосудистой системы</translation>
+        <translation>Рівень функціонального стану серцево-судинної системи</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.ui" line="130"/>
         <source>The level of the functional state of the system of external respiration</source>
-        <translation>Уровень функционального состояния системы внешнего дыхания</translation>
+        <translation>Рівень функціонального стану системи зовнішнього дихання</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="34"/>
@@ -799,32 +819,32 @@
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="61"/>
         <source>Name</source>
-        <translation>ФИО</translation>
+        <translation>ПІБ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="62"/>
         <source>Sex</source>
-        <translation>Пол</translation>
+        <translation>Стать</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="63"/>
         <source>Qualification</source>
-        <translation>Квалификация</translation>
+        <translation>Кваліфікація</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="64"/>
         <source>Old</source>
-        <translation>Возраст</translation>
+        <translation>Вік</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="65"/>
         <source>Weight</source>
-        <translation>Вес</translation>
+        <translation>Вага</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="66"/>
         <source>Height</source>
-        <translation>Рост</translation>
+        <translation>Зріст</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="67"/>
@@ -835,13 +855,13 @@
         <location filename="archiveteamshvsmintegraldialog.cpp" line="68"/>
         <source>SBP</source>
         <oldsource>SBD</oldsource>
-        <translation>АДс</translation>
+        <translation>АТс</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="69"/>
         <source>DBP</source>
         <oldsource>DBD</oldsource>
-        <translation>АДд</translation>
+        <translation>АТд</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="70"/>
@@ -851,22 +871,22 @@
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="71"/>
         <source>DTBE</source>
-        <translation>Твыд</translation>
+        <translation>Твид</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="72"/>
         <source>VCL</source>
-        <translation>фЖЕЛ</translation>
+        <translation>ЖЄЛ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="73"/>
         <source>VCLN</source>
-        <translation>дЖЕЛ</translation>
+        <translation>ЖЄЛн</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="74"/>
         <source>VCLD</source>
-        <translation>оЖЕЛ</translation>
+        <translation>ЖЄЛв</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="76"/>
@@ -876,17 +896,17 @@
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="77"/>
         <source>MVB</source>
-        <translation>МОК</translation>
+        <translation>ХОК</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="78"/>
         <source>CI</source>
-        <translation>СИ</translation>
+        <translation>СІ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="79"/>
         <source>TPR</source>
-        <translation>ОППС</translation>
+        <translation>ЗПОС</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="80"/>
@@ -896,42 +916,42 @@
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="81"/>
         <source>IR</source>
-        <translation>ИР</translation>
+        <translation>ІР</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="82"/>
         <source>CEBC</source>
-        <translation>КЭК</translation>
+        <translation>КЕК</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="83"/>
         <source>DSBP</source>
-        <translation>оАДс</translation>
+        <translation>АТс</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="84"/>
         <source>DDBP</source>
-        <translation>оАДд</translation>
+        <translation>АТд</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="85"/>
         <source>HI</source>
-        <translation>ИГ</translation>
+        <translation>ІГ</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="86"/>
         <source>IS</source>
-        <translation>ИС</translation>
+        <translation>ІС</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="87"/>
         <source>LFSCS</source>
-        <translation>ССС</translation>
+        <translation>РФСссс</translation>
     </message>
     <message>
         <location filename="archiveteamshvsmintegraldialog.cpp" line="88"/>
         <source>LFSSER</source>
-        <translation>СВД</translation>
+        <translation>РФСзд</translation>
     </message>
 </context>
 <context>
@@ -939,19 +959,19 @@
     <message>
         <location filename="languagesetupdialog.ui" line="26"/>
         <source>Change language</source>
-        <translation>Сменить язык интерфейса</translation>
+        <translation>Змінити мову інтерфейсу</translation>
     </message>
     <message>
         <location filename="languagesetupdialog.ui" line="54"/>
         <source>Current language</source>
-        <translation>Текущий язык</translation>
+        <translation>Поточна мова</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="66"/>
         <source>Russian (Русский)</source>
         <translation>Russian (Русский)</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="82"/>
         <source>Ukrainian (Українська)</source>
         <translation>Ukrainian (Українська)</translation>
@@ -978,13 +998,13 @@
         <location filename="mainwindow.ui" line="36"/>
         <source>&amp;New</source>
         <oldsource>&amp;New...</oldsource>
-        <translation>&amp;Создать</translation>
+        <translation>&amp;Створити</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="40"/>
         <location filename="mainwindow.ui" line="172"/>
         <source>Create a new survey &apos;SHVSM&apos;</source>
-        <translation>Создать новое исследование &apos;ШВСМ&apos;</translation>
+        <translation>Створити нове дослідження &apos;ШВСМ&apos;</translation>
     </message>
     <message>
         <source>S&amp;urvey</source>
@@ -994,17 +1014,17 @@
     <message>
         <location filename="mainwindow.ui" line="55"/>
         <source>&amp;Archive</source>
-        <translation>&amp;Архив</translation>
+        <translation>&amp;Архів</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="59"/>
         <source>Archive of surveys of people &apos;ShVSM-integral&apos;</source>
-        <translation>Архив обследований людей &apos;ШВСМ-интеграл&apos;</translation>
+        <translation>Архів обстежень людей &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="88"/>
         <source>&amp;Setup</source>
-        <translation>&amp;Параметры</translation>
+        <translation>&amp;Параметри</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="94"/>
@@ -1023,7 +1043,7 @@
         <location filename="mainwindow.ui" line="125"/>
         <location filename="mainwindow.ui" line="128"/>
         <source>Create a new team</source>
-        <translation>Создать новую команду</translation>
+        <translation>Створити нову команду</translation>
     </message>
     <message>
         <source>&amp;Surveyed...</source>
@@ -1034,18 +1054,18 @@
         <location filename="mainwindow.ui" line="143"/>
         <source>Create a new examinee</source>
         <oldsource>Create a new surveyed</oldsource>
-        <translation>Создать нового обследуемого</translation>
+        <translation>Створити нового обстежуваного</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="148"/>
         <source>E&amp;xit</source>
-        <translation>В&amp;ыход</translation>
+        <translation>В&amp;ихід</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="151"/>
         <location filename="mainwindow.ui" line="154"/>
         <source>Quit the program</source>
-        <translation>Завершить работу программы</translation>
+        <translation>Завершити роботу програми</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="166"/>
@@ -1055,85 +1075,85 @@
     <message>
         <location filename="mainwindow.ui" line="169"/>
         <source>Create a new examination &apos;SHVSM&apos;</source>
-        <translation>Создание нового обсследования &apos;ШВСМ&apos;</translation>
+        <translation>Створення нового обстеження &apos;ШВСМ&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="181"/>
         <source>S&amp;HVSM-integral...</source>
-        <translation>Ш&amp;ВСМ-интеграл...</translation>
+        <translation>Ш&amp;ВСМ-інтеграл...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="184"/>
         <source>Create a new examination &apos;SHVSM-integral&apos;</source>
-        <translation>Создание нового обсследования &apos;ШВСМ-интеграл&apos;</translation>
+        <translation>Створення нового обстеження &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="187"/>
         <source>Create a new survey &apos;SHVSM-integral&apos;</source>
-        <translation>Создать новое исследование &apos;ШВСМ-интеграл&apos;</translation>
+        <translation>Створити нове дослідження &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="192"/>
         <source>&amp;Language...</source>
-        <translation>&amp;Язык...</translation>
+        <translation>&amp;Мова...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="195"/>
         <location filename="mainwindow.ui" line="198"/>
         <source>Select language program</source>
-        <translation>Выбор языка программы</translation>
+        <translation>Вибір мови програми</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="203"/>
         <source>&amp;About...</source>
-        <translation>&amp;О программе...</translation>
+        <translation>&amp;Про програму ...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="206"/>
         <location filename="mainwindow.ui" line="209"/>
         <source>About the program</source>
-        <translation>Вывод сведений о программе</translation>
+        <translation>Вивід відомостей про програму</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="214"/>
         <location filename="mainwindow.ui" line="236"/>
         <location filename="mainwindow.ui" line="269"/>
         <source>&amp;Examinee...</source>
-        <translation>&amp;Обследуемый...</translation>
+        <translation>&amp;Обстежуваний...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="217"/>
         <location filename="mainwindow.ui" line="220"/>
         <source>Archive of examinee &apos;SHVSM-integral&apos;</source>
         <oldsource>Archive of examinee &apos;ShVSM-integral&apos;</oldsource>
-        <translation>Архив обсследованных &apos;ШВСМ-интеграл&apos;</translation>
+        <translation>Архів обстежень людей &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="239"/>
         <location filename="mainwindow.ui" line="242"/>
         <source>Archive of examinee &apos;SHVSM&apos;</source>
         <oldsource>Archive of surveys of people &apos;ShVSM&apos;</oldsource>
-        <translation>Архив обследований людей &apos;ШВСМ&apos;</translation>
+        <translation>Архів обстежень людей &apos;ШВСМ&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="250"/>
         <location filename="mainwindow.ui" line="253"/>
         <source>Archive of examination teams &apos;SHVSM&apos;</source>
-        <oldsource>Archive of examinee teams &apos;SHVSM&apos;</oldsource>
-        <translation>Архив обследований команд &apos;ШВСМ&apos;</translation>
+        <oldsource>Archive survey teams &apos;SHVSM&apos;</oldsource>
+        <translation>Архів обстежень команд &apos;ШВСМ&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="261"/>
         <location filename="mainwindow.ui" line="264"/>
         <source>Archive of teams</source>
-        <translation>Архив команд</translation>
+        <translation>Архів команд</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="272"/>
         <location filename="mainwindow.ui" line="275"/>
         <source>Archive of examinee</source>
         <oldsource>Archive of surveyed</oldsource>
-        <translation>Архив обследованных</translation>
+        <translation>Архів обстежень</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="69"/>
@@ -1143,24 +1163,24 @@
     <message>
         <location filename="mainwindow.ui" line="43"/>
         <source>E&amp;xamination</source>
-        <translation>О&amp;бследование</translation>
+        <translation>О&amp;бстеження</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="137"/>
         <source>E&amp;xaminee...</source>
-        <translation>Об&amp;следованный...</translation>
+        <translation>Обс&amp;тежувані...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="228"/>
         <location filename="mainwindow.ui" line="231"/>
         <source>Archive of examination teams &apos;SHVSM-integral&apos;</source>
-        <oldsource>Archive of examinee teams &apos;SHVSM-integral&apos;</oldsource>
-        <translation>Архив обследований команд &apos;ШВСМ-интеграл&apos;</translation>
+        <oldsource>Archive survey teams &apos;SHVSM-integral&apos;</oldsource>
+        <translation>Архів обстежень команд &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="62"/>
         <source>S&amp;HVSM-integral</source>
-        <translation>Ш&amp;ВСМ-интеграл</translation>
+        <translation>Ш&amp;ВСМ-інтеграл</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="99"/>
@@ -1175,12 +1195,12 @@
         <location filename="mainwindow.cpp" line="170"/>
         <location filename="mainwindow.cpp" line="178"/>
         <source>Error creating database!</source>
-        <translation>Ошибка создания базы данных!</translation>
+        <translation>Помилка створення бази даних!</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="115"/>
         <source>Man</source>
-        <translation>М</translation>
+        <translation>Ч</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="122"/>
@@ -1208,7 +1228,7 @@
     <message>
         <location filename="mainwindow.cpp" line="202"/>
         <source>Error opening database!</source>
-        <translation>Ошибка открытия базы данных!</translation>
+        <translation>Помилка відкриття бази даних!</translation>
     </message>
     <message>
         <location filename="mainwindow.cpp" line="99"/>
@@ -1224,7 +1244,7 @@
         <location filename="mainwindow.cpp" line="178"/>
         <location filename="mainwindow.cpp" line="202"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Помилка</translation>
     </message>
 </context>
 <context>
@@ -1232,13 +1252,13 @@
     <message>
         <location filename="shvsmcreatedialog.ui" line="26"/>
         <source>Survey &apos;SHVSM&apos;</source>
-        <translation>Обследование &apos;ШВСМ&apos;</translation>
+        <translation>Дослідження &apos;ШВСМ&apos;</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="38"/>
         <source>List of examinees</source>
         <oldsource>List of survehed</oldsource>
-        <translation>Список обследуемых</translation>
+        <translation>Список досліджених</translation>
     </message>
     <message>
         <source>Basic parameters of the calculation</source>
@@ -1248,109 +1268,106 @@
         <location filename="shvsmcreatedialog.ui" line="81"/>
         <source>Date of examination:</source>
         <oldsource>Date of survey:</oldsource>
-        <translation>Дата обследования:</translation>
+        <translation>Дата обстеження:</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="119"/>
         <source>Weight (kg):</source>
         <oldsource>Weight:</oldsource>
-        <translation>Вес (кг):</translation>
+        <translation>Вага (кг):</translation>
     </message>
     <message>
         <source>Height:</source>
         <translation type="obsolete">Рост:</translation>
     </message>
     <message>
+        <location filename="shvsmcreatedialog.ui" line="66"/>
+        <source>Initial characteristics</source>
+        <translation>Базові параметри</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="153"/>
+        <source>Height (sm):</source>
+        <translation>Зріст (см):</translation>
+    </message>
+    <message>
         <location filename="shvsmcreatedialog.ui" line="185"/>
         <source>The loading on the veloergometer</source>
         <oldsource>The load on the cycle ergometer</oldsource>
-        <translation>Нагрузки на велоэргометре</translation>
+        <translation>Навантаження на велоергометрі</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="219"/>
         <source>The first loading intensity (N1):</source>
         <oldsource>Power first load (N1):</oldsource>
-        <translation>Мощность первой нагрузки (N1):</translation>
+        <translation>Потужність першого навантаження (N1):</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="260"/>
         <source>The second loading intensity (N2):</source>
         <oldsource>Power second load (N2):</oldsource>
-        <translation>Мощность второй нагрузки (N2):</translation>
+        <translation>Потужність другого навантаження (N2):</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="279"/>
         <source>Input manually</source>
         <oldsource>Manual input</oldsource>
-        <translation>Ручной ввод</translation>
+        <translation>Ручне введення</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="293"/>
         <source>Number of ascents to a step</source>
         <oldsource>Number of climbing up a notch</oldsource>
-        <translation>Количество восхождений на ступеньку</translation>
+        <translation>Кількість сходжень на сходинку</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="327"/>
         <source>The first loading (n1):</source>
         <oldsource>At the first load (n1):</oldsource>
-        <translation>При первой нагрузке (n1):</translation>
+        <translation>При першому навантаженні (n1):</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="365"/>
         <source>The second loading (n2):</source>
         <oldsource>At the second load (n2):</oldsource>
-        <translation>При второй нагрузке (n2):</translation>
+        <translation>При другому навантаженні (n2):</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="382"/>
         <source>Heart rate</source>
-        <translation>Частота сердечных сокращений</translation>
+        <translation>Частота серцевих скорочень</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="412"/>
         <source>After the first loading (HR1):</source>
         <oldsource>After the first load (HR1):</oldsource>
-        <translation>После первой нагрузки (ЧСС1):</translation>
+        <translation>Після першого навантаження (ЧСС1):</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="449"/>
         <source>After the second loading (HR2):</source>
         <oldsource>After the second load (HR2):</oldsource>
-        <translation>После второй нагрузки (ЧСС2):</translation>
+        <translation>Після другого навантаження (ЧСС2):</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="469"/>
         <source>Endurance</source>
-        <translation>Выносливость</translation>
+        <translation>Витривалість</translation>
     </message>
     <message>
-        <source>Total</source>
-        <translation type="obsolete">Общая</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="515"/>
-        <source>aPWC&lt;sub&gt;170</source>
-        <oldsource>aPWC170</oldsource>
-        <translation>aPWC&lt;sub&gt;170</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="537"/>
-        <source>rPWC&lt;sub&gt;170</source>
-        <oldsource>rPWC170</oldsource>
-        <translation>oPWC&lt;sub&gt;170</translation>
+        <location filename="shvsmcreatedialog.ui" line="493"/>
+        <source>General</source>
+        <translation>Загальна</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="643"/>
         <source>aVO&lt;sub&gt;2max</source>
-        <oldsource>aVO2max</oldsource>
-        <translation>аМПК</translation>
+        <translation>аМСК</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="665"/>
         <source>rVO&lt;sub&gt;2max</source>
-        <oldsource>rVO2max</oldsource>
-        <translation>оМПК</translation>
+        <translation>вМСК</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="990"/>
@@ -1358,115 +1375,26 @@
         <translation>ПАНО</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.ui" line="1090"/>
-        <source>GMC</source>
-        <translation>ОМЕ</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="724"/>
-        <source>Speed</source>
-        <translation>Скоростная</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="66"/>
-        <source>Initial characteristics</source>
-        <translation>Базовые характеристики</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="153"/>
-        <source>Height (sm):</source>
-        <translation>Рост (см):</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="493"/>
-        <source>General</source>
-        <translation>Общая</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="755"/>
-        <source>Speed-strength</source>
-        <oldsource>Speed and power</oldsource>
-        <translation>Скоростно-силовая</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="777"/>
-        <source>ALAKp</source>
-        <oldsource>ALAKm</oldsource>
-        <translation>АЛАКм</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="827"/>
-        <source>ALAKc</source>
-        <oldsource>ALAKe</oldsource>
-        <translation>АЛАКе</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="877"/>
-        <source>LAKp</source>
-        <oldsource>LAKm</oldsource>
-        <translation>ЛАКм</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="927"/>
-        <source>LAKc</source>
-        <oldsource>LAKe</oldsource>
-        <translation>ЛАКе</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="975"/>
-        <source>Energetic system economy and reserve capability</source>
-        <oldsource>Cost of power supply and backup capabilities</oldsource>
-        <translation>Экономичность энергообеспечения и резервные возможности</translation>
-    </message>
-    <message>
         <location filename="shvsmcreatedialog.ui" line="1012"/>
         <source>HR&lt;sub&gt;AMT</source>
-        <translation>ЧСС&lt;sub&gt;ПАНО</translation>
+        <translation>ЧССпано</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.ui" line="1138"/>
-        <source>Level of functional preparedness</source>
-        <oldsource>The level of functional training</oldsource>
-        <translation>Уровень функциональной подготовленности</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="1153"/>
-        <source>General endurance</source>
-        <oldsource>Total endurance</oldsource>
-        <translation>Общая выносливость</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="1222"/>
-        <source>Functional estimation</source>
-        <translation>Функциональная оценка</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="1247"/>
-        <source>Value</source>
-        <translation>Значение</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="1297"/>
-        <source>Speed endurance</source>
-        <translation>Скоростная выносливость</translation>
-    </message>
-    <message>
-        <location filename="shvsmcreatedialog.ui" line="1366"/>
-        <source>Speed-strength endurance</source>
-        <oldsource>Speed and power endurance</oldsource>
-        <translation>Скоростно-силовая выносливость</translation>
+        <location filename="shvsmcreatedialog.ui" line="1090"/>
+        <source>GMC</source>
+        <translation>ЗМЄ</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1410"/>
         <source>Energetic system economy</source>
-        <translation>Экономичность системы энергообеспечения</translation>
+        <translation>Економічність енергетичної системи</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1554"/>
         <source>Level of functional preparedness (LFP)</source>
-        <translation>Уровень функциональной подготовки (УФП)</translation>
+        <translation>Рівень функціональної підготовленості</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="shvsmcreatedialog.ui" line="1815"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -1574,6 +1502,116 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
+        <source>Total</source>
+        <translation type="obsolete">Общая</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="515"/>
+        <source>aPWC&lt;sub&gt;170</source>
+        <oldsource>aPWC170</oldsource>
+        <translation>aPWC170</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="537"/>
+        <source>rPWC&lt;sub&gt;170</source>
+        <oldsource>oPWC170</oldsource>
+        <translation>вPWC170</translation>
+    </message>
+    <message>
+        <source>aMPK</source>
+        <translation type="obsolete">aMПK</translation>
+    </message>
+    <message>
+        <source>oMPK</source>
+        <translation type="obsolete">оMПK</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="724"/>
+        <source>Speed</source>
+        <translation>Швидкісна</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="755"/>
+        <source>Speed-strength</source>
+        <oldsource>Speed and power</oldsource>
+        <translation>Швидкісно-силова</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="777"/>
+        <source>ALAKp</source>
+        <oldsource>ALAKm</oldsource>
+        <translation>АЛАКп</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="827"/>
+        <source>ALAKc</source>
+        <oldsource>ALAKe</oldsource>
+        <translation>АЛАКє</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="877"/>
+        <source>LAKp</source>
+        <oldsource>LAKm</oldsource>
+        <translation>ЛАКп</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="927"/>
+        <source>LAKc</source>
+        <oldsource>LAKe</oldsource>
+        <translation>ЛАКє</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="975"/>
+        <source>Energetic system economy and reserve capability</source>
+        <oldsource>Cost of power supply and backup capabilities</oldsource>
+        <translation>Економічність енергозабезпечення та резервні можливості</translation>
+    </message>
+    <message>
+        <source>PANO</source>
+        <translation type="obsolete">ПАНО</translation>
+    </message>
+    <message>
+        <source>CHSSpano</source>
+        <translation type="obsolete">ЧССпано</translation>
+    </message>
+    <message>
+        <source>OME</source>
+        <translation type="obsolete">ОМЕ</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1138"/>
+        <source>Level of functional preparedness</source>
+        <oldsource>The level of functional training</oldsource>
+        <translation>Рівень функціональної підготовленості</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1153"/>
+        <source>General endurance</source>
+        <oldsource>Total endurance</oldsource>
+        <translation>Загальна витривалість</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1222"/>
+        <source>Functional estimation</source>
+        <translation>Функціональна оцінка</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1247"/>
+        <source>Value</source>
+        <translation>Значення</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1297"/>
+        <source>Speed endurance</source>
+        <translation>Швидкісна витривалість</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1366"/>
+        <source>Speed-strength endurance</source>
+        <oldsource>Speed and power endurance</oldsource>
+        <translation>Швидкісно-силова витривалість</translation>
+    </message>
+    <message>
         <source>Cost of power supply</source>
         <translation type="obsolete">Экономичность системы энергообеспечения</translation>
     </message>
@@ -1581,7 +1619,7 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmcreatedialog.ui" line="1479"/>
         <source>Reserve capability</source>
         <oldsource>Reserve possibilities</oldsource>
-        <translation>Резервные возможности</translation>
+        <translation>Резервні можливості</translation>
     </message>
     <message>
         <source>UFP</source>
@@ -1590,31 +1628,31 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmcreatedialog.ui" line="1633"/>
         <source>Levels</source>
-        <translation>Уровни</translation>
+        <translation>Рівні</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1654"/>
         <location filename="shvsmcreatedialog.cpp" line="514"/>
         <source>Below the average</source>
-        <translation>Ниже среднего</translation>
+        <translation>Нижче середнього</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1679"/>
         <location filename="shvsmcreatedialog.cpp" line="520"/>
         <source>Average</source>
-        <translation>Средний</translation>
+        <translation>Середній</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1704"/>
         <location filename="shvsmcreatedialog.cpp" line="526"/>
         <source>Above average</source>
-        <translation>Выше среднего</translation>
+        <translation>Вище середнього</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1729"/>
         <location filename="shvsmcreatedialog.cpp" line="532"/>
         <source>High</source>
-        <translation>Высокий</translation>
+        <translation>Високий</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1754"/>
@@ -1625,17 +1663,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmcreatedialog.ui" line="1774"/>
         <source>Calc</source>
-        <translation>Рассчитать</translation>
+        <translation>Розрахувати</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1787"/>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>Зберегти</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1800"/>
         <source>Recommendations</source>
-        <translation>Рекомендации</translation>
+        <translation>Рекомендації</translation>
     </message>
     <message>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
@@ -1746,7 +1784,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmcreatedialog.cpp" line="61"/>
         <source>Name</source>
-        <translation>ФИО</translation>
+        <translation>ПІБ</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="62"/>
@@ -1756,18 +1794,18 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmcreatedialog.cpp" line="63"/>
         <source>Sex</source>
-        <translation>Пол</translation>
+        <translation>Стать</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="64"/>
         <source>Qualification</source>
-        <translation>Квалификация</translation>
+        <translation>Кваліфікація</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="65"/>
         <source>DoB</source>
         <oldsource>DOB</oldsource>
-        <translation>Дата рождения</translation>
+        <translation>Дата нарождення</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="104"/>
@@ -1785,69 +1823,69 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmcreatedialog.cpp" line="470"/>
         <location filename="shvsmcreatedialog.cpp" line="480"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="104"/>
         <source>Do not set the &apos;Weight&apos;!</source>
-        <translation>Не задано значение поля &apos;Вес&apos;!</translation>
+        <translation>Не задано значення поля &apos;Вага&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="111"/>
         <source>Incorrectly set the &apos;Weight&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Вес&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Вага&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="117"/>
         <source>Do not set the &apos;Height&apos;!</source>
-        <translation>Не задано значение поля &apos;Рост&apos;!</translation>
+        <translation>Не задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="124"/>
         <source>Incorrectly set the &apos;Height&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Рост&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="131"/>
         <source>Incorrectly set the &apos;HR1&apos;!</source>
-        <translation>Некорректно задано поле &apos;ЧСС1&apos;!</translation>
+        <translation>Некоректно задано поле &apos;ЧСС1&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="138"/>
         <source>Incorrectly set the &apos;HR2&apos;!</source>
-        <translation>Некорректно задано поле &apos;ЧСС2&apos;!</translation>
+        <translation>Некоректно задано поле &apos;ЧСС2&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="147"/>
         <source>Incorrectly set the birthday or date survey!</source>
-        <translation>Некорректно задана дата рождения или дата обследования!</translation>
+        <translation>Некоректно задана дата народження або дата обстеження!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="157"/>
         <source>Incorrectly set the &apos;N1&apos;!</source>
-        <translation>Некорректно задано поле &apos;N1&apos;!</translation>
+        <translation>Некоректно задано поле &apos;N1&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="164"/>
         <source>Incorrectly set the &apos;N2&apos;!</source>
-        <translation>Некорректно задано поле &apos;N2&apos;!</translation>
+        <translation>Некоректно задано поле &apos;N2&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="171"/>
         <source>Incorrectly set the &apos;n1&apos;!</source>
-        <translation>Некорректно задано поле &apos;n1&apos;!</translation>
+        <translation>Некоректно задано поле &apos;n1&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="178"/>
         <source>Incorrectly set the &apos;n2&apos;!</source>
-        <translation>Некорректно задано поле &apos;n2&apos;!</translation>
+        <translation>Некоректно задано поле &apos;n2&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="459"/>
         <location filename="shvsmcreatedialog.cpp" line="470"/>
         <location filename="shvsmcreatedialog.cpp" line="480"/>
         <source>Error accessing to database!</source>
-        <translation>Ошибка доступа к базе данных!</translation>
+        <translation>Помилка доступу до бази даних!</translation>
     </message>
 </context>
 <context>
@@ -1855,63 +1893,63 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="26"/>
         <source>SHVSM-integral</source>
-        <translation>ШВСМ-интеграл</translation>
+        <translation>ШВСМ-інтеграл</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="38"/>
         <source>Calc</source>
-        <translation>Рассчитать</translation>
+        <translation>Розрахувати</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="51"/>
         <source>Save</source>
-        <translation>Сохранить</translation>
+        <translation>Зберегти</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="64"/>
         <source>List of examinees</source>
         <oldsource>List of survehed</oldsource>
-        <translation>Список обследуемых</translation>
+        <translation>Список обстежуваних</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="92"/>
         <source>Levels</source>
-        <translation>Уровни</translation>
+        <translation>Рівні</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="113"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="652"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="694"/>
         <source>Below the average</source>
-        <translation>Ниже среднего</translation>
+        <translation>Нижче середнього</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="138"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="659"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="701"/>
         <source>Average</source>
-        <translation>Средний</translation>
+        <translation>Середній</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="163"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="666"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="708"/>
         <source>Above average</source>
-        <translation>Выше среднего</translation>
+        <translation>Вище середнього</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="188"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="673"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="715"/>
         <source>High</source>
-        <translation>Высокий</translation>
+        <translation>Високий</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="213"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="645"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="687"/>
         <source>Low</source>
-        <translation>Низкий</translation>
+        <translation>Низький</translation>
     </message>
     <message>
         <source>Basic parameters of the calculation</source>
@@ -1921,13 +1959,13 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.ui" line="248"/>
         <source>Date of examination:</source>
         <oldsource>Date of survey:</oldsource>
-        <translation>Дата обследования:</translation>
+        <translation>Дата обстеження:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="286"/>
         <source>Weight (kg):</source>
         <oldsource>Weight:</oldsource>
-        <translation>Вес (кг):</translation>
+        <translation>Вага (кг):</translation>
     </message>
     <message>
         <source>Height:</source>
@@ -1936,17 +1974,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="369"/>
         <source>Heart rate:</source>
-        <translation>Частота сердечных сокращений:</translation>
+        <translation>Частота серцевих скорочень:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="406"/>
         <source>Systolic blood pressure:</source>
-        <translation>Систолическое АД:</translation>
+        <translation>Систолічний АТ:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="428"/>
         <source>Diastolic blood pressure:</source>
-        <translation>Диастолическое АД:</translation>
+        <translation>Діастолічний АТ:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="463"/>
@@ -1961,17 +1999,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="233"/>
         <source>Inital characteristics</source>
-        <translation>Базовые характеристики</translation>
+        <translation>Базові характеристики</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="320"/>
         <source>Height (sm):</source>
-        <translation>Рост (см):</translation>
+        <translation>Зріст (см):</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="478"/>
         <source>Due</source>
-        <translation>Фактическая</translation>
+        <translation>Фактичне</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="500"/>
@@ -1991,112 +2029,112 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="522"/>
         <source>Deviation</source>
-        <translation>Отклонение</translation>
+        <translation>Відхилення</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="603"/>
         <location filename="shvsmintegralcreatedialog.ui" line="772"/>
         <source>Functional estimation</source>
-        <translation>Функциональная оценка</translation>
+        <translation>Функціональна оцінка</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="678"/>
         <source>Breath-holding inhalation time:</source>
         <oldsource>Delay time exhalations:</oldsource>
-        <translation>Время задержки дыхания на вдохе:</translation>
+        <translation>Час затримки дихання на вдиху:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="700"/>
         <source>Breath-holding exhalation time:</source>
         <oldsource>Delay time breathing exhalation:</oldsource>
-        <translation>Время задержки дыхания на выдохе:</translation>
+        <translation>Час затримки дихання на видиху:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="735"/>
         <source>Indicators</source>
-        <translation>Показатели</translation>
+        <translation>Показники</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="750"/>
         <source>Index</source>
-        <translation>Показатель</translation>
+        <translation>Показник</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="794"/>
         <source>Value</source>
-        <translation>Значение</translation>
+        <translation>Значення</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="819"/>
         <source>Systolic blood volume:</source>
-        <translation>Систолический объем крови:</translation>
+        <translation>Систолічний об&apos;єм крові:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="847"/>
         <source>Minute volume of blood:</source>
         <translatorcomment>Сердечный индекс:</translatorcomment>
-        <translation>Минутный объем крови:</translation>
+        <translation>Хвилинний об&apos;єм крові:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="875"/>
         <source>Heart index:</source>
         <oldsource>Cardiac index:</oldsource>
-        <translation>Сердечный индекс:</translation>
+        <translation>Серцевий індекс:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="903"/>
         <source>Total peripheral resistance:</source>
-        <translation>Общее периферическое сопротивление:</translation>
+        <translation>Загальний периферичний опір:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="931"/>
         <source>Heart volume:</source>
         <oldsource>The volume of the heart:</oldsource>
-        <translation>Объем сердца:</translation>
+        <translation>Обсяг серця:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="959"/>
         <source>Robinson index (Functional effectiveness of cardiovascular system):</source>
         <oldsource>Index Robinson (the efficiency of the cardiovascular system):</oldsource>
-        <translation>Индекс Робинсона (эффективность функционирования сердечно-сосудистой системы):</translation>
+        <translation>Індекс Робінсона (ефективність функціонування серцево-судинної системи):</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="987"/>
         <source>Circulation of blood economizing coefficient:</source>
         <oldsource>The coefficient of efficiency of blood circulation:</oldsource>
-        <translation>Коэффициент экономичности кровообращения:</translation>
+        <translation>Коефіцієнт економічності кровообігу:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="1015"/>
         <source>Deviation of systolic blood pressure:</source>
-        <translation>Отклонение систолического артериального давления:</translation>
+        <translation>Відхилення систолічного артеріального тиску:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="1043"/>
         <source>Deviation of diastolic blood pressure:</source>
-        <translation>Отклонение дистолического артериального давления:</translation>
+        <translation>Відхилення дістоліческого артеріального тиску:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="1071"/>
         <source>Hypoxia index (Adaptive level of cardiovascular and breathing systems):</source>
         <oldsource>Hypoxia index (level of fitness and respiratory CVS):</oldsource>
-        <translation>Индекс гипоксии (уровень тренированности ССС и внешнего дыхания):</translation>
+        <translation>Індекс гіпоксії (рівень тренованості ССС і зовнішнього дихання):</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="1099"/>
         <source>Skibinski index (effectiveness of the cardiorespiratory system functioning):</source>
         <oldsource>Index Skibinski (efficiency of the cardiorespiratory system):</oldsource>
-        <translation>Индекс Скибинского (эффективность функционирования кардиореспираторной системы):</translation>
+        <translation>Індекс Скібінського (ефективність функціонування кардіореспіраторної системи):</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="1133"/>
         <source>Level of functional state of cardiovascular system:</source>
-        <translation>Уровень функционального состояния сердечно-сосудистой системы:</translation>
+        <translation>Рівень функціонального стану серцево-судинної системи:</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="1167"/>
         <source>Level of functional state of external breathing system:</source>
-        <translation>Уровень функционального состояния системы внешнего дыхания:</translation>
+        <translation>Рівень функціонального стану системи зовнішнього дихання:</translation>
     </message>
     <message>
         <source>The level of the functional state of the cardiovascular system:</source>
@@ -2109,7 +2147,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="65"/>
         <source>Name</source>
-        <translation>ФИО</translation>
+        <translation>ПІБ</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="66"/>
@@ -2119,17 +2157,17 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="67"/>
         <source>Sex</source>
-        <translation>Пол</translation>
+        <translation>Стать</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="68"/>
         <source>Qualification</source>
-        <translation>Квалификация</translation>
+        <translation>Кваліфікація</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="69"/>
         <source>DOB</source>
-        <translation>Дата рождения</translation>
+        <translation>Дата нарождення</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="110"/>
@@ -2147,62 +2185,62 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="623"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="633"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="110"/>
         <source>Do not set the &apos;Weight&apos;!</source>
-        <translation>Не задано значение поля &apos;Вес&apos;!</translation>
+        <translation>Не задано значення поля &quot;Вага&quot;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="117"/>
         <source>Incorrectly set the &apos;Weight&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Вес&apos;!</translation>
+        <translation>Некоректно задано значення поля &quot;Вага&quot;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="123"/>
         <source>Do not set the &apos;Height&apos;!</source>
-        <translation>Не задано значение поля &apos;Рост&apos;!</translation>
+        <translation>Не задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="130"/>
         <source>Incorrectly set the &apos;Height&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Рост&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="138"/>
         <source>Incorrectly set the &apos;Heart rate&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Частота сердечных сокращений&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Частота серцевих скорочень&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="146"/>
         <source>Incorrectly set the &apos;Systolic blood pressure&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Систолическое артериальное давление&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Систолічний артеріальний тиск&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="154"/>
         <source>Incorrectly set the &apos;Diastolic blood pressure&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Диастолическое артериальное давление&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Діастолічний артеріальний тиск&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="162"/>
         <source>Incorrectly set the &apos;Actual vital capacity of lungs&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Фактическая жизненная емкость легких&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Фактична життєва ємкість легень&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="170"/>
         <source>Incorrectly set the &apos;Delay time exhalations&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Время задержки дыхания на вдохе&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Час затримки дихання на вдиху&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="178"/>
         <source>Incorrectly set the &apos;Delay time breathing exhalation&apos;!</source>
-        <translation>Некорректно задано значение поля &apos;Время задержки дыхания на выдохе&apos;!</translation>
+        <translation>Некоректно задано значення поля &apos;Час затримки дихання на видиху&apos;!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="187"/>
         <source>Incorrectly set the birthday or date survey!</source>
-        <translation>Некорректно задана дата рождения или дата обследования!</translation>
+        <translation>Некоректно задана дата народження або дата обстеження!</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="232"/>
@@ -2210,7 +2248,7 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="253"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="262"/>
         <source>Hypokinetic type of regulation</source>
-        <translation>Гипокинетический тип регуляции</translation>
+        <translation>Гіпокінетичній тип регуляції</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="236"/>
@@ -2218,7 +2256,7 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="257"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="266"/>
         <source>Hyperkinetic type of regulation</source>
-        <translation>Гиперкинетический тип регуляции</translation>
+        <translation>Гіперкінетичний тип регуляції</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="344"/>
@@ -2228,13 +2266,13 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="420"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="433"/>
         <source>Below the norm</source>
-        <translation>Ниже нормы</translation>
+        <translation>Нижче норми</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="348"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="362"/>
         <source>Above norm</source>
-        <translation>Выше нормы</translation>
+        <translation>Вище норми</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="389"/>
@@ -2242,7 +2280,7 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="418"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="431"/>
         <source>Significantly below normal</source>
-        <translation>Значительно ниже нормы</translation>
+        <translation>Значно нижче норми</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="395"/>
@@ -2250,7 +2288,7 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="424"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="437"/>
         <source>Above the norm</source>
-        <translation>Выше нормы</translation>
+        <translation>Вище норми</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="397"/>
@@ -2258,14 +2296,14 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="426"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="439"/>
         <source>Significantly above normal</source>
-        <translation>Значительно выше нормы</translation>
+        <translation>Значно вище норми</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="611"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="623"/>
         <location filename="shvsmintegralcreatedialog.cpp" line="633"/>
         <source>Error accessing to database!</source>
-        <translation>Ошибка доступа к базе данных!</translation>
+        <translation>Помилка доступу до бази даних!</translation>
     </message>
 </context>
 <context>
@@ -2274,7 +2312,7 @@ p, li { white-space: pre-wrap; }
         <location filename="surveyedcreatedialog.ui" line="14"/>
         <source>Examinee create dialog</source>
         <oldsource>Man create dialog</oldsource>
-        <translation>Создание обследуемого</translation>
+        <translation>Створення обстежуваного</translation>
     </message>
     <message>
         <source>Surveyed</source>
@@ -2283,7 +2321,7 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="surveyedcreatedialog.ui" line="42"/>
         <source>Examinee</source>
-        <translation>Обследуемый</translation>
+        <translation>Обстежуваний</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.ui" line="57"/>
@@ -2293,13 +2331,13 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="surveyedcreatedialog.ui" line="106"/>
         <source>Name:</source>
-        <translation>ФИО:</translation>
+        <translation>ПІБ:</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.ui" line="125"/>
         <source>DoB:</source>
         <oldsource>DOB:</oldsource>
-        <translation>Дата рождения:</translation>
+        <translation>Дата народження:</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.ui" line="144"/>
@@ -2309,12 +2347,16 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="surveyedcreatedialog.ui" line="166"/>
         <source>Sex:</source>
-        <translation>Пол:</translation>
+        <translation>Стать:</translation>
+    </message>
+    <message>
+        <source>Age:</source>
+        <translation type="obsolete">Возраст:</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.ui" line="200"/>
         <source>Qualification:</source>
-        <translation>Квалификация:</translation>
+        <translation>Кваліфікація:</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.cpp" line="43"/>
@@ -2322,7 +2364,7 @@ p, li { white-space: pre-wrap; }
         <location filename="surveyedcreatedialog.cpp" line="67"/>
         <location filename="surveyedcreatedialog.cpp" line="78"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.cpp" line="43"/>
@@ -2330,7 +2372,7 @@ p, li { white-space: pre-wrap; }
         <location filename="surveyedcreatedialog.cpp" line="67"/>
         <location filename="surveyedcreatedialog.cpp" line="78"/>
         <source>Error accessing to database!</source>
-        <translation>Ошибка доступа к базе данных!</translation>
+        <translation>Помилка доступу до бази даних!</translation>
     </message>
 </context>
 <context>
@@ -2338,31 +2380,31 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="teamcreatedialog.ui" line="26"/>
         <source>Team create dialog</source>
-        <translation>Создание команды</translation>
+        <translation>Створення команди</translation>
     </message>
     <message>
         <location filename="teamcreatedialog.ui" line="54"/>
         <source>Name of ths team</source>
         <oldsource>Team name</oldsource>
-        <translation>Название команды</translation>
+        <translation>Назва команди</translation>
     </message>
     <message>
         <location filename="teamcreatedialog.cpp" line="36"/>
         <location filename="teamcreatedialog.cpp" line="41"/>
         <location filename="teamcreatedialog.cpp" line="45"/>
         <source>Error</source>
-        <translation>Ошибка</translation>
+        <translation>Помилка</translation>
     </message>
     <message>
         <location filename="teamcreatedialog.cpp" line="36"/>
         <location filename="teamcreatedialog.cpp" line="45"/>
         <source>Error accessing to database!</source>
-        <translation>Ошибка доступа к базе данных!</translation>
+        <translation>Помилка доступу до бази даних!</translation>
     </message>
     <message>
         <location filename="teamcreatedialog.cpp" line="41"/>
         <source>This team is already there!</source>
-        <translation>Такая команда уже есть!</translation>
+        <translation>Така команда вже є!</translation>
     </message>
 </context>
 </TS>

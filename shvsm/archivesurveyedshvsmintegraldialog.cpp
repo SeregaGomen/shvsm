@@ -56,7 +56,7 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     modelSurvey->setHeaderData(1, Qt::Horizontal, tr("Qualification"));
     modelSurvey->setHeaderData(2, Qt::Horizontal, tr("Old"));
     modelSurvey->setHeaderData(3, Qt::Horizontal, tr("Weight"));
-    modelSurvey->setHeaderData(4, Qt::Horizontal, tr("Growth"));
+    modelSurvey->setHeaderData(4, Qt::Horizontal, tr("Height"));
     modelSurvey->setHeaderData(5, Qt::Horizontal, tr("HR"));
     modelSurvey->setHeaderData(6, Qt::Horizontal, tr("SBP"));
     modelSurvey->setHeaderData(7, Qt::Horizontal, tr("DBP"));
@@ -147,7 +147,7 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
 
 void ColorDelegateSurveyedSHVSMIntegral::paint(QPainter* painter, const QStyleOptionViewItem& option, const QModelIndex& index) const
 {
-    float val;
+    float val = 0;
 
     if (qVariantCanConvert<float>(index.data()))
         val = qVariantValue<float>(index.data());

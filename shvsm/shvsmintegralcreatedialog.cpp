@@ -120,14 +120,14 @@ void SHVSMIntegralCreateDialog::slotCalcSHVSMIntegral(void)
     }
     if (ui->leGrowth->text().trimmed().isEmpty())
     {
-        QMessageBox::critical(this, tr("Error"),tr("Do not set the 'Growth'!"), QMessageBox::Ok);
+        QMessageBox::critical(this, tr("Error"),tr("Do not set the 'Height'!"), QMessageBox::Ok);
         ui->leGrowth->setFocus();
         return;
     }
     growth = ui->leGrowth->text().toFloat(&isOk);
     if (!isOk || growth <= 0)
     {
-        QMessageBox::critical(this, tr("Error"),tr("Incorrectly set the 'Growth'!"), QMessageBox::Ok);
+        QMessageBox::critical(this, tr("Error"),tr("Incorrectly set the 'Height'!"), QMessageBox::Ok);
         ui->leGrowth->setFocus();
         return;
     }

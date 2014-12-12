@@ -63,3 +63,7 @@ win32 {
 
     RC_FILE += shvsm.rc
 }
+
+OTHER_FILES += \
+    shvsm_UA.ts \
+    shvsm_RU.ts
