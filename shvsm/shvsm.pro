@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core sql gui
+QT += core sql gui webkit
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -25,7 +25,8 @@ SOURCES += main.cpp\
     archivesurveyedshvsmdialog.cpp \
     archivesurveyedshvsmintegraldialog.cpp \
     archivetabledialog.cpp \
-    qcustomplot.cpp
+    qcustomplot.cpp \
+    printreportdialog.cpp
 
 HEADERS  += mainwindow.h \
     teamcreatedialog.h \
@@ -39,7 +40,8 @@ HEADERS  += mainwindow.h \
     archivesurveyedshvsmdialog.h \
     archivesurveyedshvsmintegraldialog.h \
     archivetabledialog.h \
-    qcustomplot.h
+    qcustomplot.h \
+    printreportdialog.h
 
 FORMS    += mainwindow.ui \
     teamcreatedialog.ui \
@@ -52,7 +54,8 @@ FORMS    += mainwindow.ui \
     archiveteamshvsmdialog.ui \
     archivesurveyedshvsmdialog.ui \
     archivesurveyedshvsmintegraldialog.ui \
-    archivetabledialog.ui
+    archivetabledialog.ui \
+    printreportdialog.ui
 
 TRANSLATIONS += shvsm_RU.ts
 

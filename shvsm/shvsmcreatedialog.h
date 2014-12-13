@@ -10,6 +10,7 @@ class SHVSMCreateDialog;
 class QSqlDatabase;
 class QSqlQueryModel;
 class QLabel;
+class PrintReportDialog;
 
 class SHVSMCreateDialog : public QDialog
 {
@@ -20,6 +21,7 @@ public slots:
     void slotSaveSHVSM(void);
     void slotCheckBoxClicked(void);
     void slotTextChanged(void);
+    void slotPrintReport(void);
 
 public:
     explicit SHVSMCreateDialog(QSqlDatabase*,QWidget *parent = 0);
@@ -58,7 +60,9 @@ private:
     void setupForm(void);
     void showIndicator(QLabel*,float,float,float,float,float);
     void showIndicatorTxt(QLabel*,QLabel*,float);
-    void calcNn12();
+    void calcNn12(void);
+    void genReport(PrintReportDialog*);
+    QString getIndicatorTxt(float);
 };
 
 #endif // SHVSMCREATEDIALOG_H

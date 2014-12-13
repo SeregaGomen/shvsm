@@ -5,6 +5,7 @@
 #include <QSqlDatabase>
 #include <math.h>
 #include "shvsmcreatedialog.h"
+#include "printreportdialog.h"
 #include "ui_shvsmcreatedialog.h"
 
 extern void normalize(double&);
@@ -38,6 +39,7 @@ void SHVSMCreateDialog::setupForm(void)
 
     ui->textBrowser->hide();
     ui->pbSave->setEnabled(false);
+    ui->pbPrint->setEnabled(false);
 
     // Задание цвета легенды
     // "Низкий" - красный
@@ -445,6 +447,7 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
 
     ui->textBrowser->show();
     ui->pbSave->setEnabled(true);
+    ui->pbPrint->setEnabled(true);
 }
 
 void SHVSMCreateDialog::slotSaveSHVSM(void)
@@ -535,6 +538,29 @@ void SHVSMCreateDialog::showIndicatorTxt(QLabel* labelF, QLabel* labelT,float in
 }
 
 
+QString SHVSMCreateDialog::getIndicatorTxt(float indicator)
+{
+    QString text;
+
+    if (indicator < 0)
+        indicator = 0;
+    else if (indicator > 100)
+        indicator = 100;
+
+    if (indicator <= 33.1)
+        text = tr("Low");
+    else if (indicator > 33.1 && indicator <= 49.6)
+        text = tr("Below the average");
+    else if (indicator > 49.6 && indicator <= 66.1)
+        text = tr("Average");
+    else if (indicator > 66.1 && indicator <= 82.6)
+        text = tr("Above average");
+    else
+        text = tr("High");
+    return text;
+}
+
+
 void SHVSMCreateDialog::slotCheckBoxClicked(void)
 {
     ui->leN1->setEnabled(ui->cbManual->isChecked());
@@ -606,3 +632,58 @@ void SHVSMCreateDialog::calcNn12(void)
     ui->len2->setText(QString("%1").arg(int(n2)));
 }
 
+void SHVSMCreateDialog::slotPrintReport(void)
+{
+    PrintReportDialog* pdlg = new PrintReportDialog(this);
+
+    genReport(pdlg);
+    pdlg->exec();
+}
+
+void SHVSMCreateDialog::genReport(PrintReportDialog* p)
+{
+    QString html = "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">",
+            name = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),1)).toString(),
+            sex_n = (sex == 1) ? tr("M") : tr("W"),
+            qualification_n = (isSportsman) ? tr("Athlete") : tr("Non-athlete");
+
+    html += tr("<h1><center>SHVSM - complex express estimation of functional preparedness</center></h1>");
+    html += tr("<center>Malikov N.V, Malikova A.N., Svat'ev A.V.<br><b>Examination report</b></center>");
+    html += "<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">";
+
+    html += tr("<tr><td colspan=\"6\">Date of  examination: <b>%1</b></tr>").arg(ui->deDate->text());
+    html += tr("<tr><td>Surname</td><td>Sex</td><td>Age</td><td>Qualification</td><td>Body<br>length</td><td>Body<br>mass</td></tr>");
+    html += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
+    html += tr("<tr><td colspan=\"6\"><b>Entrance  calculation data</b></tr>");
+    html += tr("<tr><td colspan=\"5\">The first loading intensity on the veloergometer N1</td><td>%1</td></tr>").arg(ui->leN1->text());
+    html += tr("<tr><td colspan=\"5\">The second loading intensity on the veloergometer N2</td><td>%1</td></tr>").arg(ui->leN2->text());
+    html += tr("<tr><td colspan=\"5\">The first loading ascents on a step amount n1</td><td>%1</td></tr>").arg(ui->len1->text());
+    html += tr("<tr><td colspan=\"5\">The second loading ascents on a step amount n2</td><td>%1</td></tr>").arg(ui->len2->text());
+    html += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1</td><td>%1</td></tr>").arg(ui->leHR1->text());
+    html += tr("<tr><td colspan=\"5\">Heart rate after the second loading  HR2</td><td>%1</td></tr>").arg(ui->leHR2->text());
+    html += tr("<tr><td colspan=\"6\"><b>Calculation data</b></tr>");
+
+    html += tr("<tr><td colspan=\"4\">Index</td><td>Numerical<br>value</td><td>Functional<br>estimation</td></tr>").arg(ui->labelaPWC170->text());
+    html += tr("<tr><td colspan=\"4\">aPWC<sub>170</td><td>%1</td><td></td></tr>").arg(ui->labelaPWC170->text());
+    html += tr("<tr><td colspan=\"4\">rPWC<sub>170</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloPWC170->text()).arg(getIndicatorTxt(ui->labeloPWC170->text().toFloat()));
+    html += tr("<tr><td colspan=\"4\">aVO<sub>2max</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text());
+    html += tr("<tr><td colspan=\"4\">rVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text()).arg(getIndicatorTxt(ui->labeloMPK->text().toFloat()));
+
+    html += tr("<tr><td colspan=\"4\">ALAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text()).arg(getIndicatorTxt(ui->labelALAKm->text().toFloat()));
+    html += tr("<tr><td colspan=\"4\">ALAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text()).arg(getIndicatorTxt(ui->labelALAKe->text().toFloat()));
+    html += tr("<tr><td colspan=\"4\">LAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text()).arg(getIndicatorTxt(ui->labelLAKm->text().toFloat()));
+    html += tr("<tr><td colspan=\"4\">LAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text()).arg(getIndicatorTxt(ui->labelLAKe->text().toFloat()));
+    html += tr("<tr><td colspan=\"4\">AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text()).arg(getIndicatorTxt(ui->labelPANO->text().toFloat()));
+    html += tr("<tr><td colspan=\"4\">HR<sub>AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text()).arg(getIndicatorTxt(ui->labelCHSSpano->text().toFloat()));
+    html += tr("<tr><td colspan=\"4\">GMC</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text()).arg(getIndicatorTxt(ui->labelOME->text().toFloat()));
+
+    html += tr("<tr><td colspan=\"4\"><b>Functional preparedness level</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text()).arg(ui->labelF6->text());
+    html += tr("<tr><td colspan=\"4\">General endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text()).arg(ui->labelF1->text());
+    html += tr("<tr><td colspan=\"4\">Speed endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text()).arg(ui->labelF2->text());
+    html += tr("<tr><td colspan=\"4\">Speed-strength endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text()).arg(ui->labelF2->text());
+    html += tr("<tr><td colspan=\"4\">Speed-strength endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text()).arg(ui->labelF3->text());
+    html += tr("<tr><td colspan=\"4\">Energetic system economy</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text()).arg(ui->labelF4->text());
+    html += tr("<tr><td colspan=\"4\">Reserve capability</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text()).arg(ui->labelF5->text());
+
+    p->setHTML(html);
+}
