@@ -127,7 +127,7 @@
      <rect>
       <x>95</x>
       <y>60</y>
-      <width>41</width>
+      <width>31</width>
       <height>31</height>
      </rect>
     </property>
@@ -1877,7 +1877,7 @@ p, li { white-space: pre-wrap; }
     </rect>
    </property>
    <property name="text">
-    <string>Print</string>
+    <string>Report</string>
    </property>
   </widget>
  </widget>

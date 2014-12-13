@@ -62,7 +62,7 @@ private:
     void showIndicatorTxt(QLabel*,QLabel*,float);
     void calcNn12(void);
     void genReport(PrintReportDialog*);
-    QString getIndicatorTxt(float);
+    QString getIndicatorTxt(QLabel*);
 };
 
 #endif // SHVSMCREATEDIALOG_H

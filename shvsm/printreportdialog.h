@@ -14,7 +14,7 @@ class PrintReportDialog : public QDialog
 public:
     explicit PrintReportDialog(QWidget *parent = 0);
     ~PrintReportDialog();
-    void setHTML(QString);
+    void setText(QString);
 
 private:
     Ui::PrintReportDialog *ui;

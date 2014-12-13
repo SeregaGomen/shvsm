@@ -307,9 +307,9 @@
    <widget class="QWidget" name="horizontalLayoutWidget_5">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>140</x>
       <y>60</y>
-      <width>81</width>
+      <width>71</width>
       <height>31</height>
      </rect>
     </property>
@@ -1890,6 +1890,19 @@
     </layout>
    </widget>
   </widget>
+  <widget class="QPushButton" name="pbPrint">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>610</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Report</string>
+   </property>
+  </widget>
  </widget>
  <resources/>
  <connections>
@@ -1925,9 +1938,26 @@
     </hint>
    </hints>
   </connection>
+  <connection>
+   <sender>pbPrint</sender>
+   <signal>clicked()</signal>
+   <receiver>SHVSMIntegralCreateDialog</receiver>
+   <slot>slotPrintReport()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>47</x>
+     <y>621</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>405</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
  </connections>
  <slots>
   <slot>slotCalcSHVSMIntegral()</slot>
   <slot>slotSaveSHVSMIntegral()</slot>
+  <slot>slotPrintReport()</slot>
  </slots>
 </ui>

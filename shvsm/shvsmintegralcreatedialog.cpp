@@ -5,6 +5,7 @@
 #include <QSqlQuery>
 #include <math.h>
 #include "shvsmintegralcreatedialog.h"
+#include "printreportdialog.h"
 #include "ui_shvsmintegralcreatedialog.h"
 
 
@@ -43,6 +44,8 @@ void SHVSMIntegralCreateDialog::setupForm(void)
                      WHERE team_id = team.id AND sex_id = sex.id AND qualification_id = qualification.id";
 
     ui->pbSave->setEnabled(false);
+    ui->pbPrint->setEnabled(false);
+
     // Задание цвета легенды
     // "Низкий" - красный
     ui->labelLow->setStyleSheet("QLabel { background-color : red; }");
@@ -379,7 +382,7 @@ void SHVSMIntegralCreateDialog::slotCalcSHVSMIntegral(void)
     ui->leLNorm->setText(QString("%1").arg(dgel,0,'f',2));
 
     // -------------------------------- ОтклЖЕЛ ----------------------------------------
-    dev_dgel = ((dgel - lvActual)/lvActual)*100;
+    dev_dgel = ((lvActual - dgel)/lvActual)*100;
     ui->leLDeviation->setText(QString("%1").arg(dev_dgel,0,'f',2));
     if (isSportsman)
     {
@@ -458,8 +461,7 @@ void SHVSMIntegralCreateDialog::slotCalcSHVSMIntegral(void)
     }
 
     // ------------------------------ 11. ИC ----------------------------------------
-//    is = dgel*dtbe/hr;
-    is = dgel*dte/hr;
+    is = 2.0*dgel*dtbe/hr;
     if (isSportsman)
     {
         if (sex == 1)
@@ -597,6 +599,7 @@ void SHVSMIntegralCreateDialog::slotCalcSHVSMIntegral(void)
     showIndicatorTxt(ui->labelV13,ui->labelT13,ufsvd,33.0,49.6,66.1,82.6);
 
     ui->pbSave->setEnabled(true);
+    ui->pbPrint->setEnabled(true);
 }
 
 void SHVSMIntegralCreateDialog::slotSaveSHVSMIntegral(void)
@@ -715,4 +718,59 @@ void SHVSMIntegralCreateDialog::showIndicatorTxtI(QLabel* labelF, QLabel* labelT
         labelT->setText(tr("High"));
         labelT->setStyleSheet("QLabel { background-color : lime; }");
     }
+}
+
+void SHVSMIntegralCreateDialog::slotPrintReport(void)
+{
+    PrintReportDialog* pdlg = new PrintReportDialog(this);
+
+    genReport(pdlg);
+    pdlg->exec();
+}
+
+void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
+{
+    QString text = "<meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\">",
+            name = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),1)).toString(),
+            sex_n = (sex == 1) ? tr("M") : tr("W"),
+            qualification_n = (isSportsman) ? tr("Athlete") : tr("Non-athlete");
+
+    text += tr("<h1><center>SHVSM-complex express estimation of functional state</center></h1>");
+    text += tr("<center>Malikov N.V, Malikova A.N., Svat'ev A.V.<br><b>Examination report</b></center>");
+    text += "<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">";
+
+    text += tr("<tr><td colspan=\"6\">Date of  examination: <b>%1</b></tr>").arg(ui->deDate->text());
+    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Qualification</th><th>Body<br>length</th><th>Body<br>mass</th></tr>");
+    text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
+    text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
+
+    text += tr("<tr><td colspan=\"5\">Heart rate (HR)</td><td>%1</td></tr>").arg(ui->leHR->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Systolic arterial pressure (APs)</td><td>%1</td></tr>").arg(ui->leSBP->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Diastolic arterial pressure (APd)</td><td>%1</td></tr>").arg(ui->leDBP->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Vital lung capacity (VLC)</td><td>%1</td></tr>").arg(ui->leLActual->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Inhalation breathing delay time (Tin)</td><td>%1</td></tr>").arg(ui->leDTE->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Exhalation breathing delay time (Tex)</td><td>%1</td></tr>").arg(ui->leDTBE->text().toFloat(),0,'f',2);
+    text += tr("<tr><th colspan=\"6\">Calculation data</th></tr>");
+
+    text += tr("<tr><th colspan=\"4\">Index</th><th>Numerical<br>value</th><th>Functional<br>estimation</th></tr>");
+
+    text += tr("<tr><td colspan=\"4\">Systole blood volume</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelT1->text());
+    text += tr("<tr><td colspan=\"4\">Minute blood volume</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelT2->text());
+    text += tr("<tr><td colspan=\"4\">Cardiac index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelT3->text());
+    text += tr("<tr><td colspan=\"4\">General peripheral resistance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text().toFloat(),0,'f',2).arg(ui->labelT4->text());
+    text += tr("<tr><td colspan=\"4\">Heart volume</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelT5->text());
+    text += tr("<tr><td colspan=\"4\">Robinson Index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelT6->text());
+    text += tr("<tr><td colspan=\"4\">Circulation of blood economizing coefficient</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV7->text().toFloat(),0,'f',2).arg(ui->labelT7->text());
+    text += tr("<tr><td colspan=\"4\"Systolic arterial pressure deviation</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV8->text().toFloat(),0,'f',2).arg(ui->labelT8->text());
+    text += tr("<tr><td colspan=\"4\">Diastolic arterial pressure deviation</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV9->text().toFloat(),0,'f',2).arg(ui->labelT9->text());
+    text += tr("<tr><td colspan=\"4\">Hypoxia index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV10->text().toFloat(),0,'f',2).arg(ui->labelT10->text());
+    text += tr("<tr><td colspan=\"4\">Skibinsky index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV11->text().toFloat(),0,'f',2).arg(ui->labelT11->text());
+    text += tr("<tr><td colspan=\"4\"><b>Cardio-vascular system functional state level</b></td><td>%1</td><td>%2</td></tr>").arg(ui->labelV12->text().toFloat(),0,'f',2).arg(ui->labelT12->text());
+    text += tr("<tr><td colspan=\"4\"><b>External breathing system functional state level</b></td><td>%1</td><td>%2</td></tr>").arg(ui->labelV13->text().toFloat(),0,'f',2).arg(ui->labelT13->text());
+
+    text += "</table>";
+
+
+
+    p->setText(text);
 }

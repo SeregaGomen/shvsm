@@ -10,6 +10,7 @@ class SHVSMIntegralCreateDialog;
 class QSqlDatabase;
 class QSqlQueryModel;
 class QLabel;
+class PrintReportDialog;
 
 class SHVSMIntegralCreateDialog : public QDialog
 {
@@ -18,6 +19,7 @@ class SHVSMIntegralCreateDialog : public QDialog
 public slots:
     void slotCalcSHVSMIntegral(void);
     void slotSaveSHVSMIntegral(void);
+    void slotPrintReport(void);
 
 public:
     explicit SHVSMIntegralCreateDialog(QSqlDatabase*,QWidget *parent = 0);
@@ -57,6 +59,7 @@ private:
     void setupForm(void);
     void showIndicatorTxt(QLabel*,QLabel*,float,float,float,float,float);
     void showIndicatorTxtI(QLabel*,QLabel*,float,float,float,float,float);
+    void genReport(PrintReportDialog*);
 };
 
 #endif // SHVSMINTEGRALCREATEDIALOG_H

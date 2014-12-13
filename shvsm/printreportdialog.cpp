@@ -13,7 +13,8 @@ PrintReportDialog::~PrintReportDialog()
     delete ui;
 }
 
-void PrintReportDialog::setHTML(QString p)
+void PrintReportDialog::setText(QString p)
 {
-    ui->webView->setHtml(p);
+//    ui->webView->setHtml(p);
+    ui->textEdit->setText(p);
 }
