@@ -40,8 +40,10 @@ void SHVSMIntegralCreateDialog::changeLanguage(void)
 void SHVSMIntegralCreateDialog::setupForm(void)
 {
     QString query = "SELECT surveyed.id, surveyed.name,team.name,sex.name,qualification.name,surveyed.DOB,sex_id,qualification_id \
-                     FROM surveyed, team, sex, qualification \
-                     WHERE team_id = team.id AND sex_id = sex.id AND qualification_id = qualification.id";
+            FROM surveyed \
+            LEFT OUTER JOIN team ON surveyed.team_id = team.id \
+            LEFT OUTER JOIN sex ON surveyed.sex_id = sex.id \
+            LEFT OUTER JOIN qualification ON surveyed.qualification_id = qualification.id";
 
     ui->pbSave->setEnabled(false);
     ui->pbPrint->setEnabled(false);

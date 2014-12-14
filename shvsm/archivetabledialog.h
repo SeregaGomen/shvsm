@@ -40,6 +40,7 @@ private:
     bool isDataChanged;
     void setupForm(void);
     void checkButtons(void);
+    void cascadeRemove(int);
 };
 
 #endif // ARCHIVETABLEDIALOG_H

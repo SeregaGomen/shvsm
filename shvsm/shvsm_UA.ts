@@ -21,7 +21,8 @@
     </message>
     <message>
         <location filename="aboutdialog.ui" line="119"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Malikov N.V., Malikova A.N., Svatyev A.V.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Malikov N.V., Malikova A.N., Svat&apos;ev A.V.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <oldsource>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Malikov N.V., Malikova A.N., Svatyev A.V.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</oldsource>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Маліков М.В., Малікова А.М., Сват’єв А.В.&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
@@ -38,13 +39,13 @@
 <context>
     <name>ArchiveSurveyedSHVSMDialog</name>
     <message>
-        <location filename="archivesurveyedshvsmdialog.ui" line="14"/>
+        <location filename="archivesurveyedshvsmdialog.ui" line="26"/>
         <source>Archive of examinees &apos;SHVSM&apos;</source>
         <oldsource>Archive survey people &apos;SHVSM&apos;</oldsource>
         <translation>Архів обстежень людей &quot;ШВСМ&quot;</translation>
     </message>
     <message>
-        <location filename="archivesurveyedshvsmdialog.ui" line="42"/>
+        <location filename="archivesurveyedshvsmdialog.ui" line="54"/>
         <source>List of examinees</source>
         <oldsource>List of surveyed</oldsource>
         <translation>Список обстежених</translation>
@@ -317,13 +318,13 @@
 <context>
     <name>ArchiveSurveyedSHVSMIntegralDialog</name>
     <message>
-        <location filename="archivesurveyedshvsmintegraldialog.ui" line="14"/>
+        <location filename="archivesurveyedshvsmintegraldialog.ui" line="26"/>
         <source>Archive of examinees &apos;SHVSM-Integral&apos;</source>
         <oldsource>Archive survey people &apos;SHVSM-Integral&apos;</oldsource>
         <translation>Архів обстежень людей &quot;ШВСМ-інтеграл&quot;</translation>
     </message>
     <message>
-        <location filename="archivesurveyedshvsmintegraldialog.ui" line="42"/>
+        <location filename="archivesurveyedshvsmintegraldialog.ui" line="54"/>
         <source>List of examinees</source>
         <oldsource>List of surveyed</oldsource>
         <translation>Список обстежених</translation>
@@ -563,72 +564,86 @@
         <translation>Скасувати зміни</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="38"/>
-        <location filename="archivetabledialog.cpp" line="49"/>
+        <location filename="archivetabledialog.cpp" line="42"/>
+        <location filename="archivetabledialog.cpp" line="53"/>
         <source>Id</source>
         <translation>Id</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="39"/>
-        <location filename="archivetabledialog.cpp" line="52"/>
+        <location filename="archivetabledialog.cpp" line="43"/>
+        <location filename="archivetabledialog.cpp" line="56"/>
         <source>Team</source>
         <translation>Команда</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="50"/>
+        <location filename="archivetabledialog.cpp" line="54"/>
         <source>Name</source>
         <translation>ПІБ</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="51"/>
+        <location filename="archivetabledialog.cpp" line="55"/>
         <source>Sex</source>
         <translation>Стать</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="53"/>
+        <location filename="archivetabledialog.cpp" line="57"/>
         <source>Qualification</source>
         <translation>Кваліфікація</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="54"/>
+        <location filename="archivetabledialog.cpp" line="58"/>
         <source>DOB</source>
         <translation>Дата народження</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="72"/>
+        <location filename="archivetabledialog.cpp" line="78"/>
         <source>Archive of team</source>
         <translation>Архів команд</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="74"/>
+        <location filename="archivetabledialog.cpp" line="80"/>
         <source>Archive of surveyed</source>
         <translation>Архів обстежених</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="99"/>
+        <location filename="archivetabledialog.cpp" line="106"/>
         <source>Query</source>
         <translation>Подтверждение</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="99"/>
+        <location filename="archivetabledialog.cpp" line="106"/>
         <source>Are you sure?</source>
         <translation>Ви впевнені?</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="99"/>
+        <location filename="archivetabledialog.cpp" line="106"/>
         <source>Yes</source>
         <translation>Так</translation>
     </message>
     <message>
-        <location filename="archivetabledialog.cpp" line="99"/>
+        <location filename="archivetabledialog.cpp" line="106"/>
         <source>No</source>
         <translation>Ні</translation>
+    </message>
+    <message>
+        <location filename="archivetabledialog.cpp" line="144"/>
+        <location filename="archivetabledialog.cpp" line="149"/>
+        <location filename="archivetabledialog.cpp" line="157"/>
+        <source>Error</source>
+        <translation>Помилка</translation>
+    </message>
+    <message>
+        <location filename="archivetabledialog.cpp" line="144"/>
+        <location filename="archivetabledialog.cpp" line="149"/>
+        <location filename="archivetabledialog.cpp" line="157"/>
+        <source>Error creating database!</source>
+        <translation>Помилка створення бази даних!</translation>
     </message>
 </context>
 <context>
     <name>ArchiveTeamSHVSMDialog</name>
     <message>
-        <location filename="archiveteamshvsmdialog.ui" line="14"/>
+        <location filename="archiveteamshvsmdialog.ui" line="26"/>
         <source>Archive survey teams &apos;SHVSM&apos;</source>
         <translation>Архів обстежень команд &apos;ШВСМ&apos;</translation>
     </message>
@@ -792,17 +807,17 @@
 <context>
     <name>ArchiveTeamSHVSMIntegralDialog</name>
     <message>
-        <location filename="archiveteamshvsmintegraldialog.ui" line="14"/>
+        <location filename="archiveteamshvsmintegraldialog.ui" line="26"/>
         <source>Archive survey teams &apos;SHVSM-integral&apos;</source>
         <translation>Архів обстежень команд &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
-        <location filename="archiveteamshvsmintegraldialog.ui" line="108"/>
+        <location filename="archiveteamshvsmintegraldialog.ui" line="120"/>
         <source>The level of the functional state of the cardiovascular system</source>
         <translation>Рівень функціонального стану серцево-судинної системи</translation>
     </message>
     <message>
-        <location filename="archiveteamshvsmintegraldialog.ui" line="130"/>
+        <location filename="archiveteamshvsmintegraldialog.ui" line="142"/>
         <source>The level of the functional state of the system of external respiration</source>
         <translation>Рівень функціонального стану системи зовнішнього дихання</translation>
     </message>
@@ -1248,6 +1263,24 @@
     </message>
 </context>
 <context>
+    <name>PrintReportDialog</name>
+    <message>
+        <location filename="printreportdialog.ui" line="26"/>
+        <source>Report</source>
+        <translation>Звіт</translation>
+    </message>
+    <message>
+        <location filename="printreportdialog.ui" line="47"/>
+        <source>Print</source>
+        <translation>Друк</translation>
+    </message>
+    <message>
+        <location filename="printreportdialog.cpp" line="28"/>
+        <source>Print Report</source>
+        <translation>Друк звіту</translation>
+    </message>
+</context>
+<context>
     <name>SHVSMCreateDialog</name>
     <message>
         <location filename="shvsmcreatedialog.ui" line="26"/>
@@ -1399,6 +1432,117 @@
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для аэробных возможностей организма (величины оPWC170 и оМПК)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12 км - 15 км). ЧСС = 120 - 140 уд/мин. (подготовительный этап учебно-тренировочного процесса - далее ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный, равномерный бег (до 4-10 км). ЧСС до 180 уд/мин (ПЭ+СЭ (соревноватедьный этап).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170 -175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Интервальный бег на отрезках 200-300м со скоростью 80% от максимальной и ЧСС=180 уд/мин. Отдых между отрезками до ЧСС=120-130 уд/мин или около 30с. Объем - 3000 - 4500м за тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 2000м - 3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем - 5000м - 8000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Ритмичный легкий бег (в лесу или по пересеченной местности) в течение 1 часа. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 60-70% от максимальной в течение 30-40 мин. Скорость педалирования 60 об/мин. ЧСС=120-130 уд/мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной мощности (АЛАКм):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Прыжки с максимальной интенсивностью на двух ногах и с ноги на ногу на отрезках 30-60м (на ровной местности или в гору). Интервалы отдыха между отрезками - 30-40с, между сериями - 3-4 мин. В серии - 5-6 отрезков при общем количестве в тренировочном занятии - 15. Паузы между сериями - медленный бег, ходьба трусцой. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег с максимальной скоростью на отрезках 30-50м в гору, по песку и на дорожке. Количество отрезков - 15 за занятие. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на коротких отрезках с околопредельной (90% от максимальной) скоростью (&amp;quot;спринтерская тренировка&amp;quot;). Серии отрезков: 10 по 100 м; 6 по 150 м. Количество серий - 4 за тренировку. Паузы отдыха между отрезками 20-25 сек., между сериями - 2-3 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Прыжковые упражнения продолжительностью до 10с. 2-3 серии по 6-8 повторений. Отдых между повторениями - 10-15с, между сериями - 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 90-95% от максимальной в течение 10с. 2-3 серии по 4-5 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями 10-15с. Между сериями 5-7 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной емкости (АЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег со скоросью 90% от максимальной на отрезках 60-80м. Отдых между отрезками - 60с. За тренировку - 10-12 при отрезках 70-80м; 15 - при 50м. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег со скоростью 90% от максимальной на отрезках 100-150м. Отдых между отрезками - 2,5-3 мин. К-во отрезков за тренировку - 8-10. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа с отягощениями средней интенсивности до 20-30с. 2-3 серии/тренировку. В каждой серии 10-15 повторений. Отдых между повторениями - 30-60с, между сериями - 10-12 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Прыжковые упражнения умеренной интенсивности продолжительностью до 20-30с. 2-3 серии по 4-6 повторений. Отдых между повторениями - 1 мин., между сериями - 10-12 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для лактатной анаэробной мощности и емкости (ЛАКм и ЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег 200-400м со скоростью 85-90% от максимальной. Серии: при 200м - 5-6 повторений; при 400м - 4. Отдых между отрезками - 2,5-3 мин (заполняется ходьбой), между сериями (заполняется бегом &amp;quot;трусцой&amp;quot;) - 5 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Серии бега: четыре по 200м, три по 300м или два по 400м. За тренировку - не более двух серий. Отдых между отрезками - 30с, между сериями - 5-6 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Интервальный бег 500-600м со скоростью 80-85% от максимальной. Отдых между отрезками 2,5-3,5 минуты. Общий объем: 3000м - 4800м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторно-интервальный бег 500-600м со скоростью 85-90% от максимальной. Две серии по 3 отрезка. Отдых между отрезками - 3-3,5 мин., между сериями - 6-7 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках от 200 до 600м со скоростью 87-90% от максимальной. Отрезки располагаются либо в порядке возрастания (200+300+400+500), либо в порядке убывания. Продолжительность отдыха между отрезками до ЧСС=120-130 уд/мин. Общий объем - 2-3 серии/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-1200м со скоростью 90-95% от максимальной. Общий объем: 3600м - 5000м / тренировку. Продолжительность отдыха между отрезками - 4-6 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег в гору 150-300м. 2-3 серии по 3-4 повторения. Отдых между повторениями - 1,5-2 мин., между сериями - 8-10мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 80-85% от максимальной в течение 30с. 2-3 серии по 5-6 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями - 1 мин., между сериями 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для порога анаэробного обмена (ПАНО) и ЧССпано:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170-175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку - 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем: до 5000м - 8000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для аэробных возможностей организма (величины оPWC170 и оМПК)&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12 км - 15 км). ЧСС = 120 - 140 уд/мин. (подготовительный этап учебно-тренировочного процесса - далее ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный, равномерный бег (до 4-10 км). ЧСС до 180 уд/мин (ПЭ+СЭ (соревноватедьный этап).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170 -175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Интервальный бег на отрезках 200-300м со скоростью 80% от максимальной и ЧСС=180 уд/мин. Отдых между отрезками до ЧСС=120-130 уд/мин или около 30с. Объем - 3000 - 4500м за тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 2000м - 3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем - 5000м - 8000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Ритмичный легкий бег (в лесу или по пересеченной местности) в течение 1 часа. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 60-70% от максимальной в течение 30-40 мин. Скорость педалирования 60 об/мин. ЧСС=120-130 уд/мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной мощности (АЛАКм):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Прыжки с максимальной интенсивностью на двух ногах и с ноги на ногу на отрезках 30-60м (на ровной местности или в гору). Интервалы отдыха между отрезками - 30-40с, между сериями - 3-4 мин. В серии - 5-6 отрезков при общем количестве в тренировочном занятии - 15. Паузы между сериями - медленный бег, ходьба трусцой. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег с максимальной скоростью на отрезках 30-50м в гору, по песку и на дорожке. Количество отрезков - 15 за занятие. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на коротких отрезках с околопредельной (90% от максимальной) скоростью (&amp;quot;спринтерская тренировка&amp;quot;). Серии отрезков: 10 по 100 м; 6 по 150 м. Количество серий - 4 за тренировку. Паузы отдыха между отрезками 20-25 сек., между сериями - 2-3 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа с отягощениями с предельной интенсивностью (до 10с). 2-3 серии/тренировку. В каждой серии 8-10 повторений. Отдых между повторениями - 30-60с, между сериями - 8-10 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Прыжковые упражнения продолжительностью до 10с. 2-3 серии по 6-8 повторений. Отдых между повторениями - 10-15с, между сериями - 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 90-95% от максимальной в течение 10с. 2-3 серии по 4-5 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями 10-15с. Между сериями 5-7 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для алактатной анаэробной емкости (АЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег со скоросью 90% от максимальной на отрезках 60-80м. Отдых между отрезками - 60с. За тренировку - 10-12 при отрезках 70-80м; 15 - при 50м. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег со скоростью 90% от максимальной на отрезках 100-150м. Отдых между отрезками - 2,5-3 мин. К-во отрезков за тренировку - 8-10. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа с отягощениями средней интенсивности до 20-30с. 2-3 серии/тренировку. В каждой серии 10-15 повторений. Отдых между повторениями - 30-60с, между сериями - 10-12 мин. Интервалы отдыха между повторениями постепенно сокращаются с 60 до 30с. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Прыжковые упражнения умеренной интенсивности продолжительностью до 20-30с. 2-3 серии по 4-6 повторений. Отдых между повторениями - 1 мин., между сериями - 10-12 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для лактатной анаэробной мощности и емкости (ЛАКм и ЛАКе):&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег 200-400м со скоростью 85-90% от максимальной. Серии: при 200м - 5-6 повторений; при 400м - 4. Отдых между отрезками - 2,5-3 мин (заполняется ходьбой), между сериями (заполняется бегом &amp;quot;трусцой&amp;quot;) - 5 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Серии бега: четыре по 200м, три по 300м или два по 400м. За тренировку - не более двух серий. Отдых между отрезками - 30с, между сериями - 5-6 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Интервальный бег 500-600м со скоростью 80-85% от максимальной. Отдых между отрезками 2,5-3,5 минуты. Общий объем: 3000м - 4800м/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторно-интервальный бег 500-600м со скоростью 85-90% от максимальной. Две серии по 3 отрезка. Отдых между отрезками - 3-3,5 мин., между сериями - 6-7 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках от 200 до 600м со скоростью 87-90% от максимальной. Отрезки располагаются либо в порядке возрастания (200+300+400+500), либо в порядке убывания. Продолжительность отдыха между отрезками до ЧСС=120-130 уд/мин. Общий объем - 2-3 серии/тренировку. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-1200м со скоростью 90-95% от максимальной. Общий объем: 3600м - 5000м / тренировку. Продолжительность отдыха между отрезками - 4-6 мин. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег в гору 150-300м. 2-3 серии по 3-4 повторения. Отдых между повторениями - 1,5-2 мин., между сериями - 8-10мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Работа на велоэргометре с мощностью 80-85% от максимальной в течение 30с. 2-3 серии по 5-6 повторений. Скорость педалирования - 80 об/мин. Отдых между повторениями - 1 мин., между сериями 8-10 мин. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt; font-weight:600;&quot;&gt;Для порога анаэробного обмена (ПАНО) и ЧССпано:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Непрерывный бег (до 12-20 км). ЧСС = 150 уд/мин в начале и 170 уд/мин в конце работы. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Переменный бег на 800-1200м. Пробегание отрезков с повышенной скоростью при ЧСС=170-175 уд/мин чередуется пробеганием отрезков с меньшей скоростью (ЧСС=150 уд/мин). За тренировку - 14 км - 18 км. (ПЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Повторный бег на отрезках 800-3000м. ЧСС=180-185 уд/мин. Длительность отдыха между отрезками определяется готовностью спортсмена. Общий объем: до 5000м - 8000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.ui" line="1880"/>
+        <source>Report</source>
+        <translation>Звіт</translation>
+    </message>
+    <message>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt; font-weight:600;&quot;&gt;Для аэробных возможностей организма (величины оPWC170 и оМПК)&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
@@ -1448,7 +1592,7 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;· Бег в гору или по песку на отрезках от 200 до 1000м при ЧСС=170 уд/мин. Отдых между отрезками до 3-5 мин. Общий объем: при отрезках 200м - до 3000м/тренировку, при отрезках до 1000м - до 4000м/тренировку. (ПЭ+СЭ).&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
-        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+        <translation type="obsolete">&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
 p, li { white-space: pre-wrap; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;Sans Serif&apos;; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
@@ -1632,31 +1776,36 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1654"/>
-        <location filename="shvsmcreatedialog.cpp" line="514"/>
+        <location filename="shvsmcreatedialog.cpp" line="520"/>
+        <location filename="shvsmcreatedialog.cpp" line="552"/>
         <source>Below the average</source>
         <translation>Нижче середнього</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1679"/>
-        <location filename="shvsmcreatedialog.cpp" line="520"/>
+        <location filename="shvsmcreatedialog.cpp" line="526"/>
+        <location filename="shvsmcreatedialog.cpp" line="554"/>
         <source>Average</source>
         <translation>Середній</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1704"/>
-        <location filename="shvsmcreatedialog.cpp" line="526"/>
+        <location filename="shvsmcreatedialog.cpp" line="532"/>
+        <location filename="shvsmcreatedialog.cpp" line="556"/>
         <source>Above average</source>
         <translation>Вище середнього</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1729"/>
-        <location filename="shvsmcreatedialog.cpp" line="532"/>
+        <location filename="shvsmcreatedialog.cpp" line="538"/>
+        <location filename="shvsmcreatedialog.cpp" line="558"/>
         <source>High</source>
         <translation>Високий</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1754"/>
-        <location filename="shvsmcreatedialog.cpp" line="508"/>
+        <location filename="shvsmcreatedialog.cpp" line="514"/>
+        <location filename="shvsmcreatedialog.cpp" line="550"/>
         <source>Low</source>
         <translation>Низкий</translation>
     </message>
@@ -1782,110 +1931,281 @@ p, li { white-space: pre-wrap; }
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="61"/>
+        <location filename="shvsmcreatedialog.cpp" line="66"/>
         <source>Name</source>
         <translation>ПІБ</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="62"/>
+        <location filename="shvsmcreatedialog.cpp" line="67"/>
         <source>Team</source>
         <translation>Команда</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="63"/>
+        <location filename="shvsmcreatedialog.cpp" line="68"/>
         <source>Sex</source>
         <translation>Стать</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="64"/>
+        <location filename="shvsmcreatedialog.cpp" line="69"/>
         <source>Qualification</source>
         <translation>Кваліфікація</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="65"/>
+        <location filename="shvsmcreatedialog.cpp" line="70"/>
         <source>DoB</source>
         <oldsource>DOB</oldsource>
         <translation>Дата нарождення</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="104"/>
-        <location filename="shvsmcreatedialog.cpp" line="111"/>
-        <location filename="shvsmcreatedialog.cpp" line="117"/>
-        <location filename="shvsmcreatedialog.cpp" line="124"/>
-        <location filename="shvsmcreatedialog.cpp" line="131"/>
-        <location filename="shvsmcreatedialog.cpp" line="138"/>
-        <location filename="shvsmcreatedialog.cpp" line="147"/>
-        <location filename="shvsmcreatedialog.cpp" line="157"/>
-        <location filename="shvsmcreatedialog.cpp" line="164"/>
-        <location filename="shvsmcreatedialog.cpp" line="171"/>
-        <location filename="shvsmcreatedialog.cpp" line="178"/>
-        <location filename="shvsmcreatedialog.cpp" line="459"/>
-        <location filename="shvsmcreatedialog.cpp" line="470"/>
-        <location filename="shvsmcreatedialog.cpp" line="480"/>
+        <location filename="shvsmcreatedialog.cpp" line="109"/>
+        <location filename="shvsmcreatedialog.cpp" line="116"/>
+        <location filename="shvsmcreatedialog.cpp" line="122"/>
+        <location filename="shvsmcreatedialog.cpp" line="129"/>
+        <location filename="shvsmcreatedialog.cpp" line="136"/>
+        <location filename="shvsmcreatedialog.cpp" line="143"/>
+        <location filename="shvsmcreatedialog.cpp" line="152"/>
+        <location filename="shvsmcreatedialog.cpp" line="162"/>
+        <location filename="shvsmcreatedialog.cpp" line="169"/>
+        <location filename="shvsmcreatedialog.cpp" line="176"/>
+        <location filename="shvsmcreatedialog.cpp" line="183"/>
+        <location filename="shvsmcreatedialog.cpp" line="465"/>
+        <location filename="shvsmcreatedialog.cpp" line="476"/>
+        <location filename="shvsmcreatedialog.cpp" line="486"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="104"/>
+        <location filename="shvsmcreatedialog.cpp" line="109"/>
         <source>Do not set the &apos;Weight&apos;!</source>
         <translation>Не задано значення поля &apos;Вага&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="111"/>
+        <location filename="shvsmcreatedialog.cpp" line="116"/>
         <source>Incorrectly set the &apos;Weight&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Вага&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="117"/>
+        <location filename="shvsmcreatedialog.cpp" line="122"/>
         <source>Do not set the &apos;Height&apos;!</source>
         <translation>Не задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="124"/>
+        <location filename="shvsmcreatedialog.cpp" line="129"/>
         <source>Incorrectly set the &apos;Height&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="131"/>
+        <location filename="shvsmcreatedialog.cpp" line="136"/>
         <source>Incorrectly set the &apos;HR1&apos;!</source>
         <translation>Некоректно задано поле &apos;ЧСС1&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="138"/>
+        <location filename="shvsmcreatedialog.cpp" line="143"/>
         <source>Incorrectly set the &apos;HR2&apos;!</source>
         <translation>Некоректно задано поле &apos;ЧСС2&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="147"/>
+        <location filename="shvsmcreatedialog.cpp" line="152"/>
         <source>Incorrectly set the birthday or date survey!</source>
         <translation>Некоректно задана дата народження або дата обстеження!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="157"/>
+        <location filename="shvsmcreatedialog.cpp" line="162"/>
         <source>Incorrectly set the &apos;N1&apos;!</source>
         <translation>Некоректно задано поле &apos;N1&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="164"/>
+        <location filename="shvsmcreatedialog.cpp" line="169"/>
         <source>Incorrectly set the &apos;N2&apos;!</source>
         <translation>Некоректно задано поле &apos;N2&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="171"/>
+        <location filename="shvsmcreatedialog.cpp" line="176"/>
         <source>Incorrectly set the &apos;n1&apos;!</source>
         <translation>Некоректно задано поле &apos;n1&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="178"/>
+        <location filename="shvsmcreatedialog.cpp" line="183"/>
         <source>Incorrectly set the &apos;n2&apos;!</source>
         <translation>Некоректно задано поле &apos;n2&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="459"/>
-        <location filename="shvsmcreatedialog.cpp" line="470"/>
-        <location filename="shvsmcreatedialog.cpp" line="480"/>
+        <location filename="shvsmcreatedialog.cpp" line="465"/>
+        <location filename="shvsmcreatedialog.cpp" line="476"/>
+        <location filename="shvsmcreatedialog.cpp" line="486"/>
         <source>Error accessing to database!</source>
         <translation>Помилка доступу до бази даних!</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="646"/>
+        <source>M</source>
+        <translation>Ч</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="646"/>
+        <source>W</source>
+        <translation>Ж</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="647"/>
+        <source>Athlete</source>
+        <translation>Спортсмен</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="647"/>
+        <source>Non-athlete</source>
+        <translation>Неспортсмен</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="649"/>
+        <source>&lt;h1&gt;&lt;center&gt;SHVSM - complex express estimation of functional preparedness&lt;/center&gt;&lt;/h1&gt;</source>
+        <translation>&lt;h1&gt;&lt;center&gt;ШВСМ – комплексна експрес-оцінка функціональної підготовленості організму&lt;/center&gt;&lt;/h1&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="650"/>
+        <source>&lt;center&gt;Malikov N.V, Malikova A.N., Svat&apos;ev A.V.&lt;br&gt;&lt;b&gt;Examination report&lt;/b&gt;&lt;/center&gt;</source>
+        <translation>&lt;center&gt;Маліков М.В. Малікова А.М. Сватьев А.В.&lt;br&gt;&lt;b&gt;Звіт про обстеження&lt;/b&gt;&lt;/center&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="653"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;6&quot;&gt;Date of  examination: &lt;b&gt;%1&lt;/b&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;6&quot;&gt;Дата обстеження: &lt;b&gt;%1&lt;/b&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="654"/>
+        <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;П.І.Б.&lt;/th&gt;&lt;th&gt;Стать&lt;/th&gt;&lt;th&gt;Вік&lt;/th&gt;&lt;th&gt;Кваліфікація&lt;/th&gt;&lt;th&gt;Довжина&lt;br&gt;тіла&lt;/th&gt;&lt;th&gt;Маса&lt;br&gt;тіла&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="656"/>
+        <source>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Entrance  calculation data&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Вхідні дані для розрахунку&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="657"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The first loading intensity on the veloergometer N1&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Потужність першого навантаження на велоергометрі N1&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="658"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The second loading intensity on the veloergometer N2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Потужність другого навантаження на велоергометрі N2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="659"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The first loading ascents on a step amount n1&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Кількість підйомів на сходинку при першому навантаженні n1&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="660"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The second loading ascents on a step amount n2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Кількість підйомів на сходинку при другому навантаженні n2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="661"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the first loading HR1&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота серцевих скорочень після першого навантаження ЧСС1&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="662"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the second loading  HR2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота серцевих скорочень після другого навантаження ЧСС2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="663"/>
+        <source>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Calculation data&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Результати розрахунку&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="665"/>
+        <source>&lt;tr&gt;&lt;th colspan=&quot;4&quot;&gt;Index&lt;/th&gt;&lt;th&gt;Numerical&lt;br&gt;value&lt;/th&gt;&lt;th&gt;Functional&lt;br&gt;estimation&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th colspan=&quot;4&quot;&gt;Показник&lt;/th&gt;&lt;th&gt;Числове&lt;br&gt;значення&lt;/th&gt;&lt;th&gt;Функціональна&lt;br&gt;оцінка&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="666"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aPWC&lt;sub&gt;170&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aPWC&lt;sub&gt;170&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="667"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rPWC&lt;sub&gt;170&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;вPWC&lt;sub&gt;170&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="668"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aVO&lt;sub&gt;2max&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;аМСК&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="669"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rVO&lt;sub&gt;2max&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;вМСК&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="671"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ALAKp&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;АЛАКп&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="672"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ALAKc&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ALAKє&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="673"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;LAKp&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЛАКп&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="674"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;LAKc&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЛАКє&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="675"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;AMT&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ПАНО&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="676"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;HR&lt;sub&gt;AMT&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЧССпано&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="677"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;GMC&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЗМЄ&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="679"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Functional preparedness level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Рівень функціональної підготовленості&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="680"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;General endurance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Загальна витривалість&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="681"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Speed endurance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Швидкісна витривалість&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="682"/>
+        <location filename="shvsmcreatedialog.cpp" line="683"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Speed-strength endurance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Швидкісно-силова витривалість&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="684"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Energetic system economy&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Економічність системи енергозабезпечення&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="685"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Reserve capability&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Резервні можливості&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
 </context>
 <context>
@@ -1918,36 +2238,36 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="113"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="652"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="694"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="657"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="699"/>
         <source>Below the average</source>
         <translation>Нижче середнього</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="138"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="659"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="701"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="664"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="706"/>
         <source>Average</source>
         <translation>Середній</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="163"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="666"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="708"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="671"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="713"/>
         <source>Above average</source>
         <translation>Вище середнього</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="188"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="673"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="715"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="678"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="720"/>
         <source>High</source>
         <translation>Високий</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="213"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="645"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="687"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="650"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="692"/>
         <source>Low</source>
         <translation>Низький</translation>
     </message>
@@ -2013,16 +2333,16 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="500"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="234"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="243"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="255"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="264"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="346"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="360"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="393"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="406"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="422"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="435"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="239"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="248"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="260"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="269"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="351"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="365"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="398"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="411"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="427"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="440"/>
         <source>Norm</source>
         <translation>Норма</translation>
     </message>
@@ -2137,6 +2457,11 @@ p, li { white-space: pre-wrap; }
         <translation>Рівень функціонального стану системи зовнішнього дихання:</translation>
     </message>
     <message>
+        <location filename="shvsmintegralcreatedialog.ui" line="1903"/>
+        <source>Report</source>
+        <translation>Звіт</translation>
+    </message>
+    <message>
         <source>The level of the functional state of the cardiovascular system:</source>
         <translation type="obsolete">Уровень функционального состояния сердечно-сосудистой системы:</translation>
     </message>
@@ -2145,171 +2470,321 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Уровень функционального состояния системы внешнего дыхания:</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="65"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="70"/>
         <source>Name</source>
         <translation>ПІБ</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="66"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="71"/>
         <source>Team</source>
         <translation>Команда</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="67"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="72"/>
         <source>Sex</source>
         <translation>Стать</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="68"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="73"/>
         <source>Qualification</source>
         <translation>Кваліфікація</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="69"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="74"/>
         <source>DOB</source>
         <translation>Дата нарождення</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="110"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="117"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="123"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="130"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="138"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="146"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="154"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="162"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="170"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="178"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="187"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="611"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="623"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="633"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="115"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="122"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="128"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="135"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="143"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="151"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="159"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="167"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="175"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="183"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="192"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="616"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="628"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="638"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="110"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="115"/>
         <source>Do not set the &apos;Weight&apos;!</source>
         <translation>Не задано значення поля &quot;Вага&quot;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="117"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="122"/>
         <source>Incorrectly set the &apos;Weight&apos;!</source>
         <translation>Некоректно задано значення поля &quot;Вага&quot;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="123"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="128"/>
         <source>Do not set the &apos;Height&apos;!</source>
         <translation>Не задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="130"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="135"/>
         <source>Incorrectly set the &apos;Height&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Зріст&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="138"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="143"/>
         <source>Incorrectly set the &apos;Heart rate&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Частота серцевих скорочень&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="146"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="151"/>
         <source>Incorrectly set the &apos;Systolic blood pressure&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Систолічний артеріальний тиск&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="154"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="159"/>
         <source>Incorrectly set the &apos;Diastolic blood pressure&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Діастолічний артеріальний тиск&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="162"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="167"/>
         <source>Incorrectly set the &apos;Actual vital capacity of lungs&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Фактична життєва ємкість легень&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="170"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="175"/>
         <source>Incorrectly set the &apos;Delay time exhalations&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Час затримки дихання на вдиху&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="178"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="183"/>
         <source>Incorrectly set the &apos;Delay time breathing exhalation&apos;!</source>
         <translation>Некоректно задано значення поля &apos;Час затримки дихання на видиху&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="187"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="192"/>
         <source>Incorrectly set the birthday or date survey!</source>
         <translation>Некоректно задана дата народження або дата обстеження!</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="232"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="241"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="253"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="262"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="237"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="246"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="258"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="267"/>
         <source>Hypokinetic type of regulation</source>
         <translation>Гіпокінетичній тип регуляції</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="236"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="245"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="257"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="266"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="241"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="250"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="262"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="271"/>
         <source>Hyperkinetic type of regulation</source>
         <translation>Гіперкінетичний тип регуляції</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="344"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="358"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="391"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="404"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="420"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="433"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="349"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="363"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="396"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="409"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="425"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="438"/>
         <source>Below the norm</source>
         <translation>Нижче норми</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="348"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="362"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="353"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="367"/>
         <source>Above norm</source>
         <translation>Вище норми</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="389"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="402"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="418"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="431"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="394"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="407"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="423"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="436"/>
         <source>Significantly below normal</source>
         <translation>Значно нижче норми</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="395"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="408"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="424"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="437"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="400"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="413"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="429"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="442"/>
         <source>Above the norm</source>
         <translation>Вище норми</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="397"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="410"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="426"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="439"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="402"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="415"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="431"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="444"/>
         <source>Significantly above normal</source>
         <translation>Значно вище норми</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="611"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="623"/>
-        <location filename="shvsmintegralcreatedialog.cpp" line="633"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="616"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="628"/>
+        <location filename="shvsmintegralcreatedialog.cpp" line="638"/>
         <source>Error accessing to database!</source>
         <translation>Помилка доступу до бази даних!</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="737"/>
+        <source>M</source>
+        <translation>Ч</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="737"/>
+        <source>W</source>
+        <translation>Ж</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="738"/>
+        <source>Athlete</source>
+        <translation>Спортсмен</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="738"/>
+        <source>Non-athlete</source>
+        <translation>Неспортсмен</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="740"/>
+        <source>&lt;h1&gt;&lt;center&gt;SHVSM-complex express estimation of functional state&lt;/center&gt;&lt;/h1&gt;</source>
+        <translation>&lt;h1&gt;&lt;center&gt;ШВСМ-інтеграл – комплексная экспресс-оценка функционального состояния организма&lt;/center&gt;&lt;/h1&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="741"/>
+        <source>&lt;center&gt;Malikov N.V, Malikova A.N., Svat&apos;ev A.V.&lt;br&gt;&lt;b&gt;Examination report&lt;/b&gt;&lt;/center&gt;</source>
+        <translation>&lt;center&gt;Маліков М.В. Малікова А.М. Сватьев А.В.&lt;br&gt;&lt;b&gt;Звіт про обстеження&lt;/b&gt;&lt;/center&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="744"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;6&quot;&gt;Date of  examination: &lt;b&gt;%1&lt;/b&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;6&quot;&gt;Дата обстеження: &lt;b&gt;%1&lt;/b&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="745"/>
+        <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;П.І.Б.&lt;/th&gt;&lt;th&gt;Стать&lt;/th&gt;&lt;th&gt;Вік&lt;/th&gt;&lt;th&gt;Кваліфікація&lt;/th&gt;&lt;th&gt;Довжина&lt;br&gt;тіла&lt;/th&gt;&lt;th&gt;Маса&lt;br&gt;тіла&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="747"/>
+        <source>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Entrance  calculation data&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Вхідні дані для розрахунку&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="749"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate (HR)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота серцевих скорочень (ЧСС)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="750"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Systolic arterial pressure (APs)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Систолічний артеріальний тиск (АТс)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="751"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Diastolic arterial pressure (APd)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Діастолічний артеріальний тиск (АТд)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="752"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Vital lung capacity (VLC)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Життєва ємність легень (ЖЄЛ)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="753"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Inhalation breathing delay time (Tin)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Час затримки дихання на вдоху (Твд)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="754"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Exhalation breathing delay time (Tex)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Час затримки дихання на видиху (Твыд)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="755"/>
+        <source>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Calculation data&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Результати розрахунку&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="757"/>
+        <source>&lt;tr&gt;&lt;th colspan=&quot;4&quot;&gt;Index&lt;/th&gt;&lt;th&gt;Numerical&lt;br&gt;value&lt;/th&gt;&lt;th&gt;Functional&lt;br&gt;estimation&lt;/th&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;th colspan=&quot;4&quot;&gt;Показник&lt;/th&gt;&lt;th&gt;Числове&lt;br&gt;значення&lt;/th&gt;&lt;th&gt;Функціональна&lt;br&gt;оцінка&lt;/th&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="759"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Systole blood volume&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Систолічний об’єм крові&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="760"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Minute blood volume&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Хвилинний об’єм крові&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="761"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Cardiac index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Серцевий індекс&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="762"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;General peripheral resistance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Загальний периферичний опір судин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="763"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Heart volume&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Об’єм серця&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="764"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Robinson Index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Індекс Робінсона&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="765"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Circulation of blood economizing coefficient&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Коефіцієнт економічності кровообігу&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="766"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;Systolic arterial pressure deviation&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Відхилення систолічного артеріального тиску&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="767"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Diastolic arterial pressure deviation&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Відхилення діастолічного артеріального тиску&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="768"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Hypoxia index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Індекс гіпоксії&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="769"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Skibinsky index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Індекс Скибинського&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="770"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Cardio-vascular system functional state level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Рівень функціонального стану серцево-судинної системи&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="771"/>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;External breathing system functional state level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Рівень функціонального стану системи зовнішнього дихання&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
 </context>
 <context>
     <name>SurveyedCreateDialog</name>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="14"/>
+        <location filename="surveyedcreatedialog.ui" line="26"/>
         <source>Examinee create dialog</source>
         <oldsource>Man create dialog</oldsource>
         <translation>Створення обстежуваного</translation>
@@ -2319,33 +2794,33 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Обследуемый</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="42"/>
+        <location filename="surveyedcreatedialog.ui" line="54"/>
         <source>Examinee</source>
         <translation>Обстежуваний</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="57"/>
+        <location filename="surveyedcreatedialog.ui" line="69"/>
         <source>Team:</source>
         <translation>Команда:</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="106"/>
+        <location filename="surveyedcreatedialog.ui" line="118"/>
         <source>Name:</source>
         <translation>ПІБ:</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="125"/>
+        <location filename="surveyedcreatedialog.ui" line="137"/>
         <source>DoB:</source>
         <oldsource>DOB:</oldsource>
         <translation>Дата народження:</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="144"/>
+        <location filename="surveyedcreatedialog.ui" line="156"/>
         <source>dd.MM.yyyy</source>
         <translation>dd.MM.yyyy</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="166"/>
+        <location filename="surveyedcreatedialog.ui" line="178"/>
         <source>Sex:</source>
         <translation>Стать:</translation>
     </message>
@@ -2354,7 +2829,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">Возраст:</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="200"/>
+        <location filename="surveyedcreatedialog.ui" line="212"/>
         <source>Qualification:</source>
         <translation>Кваліфікація:</translation>
     </message>

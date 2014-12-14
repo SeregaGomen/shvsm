@@ -1,3 +1,6 @@
+#include <QSqlError>
+#include <QSqlQuery>
+#include <QDebug>
 #include <QSqlQueryModel>
 #include <QMessageBox>
 #include <QSqlRelationalTableModel>
@@ -31,6 +34,7 @@ void ArchiveTableDialog::changeLanguage(void)
 void ArchiveTableDialog::setupForm(void)
 {
     model = new QSqlRelationalTableModel(this);
+    model->setJoinMode(QSqlRelationalTableModel::LeftJoin);
     if (tableName == "team")
     {
         model->setTable("team");
@@ -59,6 +63,8 @@ void ArchiveTableDialog::setupForm(void)
     ui->tableView->setColumnHidden(0, true);
     ui->tableView->resizeColumnsToContents();
 //    ui->tableView->horizontalHeader()->resizeSection(1, 170);
+
+    db->transaction();
 
     ui->tableView->setSelectionMode(QAbstractItemView::SingleSelection);
     ui->tableView->setCurrentIndex(ui->tableView->model()->index(0, 0));
@@ -96,9 +102,12 @@ void ArchiveTableDialog::slotAddRow(void)
 
 void ArchiveTableDialog::slotDelRow(void)
 {
+    int id = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),0)).toInt();
     if (QMessageBox::question(this,tr("Query"), tr("Are you sure?"),tr("Yes"), tr("No")))
         return;
 
+    // Каскадное удаление
+    cascadeRemove(id);
     ui->tableView->model()->removeRow(ui->tableView->selectionModel()->currentIndex().row());
     isDataChanged = true;
     checkButtons();
@@ -108,7 +117,9 @@ void ArchiveTableDialog::slotSaveChanges(void)
 {
     ui->tableView->setCurrentIndex(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(), 0));
 
+
     model->submitAll();
+    db->commit();
     model->select();
     isDataChanged = false;
     checkButtons();
@@ -117,7 +128,34 @@ void ArchiveTableDialog::slotSaveChanges(void)
 void ArchiveTableDialog::slotCancelChanges(void)
 {
     model->revertAll();
+    db->rollback();
     model->select();
     isDataChanged = false;
     checkButtons();
+}
+
+void ArchiveTableDialog::cascadeRemove(int id)
+{
+    QSqlQuery query;
+
+    // Удаление соответствующих обследований
+    if (!query.exec(QString("DELETE FROM surveySHVSM WHERE surveyed_id=%1").arg(id)))
+    {
+        QMessageBox::critical(this, tr("Error"),tr("Error creating database!"), QMessageBox::Ok);
+        return;
+    }
+    if (!query.exec(QString("DELETE FROM surveySHVSMIntegral WHERE surveyed_id=%1").arg(id)))
+    {
+        QMessageBox::critical(this, tr("Error"),tr("Error creating database!"), QMessageBox::Ok);
+        return;
+    }
+    if (tableName == "team")
+    {
+        // Удаление обследуемого
+        if (!query.exec(QString("DELETE FROM surveyed WHERE id=%1").arg(id)))
+        {
+            QMessageBox::critical(this, tr("Error"),tr("Error creating database!"), QMessageBox::Ok);
+            return;
+        }
+    }
 }

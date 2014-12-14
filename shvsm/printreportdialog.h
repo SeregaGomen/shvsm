@@ -16,6 +16,9 @@ public:
     ~PrintReportDialog();
     void setText(QString);
 
+private slots:
+    void slotPrint(void);
+
 private:
     Ui::PrintReportDialog *ui;
 };

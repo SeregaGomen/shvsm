@@ -33,9 +33,11 @@ void SHVSMCreateDialog::changeLanguage(void)
 
 void SHVSMCreateDialog::setupForm(void)
 {
-    QString query = "SELECT surveyed.id, surveyed.name,team.name,sex.name,qualification.name,surveyed.DOB,sex_id,qualification_id \
-                     FROM surveyed, team, sex, qualification \
-                     WHERE team_id = team.id AND sex_id = sex.id AND qualification_id = qualification.id";
+    QString query = "SELECT surveyed.id, surveyed.name,team.name, sex.name, qualification.name,surveyed.DOB,sex_id,qualification_id \
+                     FROM surveyed \
+                     LEFT OUTER JOIN team ON surveyed.team_id = team.id \
+                     LEFT OUTER JOIN sex ON surveyed.sex_id = sex.id \
+                     LEFT OUTER JOIN qualification ON surveyed.qualification_id = qualification.id";
 
 
     ui->textBrowser->hide();
@@ -669,12 +671,12 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">ALAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
     text += tr("<tr><td colspan=\"4\">ALAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
     text += tr("<tr><td colspan=\"4\">LAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
-    text += tr("<tr><td colspan=\"4\">LAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
+    text += tr("<tr><td colspan=\"4\">LAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
     text += tr("<tr><td colspan=\"4\">AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
     text += tr("<tr><td colspan=\"4\">HR<sub>AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelCHSSpano));
     text += tr("<tr><td colspan=\"4\">GMC</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));
 
-    text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text()).arg(ui->labelF6->text());
+    text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelF6->text());
     text += tr("<tr><td colspan=\"4\">General endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelF1->text());
     text += tr("<tr><td colspan=\"4\">Speed endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelF2->text());
     text += tr("<tr><td colspan=\"4\">Speed-strength endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelF2->text());
