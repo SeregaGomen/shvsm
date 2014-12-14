@@ -742,11 +742,11 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
     text += "<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">";
 
     text += tr("<tr><td colspan=\"6\">Date of  examination: <b>%1</b></tr>").arg(ui->deDate->text());
-    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Qualification</th><th>Body<br>length</th><th>Body<br>mass</th></tr>");
+    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Qualification</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
 
-    text += tr("<tr><td colspan=\"5\">Heart rate (HR)</td><td>%1</td></tr>").arg(ui->leHR->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Heart rate (HR)</td><td>%1</td></tr>").arg(ui->leHR->text().toFloat(),0,'f',0);
     text += tr("<tr><td colspan=\"5\">Systolic arterial pressure (APs)</td><td>%1</td></tr>").arg(ui->leSBP->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">Diastolic arterial pressure (APd)</td><td>%1</td></tr>").arg(ui->leDBP->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">Vital lung capacity (VLC)</td><td>%1</td></tr>").arg(ui->leLActual->text().toFloat(),0,'f',2);
@@ -775,4 +775,80 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
 
 
     p->setText(text);
+}
+
+void SHVSMIntegralCreateDialog::slotClear(void)
+{
+    ui->pbSave->setEnabled(false);
+    ui->pbPrint->setEnabled(false);
+
+    ui->leWeight->clear();
+    ui->leGrowth->clear();
+    ui->leHR->clear();
+    ui->leSBP->clear();
+    ui->leDBP->clear();
+    ui->leDTE->clear();
+    ui->leDTBE->clear();
+
+    ui->leLActual->clear();
+    ui->leLDeviation->clear();
+    ui->leLNorm->clear();
+
+    ui->labelFE->clear();
+    ui->labelV1->clear();
+    ui->labelT1->clear();
+    ui->labelV2->clear();
+    ui->labelT2->clear();
+    ui->labelV3->clear();
+    ui->labelT3->clear();
+    ui->labelV4->clear();
+    ui->labelT4->clear();
+    ui->labelV5->clear();
+    ui->labelT5->clear();
+    ui->labelV6->clear();
+    ui->labelT6->clear();
+    ui->labelV7->clear();
+    ui->labelT7->clear();
+    ui->labelV8->clear();
+    ui->labelT8->clear();
+    ui->labelV9->clear();
+    ui->labelT9->clear();
+    ui->labelV10->clear();
+    ui->labelT10->clear();
+    ui->labelV11->clear();
+    ui->labelT11->clear();
+    ui->labelV12->clear();
+    ui->labelT12->clear();
+    ui->labelV13->clear();
+    ui->labelT13->clear();
+
+    ui->labelFE->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelFE->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV1->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT1->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV2->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT2->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV3->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT3->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV4->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT4->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV5->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT5->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV6->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT6->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV7->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT7->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV8->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT8->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV9->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT9->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV10->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT10->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV11->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT11->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV12->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT12->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV13->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelT13->setStyleSheet("QLabel { background-color : ; }");
+
 }

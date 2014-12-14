@@ -40,7 +40,6 @@ private:
     Ui::MainWindow *ui;
     QSqlDatabase db;
     QTranslator* translator;
-    int langNo;
     void readSettings(void);
     void writeSettings(void);
     void openDB(void);

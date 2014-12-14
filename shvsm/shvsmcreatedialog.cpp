@@ -40,9 +40,9 @@ void SHVSMCreateDialog::setupForm(void)
                      LEFT OUTER JOIN qualification ON surveyed.qualification_id = qualification.id";
 
 
-    ui->textBrowser->hide();
     ui->pbSave->setEnabled(false);
     ui->pbPrint->setEnabled(false);
+    ui->pbHint->setEnabled(false);
 
     // Задание цвета легенды
     // "Низкий" - красный
@@ -448,9 +448,9 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     showIndicatorTxt(ui->labelV6,ui->labelF6,ufp);
 
 
-    ui->textBrowser->show();
     ui->pbSave->setEnabled(true);
     ui->pbPrint->setEnabled(true);
+    ui->pbHint->setEnabled(true);
 }
 
 void SHVSMCreateDialog::slotSaveSHVSM(void)
@@ -614,7 +614,6 @@ void SHVSMCreateDialog::calcNn12(void)
         n1 = (N1*6.12)/(1.33*0.4*weight);
     else
         n1 = (N1*6.12)/(1.33*0.2*weight);
-
     if (isSportsman)
     {
         N2 = (N1 + 0.75*N1);
@@ -651,15 +650,15 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += "<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">";
 
     text += tr("<tr><td colspan=\"6\">Date of  examination: <b>%1</b></tr>").arg(ui->deDate->text());
-    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Qualification</th><th>Body<br>length</th><th>Body<br>mass</th></tr>");
+    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Qualification</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
     text += tr("<tr><td colspan=\"5\">The first loading intensity on the veloergometer N1</td><td>%1</td></tr>").arg(ui->leN1->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">The second loading intensity on the veloergometer N2</td><td>%1</td></tr>").arg(ui->leN2->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">The first loading ascents on a step amount n1</td><td>%1</td></tr>").arg(ui->len1->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">The second loading ascents on a step amount n2</td><td>%1</td></tr>").arg(ui->len2->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1</td><td>%1</td></tr>").arg(ui->leHR1->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Heart rate after the second loading  HR2</td><td>%1</td></tr>").arg(ui->leHR2->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1</td><td>%1</td></tr>").arg(ui->leHR1->text().toFloat(),0,'f',0);
+    text += tr("<tr><td colspan=\"5\">Heart rate after the second loading  HR2</td><td>%1</td></tr>").arg(ui->leHR2->text().toFloat(),0,'f',0);
     text += tr("<tr><th colspan=\"6\">Calculation data</th></tr>");
 
     text += tr("<tr><th colspan=\"4\">Index</th><th>Numerical<br>value</th><th>Functional<br>estimation</th></tr>");
@@ -668,10 +667,10 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">aVO<sub>2max</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">rVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloMPK));
 
-    text += tr("<tr><td colspan=\"4\">ALAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
-    text += tr("<tr><td colspan=\"4\">ALAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
-    text += tr("<tr><td colspan=\"4\">LAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
-    text += tr("<tr><td colspan=\"4\">LAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
+    text += tr("<tr><td colspan=\"4\">ALAKp (%)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
+    text += tr("<tr><td colspan=\"4\">ALAKc (mmol/l)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
+    text += tr("<tr><td colspan=\"4\">LAKp (%)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
+    text += tr("<tr><td colspan=\"4\">LAKc (mmol/l)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
     text += tr("<tr><td colspan=\"4\">AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
     text += tr("<tr><td colspan=\"4\">HR<sub>AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelCHSSpano));
     text += tr("<tr><td colspan=\"4\">GMC</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));
@@ -689,4 +688,74 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
 
 
     p->setText(text);
+}
+
+void SHVSMCreateDialog::slotHint(void)
+{
+    PrintReportDialog* pdlg = new PrintReportDialog(this);
+
+    pdlg->setHint();
+    pdlg->exec();
+}
+
+void SHVSMCreateDialog::slotClear(void)
+{
+    ui->pbSave->setEnabled(false);
+    ui->pbPrint->setEnabled(false);
+    ui->pbHint->setEnabled(false);
+
+    ui->leWeight->clear();
+    ui->leGrowth->clear();
+    ui->leN1->clear();
+    ui->leN2->clear();
+    ui->len1->clear();
+    ui->len2->clear();
+    ui->leHR1->clear();
+    ui->leHR2->clear();
+    ui->labelaPWC170->clear();
+    ui->labeloPWC170->clear();
+    ui->labelaMPK->clear();
+    ui->labeloMPK->clear();
+    ui->labelALAKm->clear();
+    ui->labelALAKe->clear();
+    ui->labelLAKe->clear();
+    ui->labelLAKm->clear();
+    ui->labelPANO->clear();
+    ui->labelCHSSpano->clear();
+    ui->labelOME->clear();
+    ui->labelV1->clear();
+    ui->labelF1->clear();
+    ui->labelV2->clear();
+    ui->labelF2->clear();
+    ui->labelV3->clear();
+    ui->labelF3->clear();
+    ui->labelV4->clear();
+    ui->labelF4->clear();
+    ui->labelV5->clear();
+    ui->labelF5->clear();
+    ui->labelV6->clear();
+    ui->labelF6->clear();
+
+    ui->labeloPWC170->setStyleSheet("QLabel { background-color : ; }");
+    ui->labeloMPK->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelALAKe->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelALAKm->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelLAKe->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelLAKm->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelPANO->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelCHSSpano->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelOME->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV1->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelF1->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV2->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelF2->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV3->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelF3->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV4->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelF4->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV5->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelF5->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelV6->setStyleSheet("QLabel { background-color : ; }");
+    ui->labelF6->setStyleSheet("QLabel { background-color : ; }");
+
 }

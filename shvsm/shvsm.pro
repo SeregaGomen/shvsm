@@ -69,4 +69,7 @@ win32 {
 
 OTHER_FILES += \
     shvsm_UA.ts \
-    shvsm_RU.ts
+    shvsm_RU.ts \
+    shvsm_hint_EN.html \
+    shvsm_hint_RU.html \
+    shvsm_hint_UA.html

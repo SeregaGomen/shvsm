@@ -22,6 +22,8 @@ public slots:
     void slotCheckBoxClicked(void);
     void slotTextChanged(void);
     void slotPrintReport(void);
+    void slotHint(void);
+    void slotClear(void);
 
 public:
     explicit SHVSMCreateDialog(QSqlDatabase*,QWidget *parent = 0);

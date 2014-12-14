@@ -24,6 +24,8 @@
 #include "archivetabledialog.h"
 #include "ui_mainwindow.h"
 
+int langNo;
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)

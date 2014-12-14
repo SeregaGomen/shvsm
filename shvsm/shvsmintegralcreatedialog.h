@@ -20,6 +20,7 @@ public slots:
     void slotCalcSHVSMIntegral(void);
     void slotSaveSHVSMIntegral(void);
     void slotPrintReport(void);
+    void slotClear(void);
 
 public:
     explicit SHVSMIntegralCreateDialog(QSqlDatabase*,QWidget *parent = 0);
