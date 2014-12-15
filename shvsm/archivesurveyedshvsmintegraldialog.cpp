@@ -47,7 +47,7 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     surveyedId = ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),0)).toInt();
 
     modelSurvey = new QSqlQueryModel(this);
-    modelSurvey->setQuery(QString("SELECT dt,qualification.name,old,weight,growth,HR,SAD,DAD,T1,T2,VL,VLN,VLD,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13  \
+    modelSurvey->setQuery(QString("SELECT dt,qualification.name,old,weight,growth,HR,SAD,DAD,T1,T2,VL,VLN,VLD,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,I1,I2,I4,I5,I6,I7,I10,I11  \
                                    FROM surveySHVSMIntegral,surveyed,qualification \
                                    WHERE surveySHVSMIntegral.surveyed_id = surveyed.id AND surveyed.id = %1 AND \
                                    surveyed.qualification_id = qualification.id \
@@ -84,7 +84,7 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     ui->twSurveyedOutput1->setModel(modelSurvey);
     ui->twSurveyedOutput1->verticalHeader()->setDefaultSectionSize(ui->twSurveyed->verticalHeader()->minimumSectionSize());
 
-    for (int i = 11; i < 26; i++)
+    for (int i = 11; i < 34; i++)
         ui->twSurveyedOutput1->setColumnHidden(i, true);
 
     ui->twSurveyedOutput1->resizeColumnsToContents();

@@ -9,7 +9,7 @@
 #include "printreportdialog.h"
 #include "ui_shvsmcreatedialog.h"
 
-extern void normalize(double&);
+extern void normalize(float&);
 
 SHVSMCreateDialog::SHVSMCreateDialog(QSqlDatabase* pdb,QWidget *parent) :
     QDialog(parent),
@@ -91,15 +91,15 @@ void SHVSMCreateDialog::setupForm(void)
 void SHVSMCreateDialog::slotCalcSHVSM(void)
 {
     bool isOk;
-    double p_opwc170,
-           p_ompk,
-           p_alakm,
-           p_alake,
-           p_lakm,
-           p_lake,
-           p_pano,
-           p_chsspano,
-           p_ome;
+    float p_opwc170,
+          p_ompk,
+          p_alakm,
+          p_alake,
+          p_lakm,
+          p_lake,
+          p_pano,
+          p_chsspano,
+          p_ome;
     QString dob = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),5)).toString();
 
 
@@ -217,58 +217,118 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     ome = pano + ompk + alake + lake;
 
     //--------------------------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
+        if (isSportsman)
         {
-            p_opwc170  = (100.0*(1.0 - (32.0 - opwc170)/22.0));
-            p_ompk = (100.0*(1.0 - (75.0 - ompk)/35.0));
-            p_alakm = (100.0*(1.0 - (11.0 - alakm)/8.5));
-            p_alake = (100.0*(1.0 - (60.0 - alake)/35.0));
-            p_lakm = (100.0*(1.0 - (8.0 - lakm)/6.5));
-            p_lake = (100.0*(1.0 - (45.0 - lake)/30.0));
-            p_pano = (100.0*(1.0 - (75.0 - pano)/45.0));
-            p_chsspano = (100.0*(1.0 - (180.0 - chsspano)/65.0));
-            p_ome = (100.0*(1.0 - (258.0 - ome)/138.0));
+            if (sex == 1)
+            {
+                p_opwc170  = (100.0*(1.0 - (32.0 - opwc170)/22.0));
+                p_ompk = (100.0*(1.0 - (75.0 - ompk)/35.0));
+                p_alakm = (100.0*(1.0 - (11.0 - alakm)/8.5));
+                p_alake = (100.0*(1.0 - (60.0 - alake)/35.0));
+                p_lakm = (100.0*(1.0 - (8.0 - lakm)/6.5));
+                p_lake = (100.0*(1.0 - (45.0 - lake)/30.0));
+                p_pano = (100.0*(1.0 - (75.0 - pano)/45.0));
+                p_chsspano = (100.0*(1.0 - (180.0 - chsspano)/65.0));
+                p_ome = (100.0*(1.0 - (258.0 - ome)/138.0));
+            }
+            else
+            {
+                p_opwc170  = (100.0*(1.0 - (27.0 - opwc170)/19.0));
+                p_ompk = (100.0*(1.0 - (70.0 - ompk)/30.0));
+                p_alakm = (100.0*(1.0 - (9.0 - alakm)/6.5));
+                p_alake = (100.0*(1.0 - (50.0 - alake)/25.0));
+                p_lakm = (100.0*(1.0 - (7.0 - lakm)/5.5));
+                p_lake = (100.0*(1.0 - (40.0 - lake)/25.0));
+                p_pano = (100.0*(1.0 - (70.0 - pano)/40.0));
+                p_chsspano = (100.0*(1.0 - (175.0 - chsspano)/60.0));
+                p_ome = (100.0*(1.0 - (220.0 - ome)/110.0));
+            }
         }
         else
         {
-            p_opwc170  = (100.0*(1.0 - (27.0 - opwc170)/19.0));
-            p_ompk = (100.0*(1.0 - (70.0 - ompk)/30.0));
-            p_alakm = (100.0*(1.0 - (9.0 - alakm)/6.5));
-            p_alake = (100.0*(1.0 - (50.0 - alake)/25.0));
-            p_lakm = (100.0*(1.0 - (7.0 - lakm)/5.5));
-            p_lake = (100.0*(1.0 - (40.0 - lake)/25.0));
-            p_pano = (100.0*(1.0 - (70.0 - pano)/40.0));
-            p_chsspano = (100.0*(1.0 - (175.0 - chsspano)/60.0));
-            p_ome = (100.0*(1.0 - (220.0 - ome)/110.0));
+            if (sex == 1)
+            {
+                p_opwc170  = (100.0*(1.0 - (25.0 - opwc170)/20.0));
+                p_ompk = (100.0*(1.0 - (65.0 - ompk)/40.0));
+                p_alakm = (100.0*(1.0 - (8.5 - alakm)/7.0));
+                p_alake = (100.0*(1.0 - (50.0 - alake)/40.0));
+                p_lakm = (100.0*(1.0 - (6.5 - lakm)/5.5));
+                p_lake = (100.0*(1.0 - (40.0 - lake)/30.0));
+                p_pano = (100.0*(1.0 - (65.0 - pano)/45.0));
+                p_chsspano = (100.0*(1.0 - (160.0 - chsspano)/70.0));
+                p_ome = (100.0*(1.0 - (200.0 - ome)/100.0));
+            }
+            else
+            {
+                p_opwc170 = (100.0*(1.0 - (20.0 - opwc170)/16.0));
+                p_ompk = (100.0*(1.0 - (60.0 - ompk)/40.0));
+                p_alakm = (100.0*(1.0 - (6.5 - alakm)/5.0));
+                p_alake = (100.0*(1.0 - (40.0 - alake)/30.0));
+                p_lakm = (100.0*(1.0 - (6.0 - lakm)/5.0));
+                p_lake = (100.0*(1.0 - (30.0 - lake)/20.0));
+                p_pano = (100.0*(1.0 - (55.0 - pano)/40.0));
+                p_chsspano = (100.0*(1.0 - (150.0 - chsspano)/70.0));
+                p_ome = (100.0*(1.0 - (190.0 - ome)/110.0));
+            }
         }
     }
     else
     {
-        if (sex == 1)
+        if (isSportsman)
         {
-            p_opwc170  = (100.0*(1.0 - (25.0 - opwc170)/20.0));
-            p_ompk = (100.0*(1.0 - (65.0 - ompk)/40.0));
-            p_alakm = (100.0*(1.0 - (8.5 - alakm)/7.0));
-            p_alake = (100.0*(1.0 - (50.0 - alake)/40.0));
-            p_lakm = (100.0*(1.0 - (6.5 - lakm)/5.5));
-            p_lake = (100.0*(1.0 - (40.0 - lake)/30.0));
-            p_pano = (100.0*(1.0 - (65.0 - pano)/45.0));
-            p_chsspano = (100.0*(1.0 - (160.0 - chsspano)/70.0));
-            p_ome = (100.0*(1.0 - (200.0 - ome)/100.0));
+            if (sex == 1)
+            {
+                p_opwc170  = (100.0*(1.0 - (28.0 - opwc170)/20.0));
+                p_ompk = (100.0*(1.0 - (65.0 - ompk)/40.0));
+                p_alakm = (100.0*(1.0 - (8.5 - alakm)/6.0));
+                p_alake = (100.0*(1.0 - (50.0 - alake)/35.0));
+                p_lakm = (100.0*(1.0 - (7.0 - lakm)/6.5));
+                p_lake = (100.0*(1.0 - (42.0 - lake)/32.0));
+                p_pano = (100.0*(1.0 - (75.0 - pano)/45.0));
+                p_chsspano = (100.0*(1.0 - (175.0 - chsspano)/60.0));
+                p_ome = (100.0*(1.0 - (240.0 - ome)/135.0));
+            }
+            else
+            {
+                p_opwc170  = (100.0*(1.0 - (26.0 - opwc170)/20.0));
+                p_ompk = (100.0*(1.0 - (60.0 - ompk)/35.0));
+                p_alakm = (100.0*(1.0 - (8.0 - alakm)/6.0));
+                p_alake = (100.0*(1.0 - (40.0 - alake)/30.0));
+                p_lakm = (100.0*(1.0 - (6.5 - lakm)/5.5));
+                p_lake = (100.0*(1.0 - (40.0 - lake)/30.0));
+                p_pano = (100.0*(1.0 - (70.0 - pano)/40.0));
+                p_chsspano = (100.0*(1.0 - (175.0 - chsspano)/60.0));
+                p_ome = (100.0*(1.0 - (220.0 - ome)/120.0));
+            }
         }
         else
         {
-            p_opwc170 = (100.0*(1.0 - (20.0 - opwc170)/16.0));
-            p_ompk = (100.0*(1.0 - (60.0 - ompk)/40.0));
-            p_alakm = (100.0*(1.0 - (6.5 - alakm)/5.0));
-            p_alake = (100.0*(1.0 - (40.0 - alake)/30.0));
-            p_lakm = (100.0*(1.0 - (6.0 - lakm)/5.0));
-            p_lake = (100.0*(1.0 - (30.0 - lake)/20.0));
-            p_pano = (100.0*(1.0 - (55.0 - pano)/40.0));
-            p_chsspano = (100.0*(1.0 - (150.0 - chsspano)/70.0));
-            p_ome = (100.0*(1.0 - (190.0 - ome)/110.0));
+            if (sex == 1)
+            {
+                p_opwc170  = (100.0*(1.0 - (22.0 - opwc170)/20.0));
+                p_ompk = (100.0*(1.0 - (65.0 - ompk)/45.0));
+                p_alakm = (100.0*(1.0 - (7.5 - alakm)/6.5));
+                p_alake = (100.0*(1.0 - (45.0 - alake)/35.0));
+                p_lakm = (100.0*(1.0 - (6.5 - lakm)/5.5));
+                p_lake = (100.0*(1.0 - (40.0 - lake)/30.0));
+                p_pano = (100.0*(1.0 - (60.0 - pano)/45.0));
+                p_chsspano = (100.0*(1.0 - (160.0 - chsspano)/70.0));
+                p_ome = (100.0*(1.0 - (200.0 - ome)/130.0));
+            }
+            else
+            {
+                p_opwc170 = (100.0*(1.0 - (20.0 - opwc170)/18.0));
+                p_ompk = (100.0*(1.0 - (60.0 - ompk)/40.0));
+                p_alakm = (100.0*(1.0 - (6.5 - alakm)/5.5));
+                p_alake = (100.0*(1.0 - (40.0 - alake)/30.0));
+                p_lakm = (100.0*(1.0 - (6.0 - lakm)/5.0));
+                p_lake = (100.0*(1.0 - (35.0 - lake)/25.0));
+                p_pano = (100.0*(1.0 - (55.0 - pano)/40.0));
+                p_chsspano = (100.0*(1.0 - (150.0 - chsspano)/80.0));
+                p_ome = (100.0*(1.0 - (190.0 - ome)/120.0));
+            }
         }
     }
 
@@ -287,10 +347,10 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
 
     //--------------------------------------------------------
 
-    ui->leN1->setText(QString("%1").arg(N1,0,'f',2));
-    ui->leN2->setText(QString("%1").arg(N2,0,'f',2));
-    ui->len1->setText(QString("%1").arg(n1,0,'f',2));
-    ui->len2->setText(QString("%1").arg(n2,0,'f',2));
+//    ui->leN1->setText(QString("%1").arg(N1,0,'f',0));
+//    ui->leN2->setText(QString("%1").arg(N2,0,'f',0));
+//    ui->len1->setText(QString("%1").arg(n1,0,'f',0));
+//    ui->len2->setText(QString("%1").arg(n2,0,'f',0));
     ui->labelaPWC170->setText(QString("%1").arg(apwc170,0,'f',2));
     ui->labeloPWC170->setText(QString("%1").arg(opwc170,0,'f',2));
     ui->labelaMPK->setText(QString("%1").arg(ampk,0,'f',2));
@@ -304,141 +364,321 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     ui->labelOME->setText(QString("%1").arg(ome,0,'f',2));
 
     // ---------------------------------- oPWC170 ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labeloPWC170,opwc170,15.25,18.49,25.00,28.25);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloPWC170,opwc170,15.25,18.49,25.00,28.25);
+            else
+                showIndicator(ui->labeloPWC170,opwc170,12.00,15.50,22.51,26.00);
+        }
         else
-            showIndicator(ui->labeloPWC170,opwc170,12.00,15.50,22.51,26.00);
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloPWC170,opwc170,9.75,12.50,18.00,20.75);
+            else
+                showIndicator(ui->labeloPWC170,opwc170,7.00,9.49,14.50,17.00);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labeloPWC170,opwc170,9.75,12.50,18.00,20.75);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloPWC170,opwc170,14.00,16.00,20.00,22.00);
+            else
+                showIndicator(ui->labeloPWC170,opwc170,12.00,14.00,18.00,20.00);
+        }
         else
-            showIndicator(ui->labeloPWC170,opwc170,7.00,9.49,14.50,17.00);
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloPWC170,opwc170,10.00,12.00,16.00,18.00);
+            else
+                showIndicator(ui->labeloPWC170,opwc170,8.00,10.00,14.00,16.00);
+        }
     }
     // ---------------------------------- oMPK ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labeloMPK,ompk,50,55,65,70);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloMPK,ompk,50,55,65,70);
+            else
+                showIndicator(ui->labeloMPK,ompk,40,44.99,55,60);
+        }
         else
-            showIndicator(ui->labeloMPK,ompk,40,44.99,55,60);
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloMPK,ompk,40,44.99,55,60);
+            else
+                showIndicator(ui->labeloMPK,ompk,27.5,34.99,55,60);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labeloMPK,ompk,40,44.99,55,60);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloMPK,ompk,40,45,55,60);
+            else
+                showIndicator(ui->labeloMPK,ompk,35,40.00,50,55);
+        }
         else
-            showIndicator(ui->labeloMPK,ompk,27.5,34.99,55,60);
+        {
+            if (sex == 1)
+                showIndicator(ui->labeloMPK,ompk,35,40,50,55);
+            else
+                showIndicator(ui->labeloMPK,ompk,32.5,35,45,47.5);
+        }
     }
     // ---------------------------------- ALAKm ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labelALAKm,alakm,3.91,5.32,8.17,9.69);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKm,alakm,3.91,5.32,8.17,9.69);
+            else
+                showIndicator(ui->labelALAKm,alakm,3.59,4.66,6.83,7.91);
+        }
         else
-            showIndicator(ui->labelALAKm,alakm,3.59,4.66,6.83,7.91);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKm,alakm,2.41,3.57,5.92,7.09);
+            else
+                showIndicator(ui->labelALAKm,alakm,2.34,3.16,4.83,5.66);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labelALAKm,alakm,2.41,3.57,5.92,7.09);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKm,alakm,3.49,4.51,6.59,7.74);
+            else
+                showIndicator(ui->labelALAKm,alakm,3.00,3.97,5.94,6.93);
+        }
         else
-            showIndicator(ui->labelALAKm,alakm,2.34,3.16,4.83,5.66);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKm,alakm,2.02,3.06,5.17,6.22);
+            else
+                showIndicator(ui->labelALAKm,alakm,1.85,2.67,4.33,5.16);
+        }
     }
     // ---------------------------------- ALAKe ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labelALAKe,alake,32,37.99,50,56);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKe,alake,32,37.99,50,56);
+            else
+                showIndicator(ui->labelALAKe,alake,29.5,32.99,40,43.5);
+        }
         else
-            showIndicator(ui->labelALAKe,alake,29.5,32.99,40,43.5);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKe,alake,20.00,24.99,35,40);
+            else
+                showIndicator(ui->labelALAKe,alake,15.00,19.99,30,35);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labelALAKe,alake,20.00,24.99,35,40);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKe,alake,29.50,33,40,43.50);
+            else
+                showIndicator(ui->labelALAKe,alake,27.5,30,35,37.5);
+        }
         else
-            showIndicator(ui->labelALAKe,alake,15.00,19.99,30,35);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelALAKe,alake,15.00,20,30,35);
+            else
+                showIndicator(ui->labelALAKe,alake,10.00,15.00,25,30);
+        }
     }
     // ---------------------------------- LAKm ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labelLAKm,alakm,2.59,3.66,5.83,6.91);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKm,alakm,2.59,3.66,5.83,6.91);
+            else
+                showIndicator(ui->labelLAKm,alakm,2.41,3.32,5.17,6.09);
+        }
         else
-            showIndicator(ui->labelLAKm,alakm,2.41,3.32,5.17,6.09);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKm,alakm,1.91,2.82,4.67,5.59);
+            else
+                showIndicator(ui->labelLAKm,alakm,1.84,2.66,4.33,5.16);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labelLAKm,alakm,1.91,2.82,4.67,5.59);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKm,alakm,2.22,3.13,4.98,5.91);
+            else
+                showIndicator(ui->labelLAKm,alakm,2.20,2.87,4.24,4.93);
+        }
         else
-            showIndicator(ui->labelLAKm,alakm,1.84,2.66,4.33,5.16);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKm,alakm,1.41,2.3,4.11,5.01);
+            else
+                showIndicator(ui->labelLAKm,alakm,1.35,2.14,3.74,4.54);
+        }
     }
     // ---------------------------------- LAKe ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labelLAKe,alake,25.00,29.99,40.00,45.00);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKe,alake,25.00,29.99,40.00,45.00);
+            else
+                showIndicator(ui->labelLAKe,alake,20.00,24.99,35.00,40.00);
+        }
         else
-            showIndicator(ui->labelLAKe,alake,20.00,24.99,35.00,40.00);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKe,alake,15.00,19.99,30.00,35.00);
+            else
+                showIndicator(ui->labelLAKe,alake,10.00,14.99,25.00,30.00);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labelLAKe,alake,15.00,19.99,30.00,35.00);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKe,alake,17.00,22.00,32.00,37.00);
+            else
+                showIndicator(ui->labelLAKe,alake,15.00,20.00,30.00,35.00);
+        }
         else
-            showIndicator(ui->labelLAKe,alake,10.00,14.99,25.00,30.00);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelLAKe,alake,13.00,18.00,28.00,33.00);
+            else
+                showIndicator(ui->labelLAKe,alake,10.00,15.00,25.00,30.00);
+        }
+
     }
     // ---------------------------------- PANO ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labelPANO,pano,47.50,54.99,70.00,77.50);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelPANO,pano,47.50,54.99,70.00,77.50);
+            else
+                showIndicator(ui->labelPANO,pano,37.50,44.99,60.00,67.50);
+        }
         else
-            showIndicator(ui->labelPANO,pano,37.50,44.99,60.00,67.50);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelPANO,pano,40.00,44.99,55.00,60.00);
+            else
+                showIndicator(ui->labelPANO,pano,35.00,39.99,50.00,55.00);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labelPANO,pano,40.00,44.99,55.00,60.00);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelPANO,pano,42.00,50.00,65.00,72.50);
+            else
+                showIndicator(ui->labelPANO,pano,37.50,45.0,60.00,67.50);
+        }
         else
-            showIndicator(ui->labelPANO,pano,35.00,39.99,50.00,55.00);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelPANO,pano,40.00,45.00,55.00,60.00);
+            else
+                showIndicator(ui->labelPANO,pano,35.00,40.00,50.00,55.00);
+        }
     }
     // ---------------------------------- CHSSpano ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labelCHSSpano,chsspano,147,154,170,178);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelCHSSpano,chsspano,147,154,170,178);
+            else
+                showIndicator(ui->labelCHSSpano,chsspano,142,149,165,173);
+        }
         else
-            showIndicator(ui->labelCHSSpano,chsspano,142,149,165,173);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelCHSSpano,chsspano,85,109,160,173);
+            else
+                showIndicator(ui->labelCHSSpano,chsspano,85,109,150,170);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labelCHSSpano,chsspano,85,109,160,173);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelCHSSpano,chsspano,138,144,160,169);
+            else
+                showIndicator(ui->labelCHSSpano,chsspano,132,139,155,163);
+        }
         else
-            showIndicator(ui->labelCHSSpano,chsspano,85,109,150,170);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelCHSSpano,chsspano,117,124,150,159);
+            else
+                showIndicator(ui->labelCHSSpano,chsspano,110,119,140,151);
+        }
     }
     // ---------------------------------- OME ------------------------------------
-    if (isSportsman)
+    if (old >= 18)
     {
-        if (sex == 1)
-            showIndicator(ui->labelOME,ome,150,169.99,210,230);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelOME,ome,150,169.99,210,230);
+            else
+                showIndicator(ui->labelOME,ome,142.5,159.99,195,212.5);
+        }
         else
-            showIndicator(ui->labelOME,ome,142.5,159.99,195,212.5);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelOME,ome,125,139.99,170,185);
+            else
+                showIndicator(ui->labelOME,ome,115,129.99,160,175);
+        }
     }
     else
     {
-        if (sex == 1)
-            showIndicator(ui->labelOME,ome,125,139.99,170,185);
+        if (isSportsman)
+        {
+            if (sex == 1)
+                showIndicator(ui->labelOME,ome,137.50,154.99,190,207.5);
+            else
+                showIndicator(ui->labelOME,ome,127.5,144.99,180,197.5);
+        }
         else
-            showIndicator(ui->labelOME,ome,115,129.99,160,175);
+        {
+            if (sex == 1)
+                showIndicator(ui->labelOME,ome,117.50,134.99,170,187.50);
+            else
+                showIndicator(ui->labelOME,ome,107.50,124.99,160,177.50);
+        }
     }
-
 
     showIndicatorTxt(ui->labelV1,ui->labelF1,0.5*(p_opwc170 + p_ompk));
     showIndicatorTxt(ui->labelV2,ui->labelF2,0.5*(p_alakm + p_alake));
@@ -507,7 +747,7 @@ void SHVSMCreateDialog::showIndicatorTxt(QLabel* labelF, QLabel* labelT,float in
     else if (indicator > 100)
         indicator = 100;
 
-    labelF->setText(QString("%1").arg(indicator));
+    labelF->setText(QString("%1").arg(indicator,0,'f',2));
     if (indicator <= 33.1)
     {
         labelF->setStyleSheet("QLabel { background-color : red; }");
