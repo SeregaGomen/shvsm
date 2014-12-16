@@ -35,7 +35,7 @@ public:
     explicit ArchiveSurveyedSHVSMIntegralDialog(QSqlDatabase*,QWidget *parent = 0);
     ~ArchiveSurveyedSHVSMIntegralDialog();
     void changeLanguage(void);
-    QColor getIndicatorColor(float,float,float,float,float);
+    QColor getIndicatorColor(int,float);
 
 private slots:
     void slotSelectionChangedSurveyed(const QItemSelection&, const QItemSelection&);
@@ -58,6 +58,9 @@ private:
     bool isGraph[2];
     int surveyedId;
     int currentRow;
+    int old;
+    int sex;
+    bool isSportsman;
     void setupForm(void);
     void scrollView(void);
     void rePlot(void);

@@ -9,7 +9,7 @@
 #include "printreportdialog.h"
 #include "ui_shvsmcreatedialog.h"
 
-extern void normalize(float&);
+extern float normalize(float);
 
 SHVSMCreateDialog::SHVSMCreateDialog(QSqlDatabase* pdb,QWidget *parent) :
     QDialog(parent),
@@ -223,54 +223,54 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
         {
             if (sex == 1)
             {
-                p_opwc170  = (100.0*(1.0 - (32.0 - opwc170)/22.0));
-                p_ompk = (100.0*(1.0 - (75.0 - ompk)/35.0));
-                p_alakm = (100.0*(1.0 - (11.0 - alakm)/8.5));
-                p_alake = (100.0*(1.0 - (60.0 - alake)/35.0));
-                p_lakm = (100.0*(1.0 - (8.0 - lakm)/6.5));
-                p_lake = (100.0*(1.0 - (45.0 - lake)/30.0));
-                p_pano = (100.0*(1.0 - (75.0 - pano)/45.0));
-                p_chsspano = (100.0*(1.0 - (180.0 - chsspano)/65.0));
-                p_ome = (100.0*(1.0 - (258.0 - ome)/138.0));
+                p_opwc170  = normalize(100.0*(1.0 - (32.0 - opwc170)/22.0));
+                p_ompk = normalize(100.0*(1.0 - (75.0 - ompk)/35.0));
+                p_alakm = normalize(100.0*(1.0 - (11.0 - alakm)/8.5));
+                p_alake = normalize(100.0*(1.0 - (60.0 - alake)/35.0));
+                p_lakm = normalize(100.0*(1.0 - (8.0 - lakm)/6.5));
+                p_lake = normalize(100.0*(1.0 - (45.0 - lake)/30.0));
+                p_pano = normalize(100.0*(1.0 - (75.0 - pano)/45.0));
+                p_chsspano = normalize(100.0*(1.0 - (180.0 - chsspano)/65.0));
+                p_ome = normalize(100.0*(1.0 - (258.0 - ome)/138.0));
             }
             else
             {
-                p_opwc170  = (100.0*(1.0 - (27.0 - opwc170)/19.0));
-                p_ompk = (100.0*(1.0 - (70.0 - ompk)/30.0));
-                p_alakm = (100.0*(1.0 - (9.0 - alakm)/6.5));
-                p_alake = (100.0*(1.0 - (50.0 - alake)/25.0));
-                p_lakm = (100.0*(1.0 - (7.0 - lakm)/5.5));
-                p_lake = (100.0*(1.0 - (40.0 - lake)/25.0));
-                p_pano = (100.0*(1.0 - (70.0 - pano)/40.0));
-                p_chsspano = (100.0*(1.0 - (175.0 - chsspano)/60.0));
-                p_ome = (100.0*(1.0 - (220.0 - ome)/110.0));
+                p_opwc170  = normalize(100.0*(1.0 - (27.0 - opwc170)/19.0));
+                p_ompk = normalize(100.0*(1.0 - (70.0 - ompk)/30.0));
+                p_alakm = normalize(100.0*(1.0 - (9.0 - alakm)/6.5));
+                p_alake = normalize(100.0*(1.0 - (50.0 - alake)/25.0));
+                p_lakm = normalize(100.0*(1.0 - (7.0 - lakm)/5.5));
+                p_lake = normalize(100.0*(1.0 - (40.0 - lake)/25.0));
+                p_pano = normalize(100.0*(1.0 - (70.0 - pano)/40.0));
+                p_chsspano = normalize(100.0*(1.0 - (175.0 - chsspano)/60.0));
+                p_ome = normalize(100.0*(1.0 - (220.0 - ome)/110.0));
             }
         }
         else
         {
             if (sex == 1)
             {
-                p_opwc170  = (100.0*(1.0 - (25.0 - opwc170)/20.0));
-                p_ompk = (100.0*(1.0 - (65.0 - ompk)/40.0));
-                p_alakm = (100.0*(1.0 - (8.5 - alakm)/7.0));
-                p_alake = (100.0*(1.0 - (50.0 - alake)/40.0));
-                p_lakm = (100.0*(1.0 - (6.5 - lakm)/5.5));
-                p_lake = (100.0*(1.0 - (40.0 - lake)/30.0));
-                p_pano = (100.0*(1.0 - (65.0 - pano)/45.0));
-                p_chsspano = (100.0*(1.0 - (160.0 - chsspano)/70.0));
-                p_ome = (100.0*(1.0 - (200.0 - ome)/100.0));
+                p_opwc170  = normalize(100.0*(1.0 - (25.0 - opwc170)/20.0));
+                p_ompk = normalize(100.0*(1.0 - (65.0 - ompk)/40.0));
+                p_alakm = normalize(100.0*(1.0 - (8.5 - alakm)/7.0));
+                p_alake = normalize(100.0*(1.0 - (50.0 - alake)/40.0));
+                p_lakm = normalize(100.0*(1.0 - (6.5 - lakm)/5.5));
+                p_lake = normalize(100.0*(1.0 - (40.0 - lake)/30.0));
+                p_pano = normalize(100.0*(1.0 - (65.0 - pano)/45.0));
+                p_chsspano = normalize(100.0*(1.0 - (160.0 - chsspano)/70.0));
+                p_ome = normalize(100.0*(1.0 - (200.0 - ome)/100.0));
             }
             else
             {
-                p_opwc170 = (100.0*(1.0 - (20.0 - opwc170)/16.0));
-                p_ompk = (100.0*(1.0 - (60.0 - ompk)/40.0));
-                p_alakm = (100.0*(1.0 - (6.5 - alakm)/5.0));
-                p_alake = (100.0*(1.0 - (40.0 - alake)/30.0));
-                p_lakm = (100.0*(1.0 - (6.0 - lakm)/5.0));
-                p_lake = (100.0*(1.0 - (30.0 - lake)/20.0));
-                p_pano = (100.0*(1.0 - (55.0 - pano)/40.0));
-                p_chsspano = (100.0*(1.0 - (150.0 - chsspano)/70.0));
-                p_ome = (100.0*(1.0 - (190.0 - ome)/110.0));
+                p_opwc170 = normalize(100.0*(1.0 - (20.0 - opwc170)/16.0));
+                p_ompk = normalize(100.0*(1.0 - (60.0 - ompk)/40.0));
+                p_alakm = normalize(100.0*(1.0 - (6.5 - alakm)/5.0));
+                p_alake = normalize(100.0*(1.0 - (40.0 - alake)/30.0));
+                p_lakm = normalize(100.0*(1.0 - (6.0 - lakm)/5.0));
+                p_lake = normalize(100.0*(1.0 - (30.0 - lake)/20.0));
+                p_pano = normalize(100.0*(1.0 - (55.0 - pano)/40.0));
+                p_chsspano = normalize(100.0*(1.0 - (150.0 - chsspano)/70.0));
+                p_ome = normalize(100.0*(1.0 - (190.0 - ome)/110.0));
             }
         }
     }
@@ -280,15 +280,15 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
         {
             if (sex == 1)
             {
-                p_opwc170  = (100.0*(1.0 - (28.0 - opwc170)/20.0));
-                p_ompk = (100.0*(1.0 - (65.0 - ompk)/40.0));
-                p_alakm = (100.0*(1.0 - (8.5 - alakm)/6.0));
-                p_alake = (100.0*(1.0 - (50.0 - alake)/35.0));
-                p_lakm = (100.0*(1.0 - (7.0 - lakm)/6.5));
-                p_lake = (100.0*(1.0 - (42.0 - lake)/32.0));
-                p_pano = (100.0*(1.0 - (75.0 - pano)/45.0));
-                p_chsspano = (100.0*(1.0 - (175.0 - chsspano)/60.0));
-                p_ome = (100.0*(1.0 - (240.0 - ome)/135.0));
+                p_opwc170  = normalize(100.0*(1.0 - (28.0 - opwc170)/20.0));
+                p_ompk = normalize(100.0*(1.0 - (65.0 - ompk)/40.0));
+                p_alakm = normalize(100.0*(1.0 - (8.5 - alakm)/6.0));
+                p_alake = normalize(100.0*(1.0 - (50.0 - alake)/35.0));
+                p_lakm = normalize(100.0*(1.0 - (7.0 - lakm)/6.5));
+                p_lake = normalize(100.0*(1.0 - (42.0 - lake)/32.0));
+                p_pano = normalize(100.0*(1.0 - (75.0 - pano)/45.0));
+                p_chsspano = normalize(100.0*(1.0 - (175.0 - chsspano)/60.0));
+                p_ome = normalize(100.0*(1.0 - (240.0 - ome)/135.0));
             }
             else
             {
@@ -307,40 +307,30 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
         {
             if (sex == 1)
             {
-                p_opwc170  = (100.0*(1.0 - (22.0 - opwc170)/20.0));
-                p_ompk = (100.0*(1.0 - (65.0 - ompk)/45.0));
-                p_alakm = (100.0*(1.0 - (7.5 - alakm)/6.5));
-                p_alake = (100.0*(1.0 - (45.0 - alake)/35.0));
-                p_lakm = (100.0*(1.0 - (6.5 - lakm)/5.5));
-                p_lake = (100.0*(1.0 - (40.0 - lake)/30.0));
-                p_pano = (100.0*(1.0 - (60.0 - pano)/45.0));
-                p_chsspano = (100.0*(1.0 - (160.0 - chsspano)/70.0));
-                p_ome = (100.0*(1.0 - (200.0 - ome)/130.0));
+                p_opwc170  = normalize(100.0*(1.0 - (22.0 - opwc170)/20.0));
+                p_ompk = normalize(100.0*(1.0 - (65.0 - ompk)/45.0));
+                p_alakm = normalize(100.0*(1.0 - (7.5 - alakm)/6.5));
+                p_alake = normalize(100.0*(1.0 - (45.0 - alake)/35.0));
+                p_lakm = normalize(100.0*(1.0 - (6.5 - lakm)/5.5));
+                p_lake = normalize(100.0*(1.0 - (40.0 - lake)/30.0));
+                p_pano = normalize(100.0*(1.0 - (60.0 - pano)/45.0));
+                p_chsspano = normalize(100.0*(1.0 - (160.0 - chsspano)/70.0));
+                p_ome = normalize(100.0*(1.0 - (200.0 - ome)/130.0));
             }
             else
             {
-                p_opwc170 = (100.0*(1.0 - (20.0 - opwc170)/18.0));
-                p_ompk = (100.0*(1.0 - (60.0 - ompk)/40.0));
-                p_alakm = (100.0*(1.0 - (6.5 - alakm)/5.5));
-                p_alake = (100.0*(1.0 - (40.0 - alake)/30.0));
-                p_lakm = (100.0*(1.0 - (6.0 - lakm)/5.0));
-                p_lake = (100.0*(1.0 - (35.0 - lake)/25.0));
-                p_pano = (100.0*(1.0 - (55.0 - pano)/40.0));
-                p_chsspano = (100.0*(1.0 - (150.0 - chsspano)/80.0));
-                p_ome = (100.0*(1.0 - (190.0 - ome)/120.0));
+                p_opwc170 = normalize(100.0*(1.0 - (20.0 - opwc170)/18.0));
+                p_ompk = normalize(100.0*(1.0 - (60.0 - ompk)/40.0));
+                p_alakm = normalize(100.0*(1.0 - (6.5 - alakm)/5.5));
+                p_alake = normalize(100.0*(1.0 - (40.0 - alake)/30.0));
+                p_lakm = normalize(100.0*(1.0 - (6.0 - lakm)/5.0));
+                p_lake = normalize(100.0*(1.0 - (35.0 - lake)/25.0));
+                p_pano = normalize(100.0*(1.0 - (55.0 - pano)/40.0));
+                p_chsspano = normalize(100.0*(1.0 - (150.0 - chsspano)/80.0));
+                p_ome = normalize(100.0*(1.0 - (190.0 - ome)/120.0));
             }
         }
     }
-
-    normalize(p_opwc170);
-    normalize(p_ompk);
-    normalize(p_alakm);
-    normalize(p_alake);
-    normalize(p_lakm);
-    normalize(p_lake);
-    normalize(p_pano);
-    normalize(p_chsspano);
-    normalize(p_ome);
 
     ufp = ((p_opwc170 + p_ompk + p_alakm + p_alake + p_lakm + p_lake + p_pano + p_chsspano + p_ome)/9.0);
 
@@ -711,8 +701,9 @@ void SHVSMCreateDialog::slotSaveSHVSM(void)
         if (!query.exec(QString("UPDATE surveySHVSM SET weight=%3,growth=%4,N1=%5,N2=%6,n_1=%7,n_2=%8,HR1=%9,HR2=%10,aPWC170=%11,oPWC170=%12,aMPK=%13,oMPK=%14,ALAKm=%15,ALAKe=%16,LAKm=%17,\
                                  LAKe=%18,PANO=%19,CHSSpano=%20,OME=%21,TE=%22,SE=%23,SPE=%24,SPS=%25,RP=%26,UFP=%27,old=%28 \
                                  WHERE surveyed_id = %1 AND dt = '%2'").arg(surveyed_id).arg(dt).arg(weight).arg(growth).arg(N1).arg(N2).arg(n1).arg(n2).arg(hr1).arg(hr2).\
-                                 arg(apwc170).arg(opwc170).arg(ampk).arg(ompk).arg(alakm).arg(alake).arg(lakm).arg(lake).arg(pano).arg(chsspano).\
-                                 arg(ome).arg(0.5*(opwc170 + ompk)).arg(0.5*(alakm + alake)).arg(0.5*(lakm + lake)).arg(0.5*(pano + chsspano)).arg(ome).arg(ufp).arg(old)))
+                                 arg(apwc170,0,'f',2).arg(opwc170,0,'f',2).arg(ampk,0,'f',2).arg(ompk,0,'f',2).arg(alakm,0,'f',2).arg(alake,0,'f',2).arg(lakm,0,'f',2).\
+                                 arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(ome,0,'f',2).arg(0.5*(opwc170 + ompk),0,'f',2).arg(0.5*(alakm + alake),0,'f',2).\
+                                 arg(0.5*(lakm + lake),0,'f',2).arg(0.5*(pano + chsspano),0,'f',2).arg(ome,0,'f',2).arg(ufp,0,'f',2).arg(old)))
             QMessageBox::critical(this, tr("Error"),tr("Error accessing to database!"), QMessageBox::Ok);
 
         return;
@@ -721,8 +712,9 @@ void SHVSMCreateDialog::slotSaveSHVSM(void)
 
     if (!query.exec(QString("INSERT INTO surveySHVSM (surveyed_id,dt,weight,growth,N1,N2,n_1,n_2,HR1,HR2,aPWC170,oPWC170,aMPK,oMPK,ALAKm,ALAKe,LAKm,LAKe,PANO,CHSSpano,OME,TE,SE,SPE,SPS,RP,UFP,old) \
                              VALUES (%1,'%2',%3,%4,%5,%6,%7,%8,%9,%10,%11,%12,%13,%14,%15,%16,%17,%18,%19,%20,%21,%22,%23,%24,%25,%26,%27,%28)").arg(surveyed_id).arg(dt).arg(weight).arg(growth).\
-                             arg(N1).arg(N2).arg(n1).arg(n2).arg(hr1).arg(hr2).arg(apwc170).arg(opwc170).arg(ampk).arg(ompk).arg(alakm).arg(alake).arg(lakm).arg(lake).arg(pano).arg(chsspano).\
-                             arg(ome).arg(0.5*(opwc170 + ompk)).arg(0.5*(alakm + alake)).arg(0.5*(lakm + lake)).arg(0.5*(pano + chsspano)).arg(ome).arg(ufp).arg(old)))
+                             arg(N1).arg(N2).arg(n1).arg(n2).arg(hr1).arg(hr2).arg(apwc170,0,'f',2).arg(opwc170,0,'f',2).arg(ampk,0,'f',2).arg(ompk,0,'f',2).arg(alakm,0,'f',2).arg(alake,0,'f',2).\
+                             arg(lakm,0,'f',2).arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(ome,0,'f',2).arg(0.5*(opwc170 + ompk),0,'f',2).arg(0.5*(alakm + alake),0,'f',2).\
+                             arg(0.5*(lakm + lake),0,'f',2).arg(0.5*(pano + chsspano),0,'f',2).arg(ome,0,'f',2).arg(ufp,0,'f',2).arg(old)))
         QMessageBox::critical(this, tr("Error"),tr("Error accessing to database!"), QMessageBox::Ok);
 }
 

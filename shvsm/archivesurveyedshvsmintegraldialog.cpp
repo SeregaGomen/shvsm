@@ -7,6 +7,17 @@
 #include "archivesurveyedshvsmintegraldialog.h"
 #include "ui_archivesurveyedshvsmintegraldialog.h"
 
+extern float normalize(float);
+extern void getIR(int,int,bool,float&,float&,float&,float&);
+extern void getIS(int,int,bool,float&,float&,float&,float&);
+extern void getIG(int,int,bool,float&,float&,float&,float&);
+extern void getSOK(int,int,bool,float&,float&,float&,float&);
+extern void getMOK(int,int,bool,float&,float&,float&,float&);
+extern void getOPSS(int,int,bool,float&,float&,float&,float&);
+extern void getVC(int,int,bool,float&,float&,float&,float&);
+extern void getKEK(int,int,bool,float&,float&,float&,float&);
+
+
 ArchiveSurveyedSHVSMIntegralDialog::ArchiveSurveyedSHVSMIntegralDialog(QSqlDatabase* pdb,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ArchiveSurveyedSHVSMIntegralDialog)
@@ -34,20 +45,23 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
 {
     // Список обследованных
     modelSurveyed = new QSqlQueryModel(this);
-    modelSurveyed->setQuery(QString("SELECT surveyed.id,surveyed.name,sex.name FROM surveyed, sex WHERE surveyed.sex_id = sex.id ORDER BY surveyed.name"));
+    modelSurveyed->setQuery(QString("SELECT surveyed.id,surveyed.name,sex.name,sex_id,qualification_id FROM surveyed, sex WHERE surveyed.sex_id = sex.id ORDER BY surveyed.name"));
     modelSurveyed->setHeaderData(1, Qt::Horizontal, tr("Name"));
     modelSurveyed->setHeaderData(2, Qt::Horizontal, tr("Sex"));
 
     ui->twSurveyed->setModel(modelSurveyed);
     ui->twSurveyed->setColumnHidden(0, true);
+    ui->twSurveyed->setColumnHidden(3, true);
+    ui->twSurveyed->setColumnHidden(4, true);
     ui->twSurveyed->resizeColumnsToContents();
     ui->twSurveyed->setCurrentIndex(ui->twSurveyed->model()->index(0, 0));
+
 
     // Обследование 'ШВСМ-интеград'
     surveyedId = ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),0)).toInt();
 
     modelSurvey = new QSqlQueryModel(this);
-    modelSurvey->setQuery(QString("SELECT dt,qualification.name,old,weight,growth,HR,SAD,DAD,T1,T2,VL,VLN,VLD,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13,I1,I2,I4,I5,I6,I7,I10,I11  \
+    modelSurvey->setQuery(QString("SELECT dt,qualification.name,old,weight,growth,HR,SAD,DAD,T1,T2,VL,VLN,VLD,V1,V2,V3,V4,V5,V6,V7,V8,V9,V10,V11,V12,V13  \
                                    FROM surveySHVSMIntegral,surveyed,qualification \
                                    WHERE surveySHVSMIntegral.surveyed_id = surveyed.id AND surveyed.id = %1 AND \
                                    surveyed.qualification_id = qualification.id \
@@ -84,7 +98,7 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     ui->twSurveyedOutput1->setModel(modelSurvey);
     ui->twSurveyedOutput1->verticalHeader()->setDefaultSectionSize(ui->twSurveyed->verticalHeader()->minimumSectionSize());
 
-    for (int i = 11; i < 34; i++)
+    for (int i = 11; i < 26; i++)
         ui->twSurveyedOutput1->setColumnHidden(i, true);
 
     ui->twSurveyedOutput1->resizeColumnsToContents();
@@ -139,9 +153,11 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
     ui->widgetPlot->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(ui->widgetPlot, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenuRequest(QPoint)));
 
+    isSportsman = (ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),4)).toInt() == 1) ? true : false;
+    sex = ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),3)).toInt();
+    old = ui->twSurveyedOutput1->model()->data(ui->twSurveyedOutput1->model()->index(ui->twSurveyedOutput1->selectionModel()->currentIndex().row(),2)).toInt();
 
     rePlot();
-
 }
 
 
@@ -151,13 +167,52 @@ void ColorDelegateSurveyedSHVSMIntegral::paint(QPainter* painter, const QStyleOp
 
     if (qVariantCanConvert<float>(index.data()))
         val = qVariantValue<float>(index.data());
-    if (((index.column() >= 12 && index.column() <= 14) || (index.column() >= 16 && index.column() <= 19) || (index.column() >= 22 && index.column() <= 25)) && val)
-        painter->fillRect(option.rect, ptr->getIndicatorColor(val,33.0,49.6,66.1,82.6));
+    if (/*val &&*/ ((index.column() > 12 && index.column() < 15) || (index.column() > 15 && index.column() < 20) || (index.column() > 21 && index.column() < 26)))
+        painter->fillRect(option.rect, ptr->getIndicatorColor(index.column(), val));
     QItemDelegate::paint(painter,option,index);
 }
 
-QColor ArchiveSurveyedSHVSMIntegralDialog::getIndicatorColor(float indicator,float val1, float val2,float val3, float val4)
+QColor ArchiveSurveyedSHVSMIntegralDialog::getIndicatorColor(int index, float indicator)
 {
+    float val1 = 0,
+          val2 = 0,
+          val3 = 0,
+          val4 = 0;
+
+    switch (index)
+    {
+        case 13:
+            getSOK(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 14:
+            getMOK(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 16:
+            getOPSS(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 17:
+            getVC(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 18:
+            getIR(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 19:
+            getKEK(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 22:
+            getIG(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 23:
+            getIS(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 24:
+        case 25:
+            val1 = 33.0;
+            val2 = 49.6;
+            val3 = 66.1;
+            val4 = 82.6;
+    }
+
     if (indicator < val1)
         return QColor("red");
     else if (indicator >= val1 && indicator <= val2)
@@ -181,13 +236,18 @@ void ArchiveSurveyedSHVSMIntegralDialog::slotSelectionChangedSurveyed(const QIte
     ui->twSurveyedOutput1->setCurrentIndex(ui->twSurveyedOutput1->model()->index(0, 0));
     ui->twSurveyedOutput2->setCurrentIndex(ui->twSurveyedOutput2->model()->index(0, 0));
     ui->twSurveyedOutput3->setCurrentIndex(ui->twSurveyedOutput3->model()->index(0, 0));
+
+    isSportsman = (ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),4)).toInt() == 1) ? true : false;
+    sex = ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),3)).toInt();
+    old = ui->twSurveyedOutput1->model()->data(ui->twSurveyedOutput1->model()->index(ui->twSurveyedOutput1->selectionModel()->currentIndex().row(),2)).toInt();
+
     rePlot();
 }
 
 void ArchiveSurveyedSHVSMIntegralDialog::slotSelectionChangedSurvey1(const QItemSelection&, const QItemSelection&)
 {
-
     currentRow = ui->twSurveyedOutput1->selectionModel()->currentIndex().row();
+    old = ui->twSurveyedOutput1->model()->data(ui->twSurveyedOutput1->model()->index(ui->twSurveyedOutput1->selectionModel()->currentIndex().row(),2)).toInt();
     scrollView();
 }
 

@@ -175,7 +175,7 @@ bool MainWindow::createDB(QString fileName)
         return false;
     }
     // SurveySHVSMIntegral
-    if (!query.exec(QString("CREATE TABLE surveySHVSMIntegral (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, surveyed_id INTEGER NOT NULL, dt TEXT, weight INTEGER, growth INTEGER, HR NUMERIC, SAD REAL, DAD REAL, VL NUMERIC, VLN NUMERIC, VLD NUMERIC, T1 NUMERIC, T2 REAL, V1 REAL, V2 REAL, V3 REAL, V4 REAL, V5 REAL, V6 REAL, V7 REAL, V8 REAL, V9 REAL, V10 REAL, V11 REAL, V12 REAL, V13 REAL, old INTEGER, I1 REAL, I2 REAL, I4 REAL, I5 REAL, I6 REAL, I7 REAL, I10 REAL, I11 REAL)")))
+    if (!query.exec(QString("CREATE TABLE surveySHVSMIntegral (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT, surveyed_id INTEGER NOT NULL, dt TEXT, weight INTEGER, growth INTEGER, HR NUMERIC, SAD REAL, DAD REAL, VL NUMERIC, VLN NUMERIC, VLD NUMERIC, T1 NUMERIC, T2 REAL, V1 REAL, V2 REAL, V3 REAL, V4 REAL, V5 REAL, V6 REAL, V7 REAL, V8 REAL, V9 REAL, V10 REAL, V11 REAL, V12 REAL, V13 REAL, old INTEGER)")))
     {
         QMessageBox::critical(this, tr("Error"),tr("Error creating database!"), QMessageBox::Ok);
         qDebug() << db.lastError();

@@ -12,6 +12,7 @@ class QSqlQueryModel;
 class QLabel;
 class PrintReportDialog;
 
+
 class SHVSMIntegralCreateDialog : public QDialog
 {
     Q_OBJECT
@@ -76,24 +77,29 @@ private:
     void showIndicatorTxt(QLabel*,QLabel*,float,float,float,float,float);
     void showIndicatorTxtI(QLabel*,QLabel*,float,float,float,float,float);
     void genReport(PrintReportDialog*);
-    void juniorSOK(float);
-    void juniorMOK(float);
-    void juniorOPSS(float);
-    void juniorVC(float);
-    void juniorIR(float);
-    void juniorKEK(float);
-    void juniorIG(float);
-    void juniorIS(float);
-    float jSOK(float);
-    float jMOK(float);
-    float jVC(float);
-    float jOPSS(float);
-    float jKEK(float);
-    float jGEL(float);
-    float jIG(float);
-    float jIS(float);
-    float jDTE(float);
-    float jDTBE(float);
+    void SOK(float);
+    void MOK(float);
+    void OPSS(float);
+    void VC(float);
+    void IR(float);
+    void KEK(float);
+    void IG(float);
+    void IS(float);
+    float nSOK(float);
+    float nMOK(float);
+    float nVC(float);
+    float nOPSS(float);
+    float nKEK(float);
+    float nGEL(float);
+    float nIG(float);
+    float nIS(float);
+    float nDTE(float);
+    float nDTBE(float);
+    float nOADD(float);
+    float nOADC(float);
+    float nIR(float);
+    float nSI(float);
+    float nDEV_GEL(float);
 };
 
 #endif // SHVSMINTEGRALCREATEDIALOG_H
