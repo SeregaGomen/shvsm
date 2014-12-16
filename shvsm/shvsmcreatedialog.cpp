@@ -11,6 +11,306 @@
 
 extern float normalize(float);
 
+void getOME(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 150,169.99,210,230 },
+                      { 137.50,154.99,190,207.5 }},
+          m[][4]   = {{ 125,139.99,170,185 },
+                      { 127.5,144.99,180,197.5 }},
+          w_s[][4] = {{ 142.5,159.99,195,212.5 },
+                      { 127.5,144.99,180,197.5 }},
+          w[][4] =   {{ 115,129.99,160,175 },
+                      { 107.50,124.99,160,177.50 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+void getCHSSpano(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 147,154,170,178 },
+                      { 138,144,160,169 }},
+          m[][4]   = {{ 85,109,160,173 },
+                      { 117,124,150,159 }},
+          w_s[][4] = {{ 142,149,165,173 },
+                      { 132,139,155,163 }},
+          w[][4] =   {{ 85,109,150,170 },
+                      { 110,119,140,151 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+void getPANO(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 47.50,54.99,70.00,77.50 },
+                      { 42.00,50.00,65.00,72.50 }},
+          m[][4]   = {{ 40.00,44.99,55.00,60.00 },
+                      { 40.00,45.00,55.00,60.00 }},
+          w_s[][4] = {{ 37.50,44.99,60.00,67.50 },
+                      { 37.50,45.0,60.00,67.50 }},
+          w[][4] =   {{ 35.00,39.99,50.00,55.00 },
+                      { 35.00,40.00,50.00,55.00 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+
+void getLAKe(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 25.00,29.99,40.00,45.00 },
+                      { 17.00,22.00,32.00,37.00 }},
+          m[][4]   = {{ 15.00,19.99,30.00,35.00 },
+                      { 13.00,18.00,28.00,33.00 }},
+          w_s[][4] = {{ 20.00,24.99,35.00,40.00 },
+                      { 15.00,20.00,30.00,35.00 }},
+          w[][4] =   {{ 10.00,14.99,25.00,30.00 },
+                      { 10.00,15.00,25.00,30.00 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+void getLAKm(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 2.59,3.66,5.83,6.91 },
+                      { 2.22,3.13,4.98,5.91 }},
+          m[][4]   = {{ 1.91,2.82,4.67,5.59 },
+                      { 1.41,2.3,4.11,5.01 }},
+          w_s[][4] = {{ 2.41,3.32,5.17,6.09 },
+                      { 2.20,2.87,4.24,4.93 }},
+          w[][4] =   {{ 1.84,2.66,4.33,5.16 },
+                      { 1.35,2.14,3.74,4.54 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+void getALAKe(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 32,37.99,50,56 },
+                      { 29.50,33,40,43.50 }},
+          m[][4]   = {{ 20.00,24.99,35,40 },
+                      { 15.00,20,30,35 }},
+          w_s[][4] = {{ 29.5,32.99,40,43.5 },
+                      { 27.5,30,35,37.5 }},
+          w[][4] =   {{ 15.00,19.99,30,35 },
+                      { 10.00,15.00,25,30 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+void getALAKm(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 3.91,5.32,8.17,9.69 },
+                      { 3.49,4.51,6.59,7.74 }},
+          m[][4]   = {{ 2.41,3.57,5.92,7.09 },
+                      { 2.02,3.06,5.17,6.22 }},
+          w_s[][4] = {{ 3.59,4.66,6.83,7.91 },
+                      { 3.49,4.51,6.59,7.74 }},
+          w[][4] =   {{ 2.34,3.16,4.83,5.66 },
+                      { 1.85,2.67,4.33,5.16 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+
+void getoPWC170(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 15.25,18.49,25.00,28.25 },
+                      { 14.00,16.00,20.00,22.00 }},
+          m[][4]   = {{ 9.75,12.50,18.00,20.75 },
+                      { 10.00,12.00,16.00,18.00 }},
+          w_s[][4] = {{ 12.00,15.50,22.51,26.00 },
+                      { 12.00,14.00,18.00,20.00 }},
+          w[][4] =   {{ 7.00,9.49,14.50,17.00 },
+                      { 8.00,10.00,14.00,16.00 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+void getoMPK(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
+{
+    int index = (age < 18) ? 0 : 1;
+    float m_s[][4] = {{ 50,55,65,70 },
+                      { 40,45,55,60 }},
+          m[][4]   = {{ 40,44.99,55,60 },
+                      { 35,40,50,55 }},
+          w_s[][4] = {{ 40,44.99,55,60 },
+                      { 35,40.00,50,55}},
+          w[][4] =   {{ 27.5,34.99,55,60 },
+                      { 32.5,35,45,47.5 }},
+          (*arr)[4];
+
+    if (isSportsman)
+    {
+        if (sex == 1)
+            arr = m_s;
+        else
+            arr = w_s;
+    }
+    else
+    {
+        if (sex == 1)
+            arr = m;
+        else
+            arr = w;
+    }
+    val1 = arr[index][0];
+    val2 = arr[index][1];
+    val3 = arr[index][2];
+    val4 = arr[index][3];
+}
+
+
 SHVSMCreateDialog::SHVSMCreateDialog(QSqlDatabase* pdb,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::SHVSMCreateDialog)
@@ -91,15 +391,10 @@ void SHVSMCreateDialog::setupForm(void)
 void SHVSMCreateDialog::slotCalcSHVSM(void)
 {
     bool isOk;
-    float p_opwc170,
-          p_ompk,
-          p_alakm,
-          p_alake,
-          p_lakm,
-          p_lake,
-          p_pano,
-          p_chsspano,
-          p_ome;
+    float val1,
+          val2,
+          val3,
+          val4;
     QString dob = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),5)).toString();
 
 
@@ -332,7 +627,7 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
         }
     }
 
-    ufp = ((p_opwc170 + p_ompk + p_alakm + p_alake + p_lakm + p_lake + p_pano + p_chsspano + p_ome)/9.0);
+    p_ufp = normalize((p_opwc170 + p_ompk + p_alakm + p_alake + p_lakm + p_lake + p_pano + p_chsspano + p_ome)/9.0);
 
 
     //--------------------------------------------------------
@@ -354,328 +649,40 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     ui->labelOME->setText(QString("%1").arg(ome,0,'f',2));
 
     // ---------------------------------- oPWC170 ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloPWC170,opwc170,15.25,18.49,25.00,28.25);
-            else
-                showIndicator(ui->labeloPWC170,opwc170,12.00,15.50,22.51,26.00);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloPWC170,opwc170,9.75,12.50,18.00,20.75);
-            else
-                showIndicator(ui->labeloPWC170,opwc170,7.00,9.49,14.50,17.00);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloPWC170,opwc170,14.00,16.00,20.00,22.00);
-            else
-                showIndicator(ui->labeloPWC170,opwc170,12.00,14.00,18.00,20.00);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloPWC170,opwc170,10.00,12.00,16.00,18.00);
-            else
-                showIndicator(ui->labeloPWC170,opwc170,8.00,10.00,14.00,16.00);
-        }
-    }
-    // ---------------------------------- oMPK ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloMPK,ompk,50,55,65,70);
-            else
-                showIndicator(ui->labeloMPK,ompk,40,44.99,55,60);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloMPK,ompk,40,44.99,55,60);
-            else
-                showIndicator(ui->labeloMPK,ompk,27.5,34.99,55,60);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloMPK,ompk,40,45,55,60);
-            else
-                showIndicator(ui->labeloMPK,ompk,35,40.00,50,55);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labeloMPK,ompk,35,40,50,55);
-            else
-                showIndicator(ui->labeloMPK,ompk,32.5,35,45,47.5);
-        }
-    }
-    // ---------------------------------- ALAKm ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKm,alakm,3.91,5.32,8.17,9.69);
-            else
-                showIndicator(ui->labelALAKm,alakm,3.59,4.66,6.83,7.91);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKm,alakm,2.41,3.57,5.92,7.09);
-            else
-                showIndicator(ui->labelALAKm,alakm,2.34,3.16,4.83,5.66);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKm,alakm,3.49,4.51,6.59,7.74);
-            else
-                showIndicator(ui->labelALAKm,alakm,3.00,3.97,5.94,6.93);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKm,alakm,2.02,3.06,5.17,6.22);
-            else
-                showIndicator(ui->labelALAKm,alakm,1.85,2.67,4.33,5.16);
-        }
-    }
-    // ---------------------------------- ALAKe ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKe,alake,32,37.99,50,56);
-            else
-                showIndicator(ui->labelALAKe,alake,29.5,32.99,40,43.5);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKe,alake,20.00,24.99,35,40);
-            else
-                showIndicator(ui->labelALAKe,alake,15.00,19.99,30,35);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKe,alake,29.50,33,40,43.50);
-            else
-                showIndicator(ui->labelALAKe,alake,27.5,30,35,37.5);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelALAKe,alake,15.00,20,30,35);
-            else
-                showIndicator(ui->labelALAKe,alake,10.00,15.00,25,30);
-        }
-    }
-    // ---------------------------------- LAKm ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKm,alakm,2.59,3.66,5.83,6.91);
-            else
-                showIndicator(ui->labelLAKm,alakm,2.41,3.32,5.17,6.09);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKm,alakm,1.91,2.82,4.67,5.59);
-            else
-                showIndicator(ui->labelLAKm,alakm,1.84,2.66,4.33,5.16);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKm,alakm,2.22,3.13,4.98,5.91);
-            else
-                showIndicator(ui->labelLAKm,alakm,2.20,2.87,4.24,4.93);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKm,alakm,1.41,2.3,4.11,5.01);
-            else
-                showIndicator(ui->labelLAKm,alakm,1.35,2.14,3.74,4.54);
-        }
-    }
-    // ---------------------------------- LAKe ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKe,alake,25.00,29.99,40.00,45.00);
-            else
-                showIndicator(ui->labelLAKe,alake,20.00,24.99,35.00,40.00);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKe,alake,15.00,19.99,30.00,35.00);
-            else
-                showIndicator(ui->labelLAKe,alake,10.00,14.99,25.00,30.00);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKe,alake,17.00,22.00,32.00,37.00);
-            else
-                showIndicator(ui->labelLAKe,alake,15.00,20.00,30.00,35.00);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelLAKe,alake,13.00,18.00,28.00,33.00);
-            else
-                showIndicator(ui->labelLAKe,alake,10.00,15.00,25.00,30.00);
-        }
 
-    }
+    getoPWC170(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labeloPWC170,opwc170,val1,val2,val3,val4);
+    // ---------------------------------- oMPK ------------------------------------
+    getoMPK(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labeloMPK,ompk,val1,val2,val3,val4);
+    // ---------------------------------- ALAKm ------------------------------------
+    getALAKm(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labelALAKm,alakm,val1,val2,val3,val4);
+    // ---------------------------------- ALAKe ------------------------------------
+    getALAKe(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labelALAKe,alake,val1,val2,val3,val4);
+    // ---------------------------------- LAKm ------------------------------------
+    getLAKm(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labelLAKm,lakm,val1,val2,val3,val4);
+    // ---------------------------------- LAKe ------------------------------------
+    getLAKe(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labelLAKe,lake,val1,val2,val3,val4);
     // ---------------------------------- PANO ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelPANO,pano,47.50,54.99,70.00,77.50);
-            else
-                showIndicator(ui->labelPANO,pano,37.50,44.99,60.00,67.50);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelPANO,pano,40.00,44.99,55.00,60.00);
-            else
-                showIndicator(ui->labelPANO,pano,35.00,39.99,50.00,55.00);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelPANO,pano,42.00,50.00,65.00,72.50);
-            else
-                showIndicator(ui->labelPANO,pano,37.50,45.0,60.00,67.50);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelPANO,pano,40.00,45.00,55.00,60.00);
-            else
-                showIndicator(ui->labelPANO,pano,35.00,40.00,50.00,55.00);
-        }
-    }
+    getPANO(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labelPANO,pano,val1,val2,val3,val4);
     // ---------------------------------- CHSSpano ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelCHSSpano,chsspano,147,154,170,178);
-            else
-                showIndicator(ui->labelCHSSpano,chsspano,142,149,165,173);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelCHSSpano,chsspano,85,109,160,173);
-            else
-                showIndicator(ui->labelCHSSpano,chsspano,85,109,150,170);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelCHSSpano,chsspano,138,144,160,169);
-            else
-                showIndicator(ui->labelCHSSpano,chsspano,132,139,155,163);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelCHSSpano,chsspano,117,124,150,159);
-            else
-                showIndicator(ui->labelCHSSpano,chsspano,110,119,140,151);
-        }
-    }
+    getCHSSpano(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labelCHSSpano,chsspano,val1,val2,val3,val4);
     // ---------------------------------- OME ------------------------------------
-    if (old >= 18)
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelOME,ome,150,169.99,210,230);
-            else
-                showIndicator(ui->labelOME,ome,142.5,159.99,195,212.5);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelOME,ome,125,139.99,170,185);
-            else
-                showIndicator(ui->labelOME,ome,115,129.99,160,175);
-        }
-    }
-    else
-    {
-        if (isSportsman)
-        {
-            if (sex == 1)
-                showIndicator(ui->labelOME,ome,137.50,154.99,190,207.5);
-            else
-                showIndicator(ui->labelOME,ome,127.5,144.99,180,197.5);
-        }
-        else
-        {
-            if (sex == 1)
-                showIndicator(ui->labelOME,ome,117.50,134.99,170,187.50);
-            else
-                showIndicator(ui->labelOME,ome,107.50,124.99,160,177.50);
-        }
-    }
+    getOME(sex,old,isSportsman,val1,val2,val3,val4);
+    showIndicator(ui->labelOME,ome,val1,val2,val3,val4);
 
     showIndicatorTxt(ui->labelV1,ui->labelF1,0.5*(p_opwc170 + p_ompk));
     showIndicatorTxt(ui->labelV2,ui->labelF2,0.5*(p_alakm + p_alake));
     showIndicatorTxt(ui->labelV3,ui->labelF3,0.5*(p_lakm + p_lake));
     showIndicatorTxt(ui->labelV4,ui->labelF4,0.5*(p_pano + p_chsspano));
     showIndicatorTxt(ui->labelV5,ui->labelF5,p_ome);
-    showIndicatorTxt(ui->labelV6,ui->labelF6,ufp);
+    showIndicatorTxt(ui->labelV6,ui->labelF6,p_ufp);
 
 
     ui->pbSave->setEnabled(true);
@@ -700,10 +707,10 @@ void SHVSMCreateDialog::slotSaveSHVSM(void)
         // Такая запись уже есть, перезаписываем ее
         if (!query.exec(QString("UPDATE surveySHVSM SET weight=%3,growth=%4,N1=%5,N2=%6,n_1=%7,n_2=%8,HR1=%9,HR2=%10,aPWC170=%11,oPWC170=%12,aMPK=%13,oMPK=%14,ALAKm=%15,ALAKe=%16,LAKm=%17,\
                                  LAKe=%18,PANO=%19,CHSSpano=%20,OME=%21,TE=%22,SE=%23,SPE=%24,SPS=%25,RP=%26,UFP=%27,old=%28 \
-                                 WHERE surveyed_id = %1 AND dt = '%2'").arg(surveyed_id).arg(dt).arg(weight).arg(growth).arg(N1).arg(N2).arg(n1).arg(n2).arg(hr1).arg(hr2).\
+                                 WHERE surveyed_id = %1 AND dt = '%2'").arg(surveyed_id).arg(dt).arg(weight).arg(growth).arg(N1,0,'f',0).arg(N2,0,'f',0).arg(n1,0,'f',0).arg(n2,0,'f',0).arg(hr1,0,'f',0).arg(hr2,0,'f',0).\
                                  arg(apwc170,0,'f',2).arg(opwc170,0,'f',2).arg(ampk,0,'f',2).arg(ompk,0,'f',2).arg(alakm,0,'f',2).arg(alake,0,'f',2).arg(lakm,0,'f',2).\
-                                 arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(ome,0,'f',2).arg(0.5*(opwc170 + ompk),0,'f',2).arg(0.5*(alakm + alake),0,'f',2).\
-                                 arg(0.5*(lakm + lake),0,'f',2).arg(0.5*(pano + chsspano),0,'f',2).arg(ome,0,'f',2).arg(ufp,0,'f',2).arg(old)))
+                                 arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(p_ome,0,'f',2).arg(0.5*(p_opwc170 + p_ompk),0,'f',2).arg(0.5*(p_alakm + p_alake),0,'f',2).\
+                                 arg(0.5*(p_lakm + p_lake),0,'f',2).arg(0.5*(p_pano + p_chsspano),0,'f',2).arg(p_ome,0,'f',2).arg(p_ufp,0,'f',2).arg(old)))
             QMessageBox::critical(this, tr("Error"),tr("Error accessing to database!"), QMessageBox::Ok);
 
         return;
@@ -712,9 +719,9 @@ void SHVSMCreateDialog::slotSaveSHVSM(void)
 
     if (!query.exec(QString("INSERT INTO surveySHVSM (surveyed_id,dt,weight,growth,N1,N2,n_1,n_2,HR1,HR2,aPWC170,oPWC170,aMPK,oMPK,ALAKm,ALAKe,LAKm,LAKe,PANO,CHSSpano,OME,TE,SE,SPE,SPS,RP,UFP,old) \
                              VALUES (%1,'%2',%3,%4,%5,%6,%7,%8,%9,%10,%11,%12,%13,%14,%15,%16,%17,%18,%19,%20,%21,%22,%23,%24,%25,%26,%27,%28)").arg(surveyed_id).arg(dt).arg(weight).arg(growth).\
-                             arg(N1).arg(N2).arg(n1).arg(n2).arg(hr1).arg(hr2).arg(apwc170,0,'f',2).arg(opwc170,0,'f',2).arg(ampk,0,'f',2).arg(ompk,0,'f',2).arg(alakm,0,'f',2).arg(alake,0,'f',2).\
-                             arg(lakm,0,'f',2).arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(ome,0,'f',2).arg(0.5*(opwc170 + ompk),0,'f',2).arg(0.5*(alakm + alake),0,'f',2).\
-                             arg(0.5*(lakm + lake),0,'f',2).arg(0.5*(pano + chsspano),0,'f',2).arg(ome,0,'f',2).arg(ufp,0,'f',2).arg(old)))
+                             arg(N1,0,'f',0).arg(N2,0,'f',0).arg(n1,0,'f',0).arg(n2,0,'f',0).arg(hr1,0,'f',0).arg(hr2,0,'f',0).arg(apwc170,0,'f',2).arg(opwc170,0,'f',2).arg(ampk,0,'f',2).arg(ompk,0,'f',2).arg(alakm,0,'f',2).arg(alake,0,'f',2).\
+                             arg(lakm,0,'f',2).arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(ome,0,'f',2).arg(0.5*(p_opwc170 + p_ompk),0,'f',2).arg(0.5*(p_alakm + p_alake),0,'f',2).\
+                             arg(0.5*(p_lakm + p_lake),0,'f',2).arg(0.5*(p_pano + p_chsspano),0,'f',2).arg(p_ome,0,'f',2).arg(p_ufp,0,'f',2).arg(old)))
         QMessageBox::critical(this, tr("Error"),tr("Error accessing to database!"), QMessageBox::Ok);
 }
 

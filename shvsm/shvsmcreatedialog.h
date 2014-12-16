@@ -57,7 +57,16 @@ private:
     float pano;
     float chsspano;
     float ome;
-    float ufp;
+    float p_opwc170;
+    float p_ufp;
+    float p_ome;
+    float p_alakm;
+    float p_alake;
+    float p_lakm;
+    float p_lake;
+    float p_ompk;
+    float p_pano;
+    float p_chsspano;
     float old;
     void setupForm(void);
     void showIndicator(QLabel*,float,float,float,float,float);

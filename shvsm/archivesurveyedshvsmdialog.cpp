@@ -7,6 +7,17 @@
 #include "archivesurveyedshvsmdialog.h"
 #include "ui_archivesurveyedshvsmdialog.h"
 
+extern void getoPWC170(int,int,bool,float&,float&,float&,float&);
+extern void getoMPK(int,int,bool,float&,float&,float&,float&);
+extern void getALAKm(int,int,bool,float&,float&,float&,float&);
+extern void getALAKe(int,int,bool,float&,float&,float&,float&);
+extern void getLAKm(int,int,bool,float&,float&,float&,float&);
+extern void getLAKe(int,int,bool,float&,float&,float&,float&);
+extern void getPANO(int,int,bool,float&,float&,float&,float&);
+extern void getCHSSpano(int,int,bool,float&,float&,float&,float&);
+extern void getOME(int,int,bool,float&,float&,float&,float&);
+
+
 ArchiveSurveyedSHVSMDialog::ArchiveSurveyedSHVSMDialog(QSqlDatabase* pdb,QWidget *parent) :
     QDialog(parent),
     ui(new Ui::ArchiveSurveyedSHVSMDialog)
@@ -34,12 +45,14 @@ void ArchiveSurveyedSHVSMDialog::setupForm(void)
 {
     // Список обследованных
     modelSurveyed = new QSqlQueryModel(this);
-    modelSurveyed->setQuery(QString("SELECT surveyed.id,surveyed.name,sex.name FROM surveyed, sex WHERE surveyed.sex_id = sex.id ORDER BY surveyed.name"));
+    modelSurveyed->setQuery(QString("SELECT surveyed.id,surveyed.name,sex.name,sex_id,qualification_id FROM surveyed, sex WHERE surveyed.sex_id = sex.id ORDER BY surveyed.name"));
     modelSurveyed->setHeaderData(1, Qt::Horizontal, tr("Name"));
     modelSurveyed->setHeaderData(2, Qt::Horizontal, tr("Sex"));
 
     ui->twSurveyed->setModel(modelSurveyed);
     ui->twSurveyed->setColumnHidden(0, true);
+    ui->twSurveyed->setColumnHidden(3, true);
+    ui->twSurveyed->setColumnHidden(4, true);
     ui->twSurveyed->resizeColumnsToContents();
     ui->twSurveyed->setCurrentIndex(ui->twSurveyed->model()->index(0, 0));
 
@@ -137,6 +150,9 @@ void ArchiveSurveyedSHVSMDialog::setupForm(void)
     ui->widgetPlot->setContextMenuPolicy(Qt::CustomContextMenu);
     connect(ui->widgetPlot, SIGNAL(customContextMenuRequested(QPoint)), this, SLOT(contextMenuRequest(QPoint)));
 
+    isSportsman = (ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),4)).toInt() == 1) ? true : false;
+    sex = ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),3)).toInt();
+    old = ui->twSurveyedOutput1->model()->data(ui->twSurveyedOutput1->model()->index(ui->twSurveyedOutput1->selectionModel()->currentIndex().row(),2)).toInt();
     rePlot();
 }
 
@@ -147,13 +163,59 @@ void ColorDelegateSurveyedSHVSM::paint(QPainter* painter, const QStyleOptionView
 
     if (qVariantCanConvert<float>(index.data()))
         val = qVariantValue<float>(index.data());
-    if (((index.column() >= 14 && index.column() <= 27) || index.column() == 12) && val)
-        painter->fillRect(option.rect, ptr->getIndicatorColor(val,33.0,49.6,66.1,82.6));
+    if (/*val && */((index.column() >= 14 && index.column() <= 27) || index.column() == 12))
+        painter->fillRect(option.rect, ptr->getIndicatorColor(index.column(), val));
     QItemDelegate::paint(painter,option,index);
 }
 
-QColor ArchiveSurveyedSHVSMDialog::getIndicatorColor(float indicator,float val1, float val2,float val3, float val4)
+QColor ArchiveSurveyedSHVSMDialog::getIndicatorColor(int index, float indicator)
 {
+    float val1 = 0,
+          val2 = 0,
+          val3 = 0,
+          val4 = 0;
+
+    switch (index)
+    {
+        case 12:
+            getoPWC170(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 14:
+            getoMPK(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 15:
+            getALAKm(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 16:
+            getALAKe(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 17:
+            getLAKm(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 18:
+            getLAKe(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 19:
+            getPANO(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 20:
+            getCHSSpano(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 21:
+            getOME(sex,old,isSportsman,val1,val2,val3,val4);
+            break;
+        case 22:
+        case 23:
+        case 24:
+        case 25:
+        case 26:
+        case 27:
+            val1 = 33.0;
+            val2 = 49.6;
+            val3 = 66.1;
+            val4 = 82.6;
+    }
+
     if (indicator < val1)
         return QColor("red");
     else if (indicator >= val1 && indicator <= val2)
@@ -176,13 +238,18 @@ void ArchiveSurveyedSHVSMDialog::slotSelectionChangedSurveyed(const QItemSelecti
     ui->twSurveyedOutput1->setCurrentIndex(ui->twSurveyedOutput1->model()->index(0, 0));
     ui->twSurveyedOutput2->setCurrentIndex(ui->twSurveyedOutput2->model()->index(0, 0));
     ui->twSurveyedOutput3->setCurrentIndex(ui->twSurveyedOutput3->model()->index(0, 0));
+
+    isSportsman = (ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),4)).toInt() == 1) ? true : false;
+    sex = ui->twSurveyed->model()->data(ui->twSurveyed->model()->index(ui->twSurveyed->selectionModel()->currentIndex().row(),3)).toInt();
+    old = ui->twSurveyedOutput1->model()->data(ui->twSurveyedOutput1->model()->index(ui->twSurveyedOutput1->selectionModel()->currentIndex().row(),2)).toInt();
+
     rePlot();
 }
 
 void ArchiveSurveyedSHVSMDialog::slotSelectionChangedSurvey1(const QItemSelection&, const QItemSelection&)
 {
-
     currentRow = ui->twSurveyedOutput1->selectionModel()->currentIndex().row();
+    old = ui->twSurveyedOutput1->model()->data(ui->twSurveyedOutput1->model()->index(ui->twSurveyedOutput1->selectionModel()->currentIndex().row(),2)).toInt();
     scrollView();
 }
 
