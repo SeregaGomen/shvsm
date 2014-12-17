@@ -372,7 +372,7 @@ float SHVSMIntegralCreateDialog::nDEV_GEL(float val)
 
 float SHVSMIntegralCreateDialog::nSI(float val)
 {
-    return normalize(100.0*(1.0 - ((fabs(val) - 0.5)/0.5)));
+    return normalize(100.0*(fabs((4.0 - val)/4.0 - 1.0)));
 }
 
 float SHVSMIntegralCreateDialog::nIR(float val)
@@ -1096,7 +1096,7 @@ void SHVSMIntegralCreateDialog::setupForm(void)
     model->setHeaderData(1, Qt::Horizontal, tr("Name"));
     model->setHeaderData(2, Qt::Horizontal, tr("Team"));
     model->setHeaderData(3, Qt::Horizontal, tr("Sex"));
-    model->setHeaderData(4, Qt::Horizontal, tr("Qualification"));
+    model->setHeaderData(4, Qt::Horizontal, tr("Status"));
     model->setHeaderData(5, Qt::Horizontal, tr("DOB"));
     ui->tableView->setModel(model);
     ui->tableView->setColumnHidden(0, true);
@@ -1646,7 +1646,7 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
     text += "<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">";
 
     text += tr("<tr><td colspan=\"6\">Date of  examination: <b>%1</b></tr>").arg(ui->deDate->text());
-    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Qualification</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
+    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Status</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
 

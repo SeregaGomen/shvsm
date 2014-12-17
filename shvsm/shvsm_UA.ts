@@ -1960,9 +1960,13 @@ p, li { white-space: pre-wrap; }
         <translation>Стать</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="369"/>
         <source>Qualification</source>
-        <translation>Кваліфікація</translation>
+        <translation type="obsolete">Кваліфікація</translation>
+    </message>
+    <message>
+        <location filename="shvsmcreatedialog.cpp" line="369"/>
+        <source>Status</source>
+        <translation>Статус</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="370"/>
@@ -2087,8 +2091,9 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="892"/>
-        <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;П.І.Б.&lt;/th&gt;&lt;th&gt;Стать&lt;/th&gt;&lt;th&gt;Вік&lt;/th&gt;&lt;th&gt;Кваліфікація&lt;/th&gt;&lt;th&gt;Довжина&lt;br&gt;тіла (см)&lt;/th&gt;&lt;th&gt;Маса&lt;br&gt;тіла (кг)&lt;/th&gt;&lt;/tr&gt;</translation>
+        <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</oldsource>
+        <translation>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;П.І.Б.&lt;/th&gt;&lt;th&gt;Стать&lt;/th&gt;&lt;th&gt;Вік&lt;/th&gt;&lt;th&gt;Статус&lt;/th&gt;&lt;th&gt;Довжина&lt;br&gt;тіла (см)&lt;/th&gt;&lt;th&gt;Маса&lt;br&gt;тіла (кг)&lt;/th&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="909"/>
@@ -2211,17 +2216,16 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="920"/>
-        <location filename="shvsmcreatedialog.cpp" line="921"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Speed-strength endurance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Швидкісно-силова витривалість&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="922"/>
+        <location filename="shvsmcreatedialog.cpp" line="921"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Energetic system economy&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Економічність системи енергозабезпечення&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="923"/>
+        <location filename="shvsmcreatedialog.cpp" line="922"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Reserve capability&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Резервні можливості&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
@@ -2515,9 +2519,13 @@ p, li { white-space: pre-wrap; }
         <translation>Стать</translation>
     </message>
     <message>
-        <location filename="shvsmintegralcreatedialog.cpp" line="1099"/>
         <source>Qualification</source>
-        <translation>Кваліфікація</translation>
+        <translation type="obsolete">Кваліфікація</translation>
+    </message>
+    <message>
+        <location filename="shvsmintegralcreatedialog.cpp" line="1099"/>
+        <source>Status</source>
+        <translation>Статус</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1100"/>
@@ -2709,8 +2717,9 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1649"/>
-        <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</source>
-        <translation>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;ПІБ.&lt;/th&gt;&lt;th&gt;Стать&lt;/th&gt;&lt;th&gt;Вік&lt;/th&gt;&lt;th&gt;Кваліфікація&lt;/th&gt;&lt;th&gt;Довжина&lt;br&gt;тіла (см)&lt;/th&gt;&lt;th&gt;Маса&lt;br&gt;тіла (кг)&lt;/th&gt;&lt;/tr&gt;</translation>
+        <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</oldsource>
+        <translation>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;ПІБ.&lt;/th&gt;&lt;th&gt;Стать&lt;/th&gt;&lt;th&gt;Вік&lt;/th&gt;&lt;th&gt;Статус&lt;/th&gt;&lt;th&gt;Довжина&lt;br&gt;тіла (см)&lt;/th&gt;&lt;th&gt;Маса&lt;br&gt;тіла (кг)&lt;/th&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass&lt;/th&gt;&lt;/tr&gt;</source>
@@ -2872,13 +2881,17 @@ p, li { white-space: pre-wrap; }
         <translation>Стать:</translation>
     </message>
     <message>
+        <location filename="surveyedcreatedialog.ui" line="212"/>
+        <source>Status:</source>
+        <translation>Статус:</translation>
+    </message>
+    <message>
         <source>Age:</source>
         <translation type="obsolete">Возраст:</translation>
     </message>
     <message>
-        <location filename="surveyedcreatedialog.ui" line="212"/>
         <source>Qualification:</source>
-        <translation>Кваліфікація:</translation>
+        <translation type="obsolete">Кваліфікація:</translation>
     </message>
     <message>
         <location filename="surveyedcreatedialog.cpp" line="43"/>

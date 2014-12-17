@@ -209,7 +209,7 @@
      <item>
       <widget class="QLabel" name="label_6">
        <property name="text">
-        <string>Qualification:</string>
+        <string>Status:</string>
        </property>
       </widget>
      </item>

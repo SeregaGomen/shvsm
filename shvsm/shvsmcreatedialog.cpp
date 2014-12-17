@@ -366,7 +366,7 @@ void SHVSMCreateDialog::setupForm(void)
     model->setHeaderData(1, Qt::Horizontal, tr("Name"));
     model->setHeaderData(2, Qt::Horizontal, tr("Team"));
     model->setHeaderData(3, Qt::Horizontal, tr("Sex"));
-    model->setHeaderData(4, Qt::Horizontal, tr("Qualification"));
+    model->setHeaderData(4, Qt::Horizontal, tr("Status"));
     model->setHeaderData(5, Qt::Horizontal, tr("DoB"));
     ui->tableView->setModel(model);
     ui->tableView->setColumnHidden(0, true);
@@ -889,7 +889,7 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += "<table border=\"1\" cellpadding=\"4\" cellspacing=\"0\">";
 
     text += tr("<tr><td colspan=\"6\">Date of  examination: <b>%1</b></tr>").arg(ui->deDate->text());
-    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Qualification</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
+    text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Status</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
     text += tr("<tr><td colspan=\"5\">The first loading intensity on the veloergometer N1</td><td>%1</td></tr>").arg(ui->leN1->text().toFloat(),0,'f',2);
@@ -917,7 +917,6 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelF6->text());
     text += tr("<tr><td colspan=\"4\">General endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelF1->text());
     text += tr("<tr><td colspan=\"4\">Speed endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelF2->text());
-    text += tr("<tr><td colspan=\"4\">Speed-strength endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelF2->text());
     text += tr("<tr><td colspan=\"4\">Speed-strength endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelF3->text());
     text += tr("<tr><td colspan=\"4\">Energetic system economy</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text().toFloat(),0,'f',2).arg(ui->labelF4->text());
     text += tr("<tr><td colspan=\"4\">Reserve capability</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelF5->text());
