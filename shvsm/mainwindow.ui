@@ -56,10 +56,10 @@
      </property>
      <widget class="QMenu" name="menuS_HVSM_integral">
       <property name="statusTip">
-       <string>Archive of surveys of people 'ShVSM-integral'</string>
+       <string>Archive of surveys of people 'ShVSM-complex'</string>
       </property>
       <property name="title">
-       <string>S&amp;HVSM-integral</string>
+       <string>S&amp;HVSM-complex</string>
       </property>
       <addaction name="action_ArchiveSurveyedSHVSMIntegral"/>
       <addaction name="action_ArchiveTeamSHVSMIntegral"/>
@@ -178,13 +178,13 @@
      <normaloff>:/image/chart_pie.png</normaloff>:/image/chart_pie.png</iconset>
    </property>
    <property name="text">
-    <string>S&amp;HVSM-integral...</string>
+    <string>S&amp;HVSM-complex...</string>
    </property>
    <property name="toolTip">
-    <string>Create a new examination 'SHVSM-integral'</string>
+    <string>Create a new examination 'SHVSM-complex'</string>
    </property>
    <property name="statusTip">
-    <string>Create a new survey 'SHVSM-integral'</string>
+    <string>Create a new examination 'SHVSM-complex'</string>
    </property>
   </action>
   <action name="action_Language">
@@ -214,10 +214,10 @@
     <string>&amp;Examinee...</string>
    </property>
    <property name="toolTip">
-    <string>Archive of examinee 'SHVSM-integral'</string>
+    <string>Archive of examinee 'SHVSM-complex'</string>
    </property>
    <property name="statusTip">
-    <string>Archive of examinee 'SHVSM-integral'</string>
+    <string>Archive of examinee 'SHVSM-complex'</string>
    </property>
   </action>
   <action name="action_ArchiveTeamSHVSMIntegral">
@@ -225,10 +225,10 @@
     <string>&amp;Team...</string>
    </property>
    <property name="toolTip">
-    <string>Archive of examination teams 'SHVSM-integral'</string>
+    <string>Archive of examination teams 'SHVSM-complex'</string>
    </property>
    <property name="statusTip">
-    <string>Archive of examination teams 'SHVSM-integral'</string>
+    <string>Archive of examination teams 'SHVSM-complex'</string>
    </property>
   </action>
   <action name="action_ArchiveSurveyedSHVSM">

@@ -23,7 +23,7 @@
    </size>
   </property>
   <property name="windowTitle">
-   <string>Archive of examinees 'SHVSM-Integral'</string>
+   <string>Archive of examinees 'SHVSM-complex'</string>
   </property>
   <widget class="QDialogButtonBox" name="buttonBox">
    <property name="geometry">

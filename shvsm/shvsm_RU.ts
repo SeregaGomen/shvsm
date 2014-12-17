@@ -299,8 +299,8 @@
     <name>ArchiveSurveyedSHVSMIntegralDialog</name>
     <message>
         <location filename="archivesurveyedshvsmintegraldialog.ui" line="26"/>
-        <source>Archive of examinees &apos;SHVSM-Integral&apos;</source>
-        <oldsource>Archive survey people &apos;SHVSM-Integral&apos;</oldsource>
+        <source>Archive of examinees &apos;SHVSM-complex&apos;</source>
+        <oldsource>Archive of examinees &apos;SHVSM-Integral&apos;</oldsource>
         <translation>Архив обследований людей &quot;ШВСМ-интеграл&quot;</translation>
     </message>
     <message>
@@ -788,7 +788,8 @@
     <name>ArchiveTeamSHVSMIntegralDialog</name>
     <message>
         <location filename="archiveteamshvsmintegraldialog.ui" line="26"/>
-        <source>Archive survey teams &apos;SHVSM-integral&apos;</source>
+        <source>Archive survey teams &apos;SHVSM-complex&apos;</source>
+        <oldsource>Archive survey teams &apos;SHVSM-integral&apos;</oldsource>
         <translation>Архив обследований команд &apos;ШВСМ-интеграл&apos;</translation>
     </message>
     <message>
@@ -1013,7 +1014,8 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="59"/>
-        <source>Archive of surveys of people &apos;ShVSM-integral&apos;</source>
+        <source>Archive of surveys of people &apos;ShVSM-complex&apos;</source>
+        <oldsource>Archive of surveys of people &apos;ShVSM-integral&apos;</oldsource>
         <translation>Архив обследований людей &apos;ШВСМ-интеграл&apos;</translation>
     </message>
     <message>
@@ -1074,18 +1076,16 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="181"/>
-        <source>S&amp;HVSM-integral...</source>
+        <source>S&amp;HVSM-complex...</source>
+        <oldsource>S&amp;HVSM-integral...</oldsource>
         <translation>Ш&amp;ВСМ-интеграл...</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="184"/>
-        <source>Create a new examination &apos;SHVSM-integral&apos;</source>
-        <translation>Создание нового обсследования &apos;ШВСМ-интеграл&apos;</translation>
-    </message>
-    <message>
         <location filename="mainwindow.ui" line="187"/>
-        <source>Create a new survey &apos;SHVSM-integral&apos;</source>
-        <translation>Создать новое исследование &apos;ШВСМ-интеграл&apos;</translation>
+        <source>Create a new examination &apos;SHVSM-complex&apos;</source>
+        <oldsource>Create a new examination &apos;SHVSM-integral&apos;</oldsource>
+        <translation>Создание нового обсследования &apos;ШВСМ-интеграл&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="192"/>
@@ -1119,8 +1119,8 @@
     <message>
         <location filename="mainwindow.ui" line="217"/>
         <location filename="mainwindow.ui" line="220"/>
-        <source>Archive of examinee &apos;SHVSM-integral&apos;</source>
-        <oldsource>Archive of examinee &apos;ShVSM-integral&apos;</oldsource>
+        <source>Archive of examinee &apos;SHVSM-complex&apos;</source>
+        <oldsource>Archive of examinee &apos;SHVSM-integral&apos;</oldsource>
         <translation>Архив обсследованных &apos;ШВСМ-интеграл&apos;</translation>
     </message>
     <message>
@@ -1168,13 +1168,14 @@
     <message>
         <location filename="mainwindow.ui" line="228"/>
         <location filename="mainwindow.ui" line="231"/>
-        <source>Archive of examination teams &apos;SHVSM-integral&apos;</source>
-        <oldsource>Archive of examinee teams &apos;SHVSM-integral&apos;</oldsource>
+        <source>Archive of examination teams &apos;SHVSM-complex&apos;</source>
+        <oldsource>Archive of examination teams &apos;SHVSM-integral&apos;</oldsource>
         <translation>Архив обследований команд &apos;ШВСМ-интеграл&apos;</translation>
     </message>
     <message>
         <location filename="mainwindow.ui" line="62"/>
-        <source>S&amp;HVSM-integral</source>
+        <source>S&amp;HVSM-complex</source>
+        <oldsource>S&amp;HVSM-integral</oldsource>
         <translation>Ш&amp;ВСМ-интеграл</translation>
     </message>
     <message>
@@ -1250,7 +1251,7 @@
         <translation>Отчет</translation>
     </message>
     <message>
-        <location filename="printreportdialog.ui" line="47"/>
+        <location filename="printreportdialog.ui" line="51"/>
         <source>Print</source>
         <translation>Печать</translation>
     </message>
@@ -2191,7 +2192,8 @@ p, li { white-space: pre-wrap; }
     <name>SHVSMIntegralCreateDialog</name>
     <message>
         <location filename="shvsmintegralcreatedialog.ui" line="26"/>
-        <source>SHVSM-integral</source>
+        <source>SHVSM-complex</source>
+        <oldsource>SHVSM-integral</oldsource>
         <translation>ШВСМ-интеграл</translation>
     </message>
     <message>
