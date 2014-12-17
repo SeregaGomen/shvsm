@@ -906,10 +906,10 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">aVO<sub>2max</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">rVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloMPK));
 
-    text += tr("<tr><td colspan=\"4\">ALAKp (%)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
-    text += tr("<tr><td colspan=\"4\">ALAKc (mmol/l)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
-    text += tr("<tr><td colspan=\"4\">LAKp (%)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
-    text += tr("<tr><td colspan=\"4\">LAKc (mmol/l)</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
+    text += tr("<tr><td colspan=\"4\">ALAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
+    text += tr("<tr><td colspan=\"4\">ALAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
+    text += tr("<tr><td colspan=\"4\">LAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
+    text += tr("<tr><td colspan=\"4\">LAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
     text += tr("<tr><td colspan=\"4\">AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
     text += tr("<tr><td colspan=\"4\">HR<sub>AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelCHSSpano));
     text += tr("<tr><td colspan=\"4\">GMC</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));

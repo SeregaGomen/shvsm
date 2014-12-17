@@ -1667,7 +1667,7 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">Heart volume</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelT5->text());
     text += tr("<tr><td colspan=\"4\">Robinson Index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelT6->text());
     text += tr("<tr><td colspan=\"4\">Circulation of blood economizing coefficient</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV7->text().toFloat(),0,'f',2).arg(ui->labelT7->text());
-    text += tr("<tr><td colspan=\"4\"Systolic arterial pressure deviation</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV8->text().toFloat(),0,'f',2).arg(ui->labelT8->text());
+    text += tr("<tr><td colspan=\"4\">Systolic arterial pressure deviation</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV8->text().toFloat(),0,'f',2).arg(ui->labelT8->text());
     text += tr("<tr><td colspan=\"4\">Diastolic arterial pressure deviation</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV9->text().toFloat(),0,'f',2).arg(ui->labelT9->text());
     text += tr("<tr><td colspan=\"4\">Hypoxia index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV10->text().toFloat(),0,'f',2).arg(ui->labelT10->text());
     text += tr("<tr><td colspan=\"4\">Skibinsky index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV11->text().toFloat(),0,'f',2).arg(ui->labelT11->text());

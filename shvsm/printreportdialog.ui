@@ -25,6 +25,10 @@
   <property name="windowTitle">
    <string>Report</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="shvsm.qrc">
+    <normaloff>:/image/app.ico</normaloff>:/image/app.ico</iconset>
+  </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
     <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -65,7 +69,9 @@
    </item>
   </layout>
  </widget>
- <resources/>
+ <resources>
+  <include location="shvsm.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>pbPrint</sender>
