@@ -501,6 +501,7 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
 
     lakm = (1.87 + 1.56*pow(N1 + (N2 - N1)*(160 - hr1)/(hr2 - hr1),1.015) + 0.011*weight + 0.0069*growth - 0.0035*old)/weight;
     lake = 0.91 + 5.87*pow(lakm,0.987) + 0.0008*weight + 0.00011*growth - 0.00054*old;
+    lakem = lake/4.05;
 
     panof = 100.0*pow(ompk,0.941)/(pow(ompk,0.941) + pow(lake,1.087));
     if (ompk <= 40)
@@ -649,6 +650,7 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     ui->labelALAKm->setText(QString("%1").arg(alakm,0,'f',2));
     ui->labelALAKe->setText(QString("%1").arg(alake,0,'f',2));
     ui->labelLAKm->setText(QString("%1").arg(lakm,0,'f',2));
+    ui->labelLAKem->setText(QString("%1").arg(lakem,0,'f',2));
     ui->labelLAKe->setText(QString("%1").arg(lake,0,'f',2));
     ui->labelPANO->setText(QString("%1").arg(pano,0,'f',2));
     ui->labelCHSSpano->setText(QString("%1").arg(chsspano,0,'f',2));
@@ -898,8 +900,8 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Status</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
-    text += tr("<tr><td colspan=\"5\">The first loading intensity on the veloergometer N1, bT</td><td>%1</td></tr>").arg(ui->leN1->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">The second loading intensity on the veloergometer N2, bT</td><td>%1</td></tr>").arg(ui->leN2->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">The first loading intensity on the veloergometer N1, watt</td><td>%1</td></tr>").arg(ui->leN1->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">The second loading intensity on the veloergometer N2, watt</td><td>%1</td></tr>").arg(ui->leN2->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">The first loading ascents on a step amount n1, n/min</td><td>%1</td></tr>").arg(ui->len1->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">The second loading ascents on a step amount n2, n/min</td><td>%1</td></tr>").arg(ui->len2->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1, sh/min</td><td>%1</td></tr>").arg(ui->leHR1->text().toFloat(),0,'f',0);
@@ -908,19 +910,20 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
 
     text += tr("<tr><th colspan=\"4\">Index</th><th>Numerical<br>value</th><th>Functional<br>estimation</th></tr>");
     text += tr("<tr><td colspan=\"4\">aPWC<sub>170</sub>, kgm/min</td><td>%1</td><td></td></tr>").arg(ui->labelaPWC170->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"4\">rPWC<sub>170</sub>, kgm/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloPWC170->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloPWC170));
+    text += tr("<tr><td colspan=\"4\">rPWC<sub>170</sub>, kgm/min/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloPWC170->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloPWC170));
     text += tr("<tr><td colspan=\"4\">aVO<sub>2max</sub>, l/min</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">rVO<sub>2max</sub>, ml/min/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloMPK));
 
-    text += tr("<tr><td colspan=\"4\">ALAKp, bT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
+    text += tr("<tr><td colspan=\"4\">ALAKp, watt/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
     text += tr("<tr><td colspan=\"4\">ALAKc, mmol/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
-    text += tr("<tr><td colspan=\"4\">LAKp, bT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
+    text += tr("<tr><td colspan=\"4\">LAKp, watt</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
     text += tr("<tr><td colspan=\"4\">LAKc, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
+    text += tr("<tr><td colspan=\"4\">LAKcm, mmol/l</td><td>%1</td><td></td></tr>").arg(ui->labelLAKem->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">AMT, % from aVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
     text += tr("<tr><td colspan=\"4\">HR<sub>AMT</sub>, sh/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelCHSSpano));
     text += tr("<tr><td colspan=\"4\">GMC, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));
 
-    text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelF6->text());
+    text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level, points</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelF6->text());
     text += tr("<tr><td colspan=\"4\">General endurance, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelF1->text());
     text += tr("<tr><td colspan=\"4\">Speed endurance, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelF2->text());
     text += tr("<tr><td colspan=\"4\">Speed-strength endurance, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelF3->text());

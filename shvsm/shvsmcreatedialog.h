@@ -53,6 +53,7 @@ private:
     float alake;
     float lakm;
     float lake;
+    float lakem;
     float panof;
     float pano;
     float chsspano;

@@ -30,7 +30,7 @@
     <rect>
      <x>10</x>
      <y>610</y>
-     <width>81</width>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>
@@ -41,9 +41,9 @@
   <widget class="QPushButton" name="pbSave">
    <property name="geometry">
     <rect>
-     <x>100</x>
+     <x>120</x>
      <y>610</y>
-     <width>81</width>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>
@@ -225,7 +225,7 @@
     <rect>
      <x>10</x>
      <y>150</y>
-     <width>261</width>
+     <width>271</width>
      <height>221</height>
     </rect>
    </property>
@@ -254,7 +254,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_2">
     <property name="geometry">
      <rect>
-      <x>150</x>
+      <x>160</x>
       <y>20</y>
       <width>101</width>
       <height>31</height>
@@ -307,7 +307,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_5">
     <property name="geometry">
      <rect>
-      <x>130</x>
+      <x>140</x>
       <y>60</y>
       <width>77</width>
       <height>31</height>
@@ -326,7 +326,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_6">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>60</y>
       <width>41</width>
       <height>31</height>
@@ -341,7 +341,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_7">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>100</y>
       <width>41</width>
       <height>31</height>
@@ -378,7 +378,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_9">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>140</y>
       <width>41</width>
       <height>31</height>
@@ -437,7 +437,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_12">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>180</y>
       <width>41</width>
       <height>31</height>
@@ -455,7 +455,7 @@
     <rect>
      <x>10</x>
      <y>370</y>
-     <width>261</width>
+     <width>271</width>
      <height>131</height>
     </rect>
    </property>
@@ -489,7 +489,7 @@
      <rect>
       <x>90</x>
       <y>20</y>
-      <width>81</width>
+      <width>91</width>
       <height>21</height>
      </rect>
     </property>
@@ -509,7 +509,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_15">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>180</x>
       <y>20</y>
       <width>81</width>
       <height>21</height>
@@ -548,7 +548,7 @@
      <rect>
       <x>90</x>
       <y>40</y>
-      <width>81</width>
+      <width>91</width>
       <height>31</height>
      </rect>
     </property>
@@ -568,7 +568,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_18">
     <property name="geometry">
      <rect>
-      <x>170</x>
+      <x>180</x>
       <y>40</y>
       <width>81</width>
       <height>31</height>
@@ -592,7 +592,7 @@
      <rect>
       <x>10</x>
       <y>80</y>
-      <width>241</width>
+      <width>251</width>
       <height>21</height>
      </rect>
     </property>
@@ -614,7 +614,7 @@
      <rect>
       <x>10</x>
       <y>100</y>
-      <width>241</width>
+      <width>251</width>
       <height>21</height>
      </rect>
     </property>
@@ -640,7 +640,7 @@
     <rect>
      <x>10</x>
      <y>510</y>
-     <width>261</width>
+     <width>271</width>
      <height>91</height>
     </rect>
    </property>
@@ -650,7 +650,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_21">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>10</y>
       <width>41</width>
       <height>31</height>
@@ -709,7 +709,7 @@
    <widget class="QWidget" name="horizontalLayoutWidget_24">
     <property name="geometry">
      <rect>
-      <x>210</x>
+      <x>220</x>
       <y>50</y>
       <width>41</width>
       <height>31</height>
@@ -761,7 +761,7 @@
      <rect>
       <x>380</x>
       <y>20</y>
-      <width>131</width>
+      <width>132</width>
       <height>21</height>
      </rect>
     </property>
@@ -1893,9 +1893,9 @@
   <widget class="QPushButton" name="pbPrint">
    <property name="geometry">
     <rect>
-     <x>190</x>
+     <x>230</x>
      <y>610</y>
-     <width>81</width>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>
@@ -1906,9 +1906,9 @@
   <widget class="QPushButton" name="pbClear">
    <property name="geometry">
     <rect>
-     <x>720</x>
+     <x>700</x>
      <y>610</y>
-     <width>81</width>
+     <width>101</width>
      <height>23</height>
     </rect>
    </property>

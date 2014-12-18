@@ -1671,8 +1671,8 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">Diastolic arterial pressure deviation, mm of m.c.</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV9->text().toFloat(),0,'f',2).arg(ui->labelT9->text());
     text += tr("<tr><td colspan=\"4\">Hypoxia index, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV10->text().toFloat(),0,'f',2).arg(ui->labelT10->text());
     text += tr("<tr><td colspan=\"4\">Skibinsky index, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV11->text().toFloat(),0,'f',2).arg(ui->labelT11->text());
-    text += tr("<tr><td colspan=\"4\"><b>Cardio-vascular system functional state level</b>, points</td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV12->text().toFloat(),0,'f',2).arg(ui->labelT12->text());
-    text += tr("<tr><td colspan=\"4\"><b>External breathing system functional state level</b>, points</td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV13->text().toFloat(),0,'f',2).arg(ui->labelT13->text());
+    text += tr("<tr><td colspan=\"4\"><b>Cardio-vascular system functional state level, points</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV12->text().toFloat(),0,'f',2).arg(ui->labelT12->text());
+    text += tr("<tr><td colspan=\"4\"><b>External breathing system functional state level, points</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV13->text().toFloat(),0,'f',2).arg(ui->labelT13->text());
 
     text += "</table>";
 
