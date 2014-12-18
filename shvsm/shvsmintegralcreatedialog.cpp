@@ -1650,29 +1650,29 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
 
-    text += tr("<tr><td colspan=\"5\">Heart rate (HR)</td><td>%1</td></tr>").arg(ui->leHR->text().toFloat(),0,'f',0);
-    text += tr("<tr><td colspan=\"5\">Systolic arterial pressure (APs)</td><td>%1</td></tr>").arg(ui->leSBP->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Diastolic arterial pressure (APd)</td><td>%1</td></tr>").arg(ui->leDBP->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Vital lung capacity (VLC)</td><td>%1</td></tr>").arg(ui->leLActual->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Inhalation breathing delay time (Tin)</td><td>%1</td></tr>").arg(ui->leDTE->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Exhalation breathing delay time (Tex)</td><td>%1</td></tr>").arg(ui->leDTBE->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Heart rate (HR), sh/min</td><td>%1</td></tr>").arg(ui->leHR->text().toFloat(),0,'f',0);
+    text += tr("<tr><td colspan=\"5\">Systolic arterial pressure (APs), mm of m.c.</td><td>%1</td></tr>").arg(ui->leSBP->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Diastolic arterial pressure (APd), mm of m.c.</td><td>%1</td></tr>").arg(ui->leDBP->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Vital lung capacity (VLC), mL</td><td>%1</td></tr>").arg(ui->leLActual->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Inhalation breathing delay time (Tin), sec.</td><td>%1</td></tr>").arg(ui->leDTE->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Exhalation breathing delay time (Tex), sec.</td><td>%1</td></tr>").arg(ui->leDTBE->text().toFloat(),0,'f',2);
     text += tr("<tr><th colspan=\"6\">Calculation data</th></tr>");
 
     text += tr("<tr><th colspan=\"4\">Index</th><th>Numerical<br>value</th><th>Functional<br>estimation</th></tr>");
 
-    text += tr("<tr><td colspan=\"4\">Systole blood volume</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelT1->text());
-    text += tr("<tr><td colspan=\"4\">Minute blood volume</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelT2->text());
-    text += tr("<tr><td colspan=\"4\">Cardiac index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelT3->text());
-    text += tr("<tr><td colspan=\"4\">General peripheral resistance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text().toFloat(),0,'f',2).arg(ui->labelT4->text());
-    text += tr("<tr><td colspan=\"4\">Heart volume</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelT5->text());
-    text += tr("<tr><td colspan=\"4\">Robinson Index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelT6->text());
-    text += tr("<tr><td colspan=\"4\">Circulation of blood economizing coefficient</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV7->text().toFloat(),0,'f',2).arg(ui->labelT7->text());
-    text += tr("<tr><td colspan=\"4\">Systolic arterial pressure deviation</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV8->text().toFloat(),0,'f',2).arg(ui->labelT8->text());
-    text += tr("<tr><td colspan=\"4\">Diastolic arterial pressure deviation</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV9->text().toFloat(),0,'f',2).arg(ui->labelT9->text());
-    text += tr("<tr><td colspan=\"4\">Hypoxia index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV10->text().toFloat(),0,'f',2).arg(ui->labelT10->text());
-    text += tr("<tr><td colspan=\"4\">Skibinsky index</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV11->text().toFloat(),0,'f',2).arg(ui->labelT11->text());
-    text += tr("<tr><td colspan=\"4\"><b>Cardio-vascular system functional state level</b></td><td>%1</td><td>%2</td></tr>").arg(ui->labelV12->text().toFloat(),0,'f',2).arg(ui->labelT12->text());
-    text += tr("<tr><td colspan=\"4\"><b>External breathing system functional state level</b></td><td>%1</td><td>%2</td></tr>").arg(ui->labelV13->text().toFloat(),0,'f',2).arg(ui->labelT13->text());
+    text += tr("<tr><td colspan=\"4\">Systole blood volume, mL</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelT1->text());
+    text += tr("<tr><td colspan=\"4\">Minute blood volume, L/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelT2->text());
+    text += tr("<tr><td colspan=\"4\">Cardiac index, L/m<sup>2</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelT3->text());
+    text += tr("<tr><td colspan=\"4\">General peripheral resistance, din<sup>2</sup>&times;sec/sm<sup>5</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text().toFloat(),0,'f',2).arg(ui->labelT4->text());
+    text += tr("<tr><td colspan=\"4\">Heart volume, sm<sup>3</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelT5->text());
+    text += tr("<tr><td colspan=\"4\">Robinson Index, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelT6->text());
+    text += tr("<tr><td colspan=\"4\">Circulation of blood economizing coefficient, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV7->text().toFloat(),0,'f',2).arg(ui->labelT7->text());
+    text += tr("<tr><td colspan=\"4\">Systolic arterial pressure deviation, mm of m.c.</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV8->text().toFloat(),0,'f',2).arg(ui->labelT8->text());
+    text += tr("<tr><td colspan=\"4\">Diastolic arterial pressure deviation, mm of m.c.</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV9->text().toFloat(),0,'f',2).arg(ui->labelT9->text());
+    text += tr("<tr><td colspan=\"4\">Hypoxia index, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV10->text().toFloat(),0,'f',2).arg(ui->labelT10->text());
+    text += tr("<tr><td colspan=\"4\">Skibinsky index, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV11->text().toFloat(),0,'f',2).arg(ui->labelT11->text());
+    text += tr("<tr><td colspan=\"4\"><b>Cardio-vascular system functional state level</b>, points</td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV12->text().toFloat(),0,'f',2).arg(ui->labelT12->text());
+    text += tr("<tr><td colspan=\"4\"><b>External breathing system functional state level</b>, points</td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV13->text().toFloat(),0,'f',2).arg(ui->labelT13->text());
 
     text += "</table>";
 

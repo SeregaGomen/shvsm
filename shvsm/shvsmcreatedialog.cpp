@@ -439,7 +439,13 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
         ui->leHR2->setFocus();
         return;
     }
+    if (hr2 <= hr1)
+    {
+        QMessageBox::critical(this, tr("Error"),tr("Incorrectly set the 'HR2' (HR2 must be greater HR1)!"), QMessageBox::Ok);
+        ui->leHR2->setFocus();
+        return;
 
+    }
     // Определяем возраст человека
     old = QDate::currentDate().year() - dob.right(4).toInt();
     if (old <= 0 || old > 120)
@@ -892,34 +898,34 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><th width=\"200%\">Surname</th><th>Sex</th><th>Age</th><th>Status</th><th>Body<br>length (sm)</th><th>Body<br>mass (kg)</th></tr>");
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
-    text += tr("<tr><td colspan=\"5\">The first loading intensity on the veloergometer N1</td><td>%1</td></tr>").arg(ui->leN1->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">The second loading intensity on the veloergometer N2</td><td>%1</td></tr>").arg(ui->leN2->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">The first loading ascents on a step amount n1</td><td>%1</td></tr>").arg(ui->len1->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">The second loading ascents on a step amount n2</td><td>%1</td></tr>").arg(ui->len2->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1</td><td>%1</td></tr>").arg(ui->leHR1->text().toFloat(),0,'f',0);
-    text += tr("<tr><td colspan=\"5\">Heart rate after the second loading  HR2</td><td>%1</td></tr>").arg(ui->leHR2->text().toFloat(),0,'f',0);
+    text += tr("<tr><td colspan=\"5\">The first loading intensity on the veloergometer N1, bT</td><td>%1</td></tr>").arg(ui->leN1->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">The second loading intensity on the veloergometer N2, bT</td><td>%1</td></tr>").arg(ui->leN2->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">The first loading ascents on a step amount n1, n/min</td><td>%1</td></tr>").arg(ui->len1->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">The second loading ascents on a step amount n2, n/min</td><td>%1</td></tr>").arg(ui->len2->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1, sh/min</td><td>%1</td></tr>").arg(ui->leHR1->text().toFloat(),0,'f',0);
+    text += tr("<tr><td colspan=\"5\">Heart rate after the second loading  HR2, sh/min</td><td>%1</td></tr>").arg(ui->leHR2->text().toFloat(),0,'f',0);
     text += tr("<tr><th colspan=\"6\">Calculation data</th></tr>");
 
     text += tr("<tr><th colspan=\"4\">Index</th><th>Numerical<br>value</th><th>Functional<br>estimation</th></tr>");
-    text += tr("<tr><td colspan=\"4\">aPWC<sub>170</td><td>%1</td><td></td></tr>").arg(ui->labelaPWC170->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"4\">rPWC<sub>170</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloPWC170->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloPWC170));
-    text += tr("<tr><td colspan=\"4\">aVO<sub>2max</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"4\">rVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloMPK));
+    text += tr("<tr><td colspan=\"4\">aPWC<sub>170</sub>, kgm/min</td><td>%1</td><td></td></tr>").arg(ui->labelaPWC170->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"4\">rPWC<sub>170</sub>, kgm/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloPWC170->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloPWC170));
+    text += tr("<tr><td colspan=\"4\">aVO<sub>2max</sub>, l/min</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"4\">rVO<sub>2max</sub>, ml/min/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloMPK));
 
-    text += tr("<tr><td colspan=\"4\">ALAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
-    text += tr("<tr><td colspan=\"4\">ALAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
-    text += tr("<tr><td colspan=\"4\">LAKp</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
-    text += tr("<tr><td colspan=\"4\">LAKc</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
-    text += tr("<tr><td colspan=\"4\">AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
-    text += tr("<tr><td colspan=\"4\">HR<sub>AMT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelCHSSpano));
-    text += tr("<tr><td colspan=\"4\">GMC</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));
+    text += tr("<tr><td colspan=\"4\">ALAKp, bT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
+    text += tr("<tr><td colspan=\"4\">ALAKc, mmol/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
+    text += tr("<tr><td colspan=\"4\">LAKp, bT</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
+    text += tr("<tr><td colspan=\"4\">LAKc, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
+    text += tr("<tr><td colspan=\"4\">AMT, % from aVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
+    text += tr("<tr><td colspan=\"4\">HR<sub>AMT</sub>, sh/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelCHSSpano));
+    text += tr("<tr><td colspan=\"4\">GMC, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));
 
     text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelF6->text());
-    text += tr("<tr><td colspan=\"4\">General endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelF1->text());
-    text += tr("<tr><td colspan=\"4\">Speed endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelF2->text());
-    text += tr("<tr><td colspan=\"4\">Speed-strength endurance</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelF3->text());
-    text += tr("<tr><td colspan=\"4\">Energetic system economy</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text().toFloat(),0,'f',2).arg(ui->labelF4->text());
-    text += tr("<tr><td colspan=\"4\">Reserve capability</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelF5->text());
+    text += tr("<tr><td colspan=\"4\">General endurance, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelF1->text());
+    text += tr("<tr><td colspan=\"4\">Speed endurance, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelF2->text());
+    text += tr("<tr><td colspan=\"4\">Speed-strength endurance, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelF3->text());
+    text += tr("<tr><td colspan=\"4\">Energetic system economy, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text().toFloat(),0,'f',2).arg(ui->labelF4->text());
+    text += tr("<tr><td colspan=\"4\">Reserve capability, points</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelF5->text());
 
     text += "</table>";
 
