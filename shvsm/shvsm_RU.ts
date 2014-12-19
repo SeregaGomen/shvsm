@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -962,12 +962,12 @@
         <source>Current language</source>
         <translation>Текущий язык</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="66"/>
         <source>Russian (Русский)</source>
         <translation>Russian (Русский)</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="82"/>
         <source>Ukrainian (Українська)</source>
         <translation>Ukrainian (Українська)</translation>
@@ -2764,37 +2764,37 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="1653"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate (HR), sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate (HR)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений (ЧСС)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений (ЧСС), уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1654"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Systolic arterial pressure (APs), mm of m.c.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Systolic arterial pressure (APs)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Артериальное давление систолическое (АДс)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Артериальное давление систолическое (АДс), мм рт.ст.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1655"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Diastolic arterial pressure (APd), mm of m.c.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Diastolic arterial pressure (APd)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Артериальное давление диастолическое (АДд)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Артериальное давление диастолическое (АДд), мм рт.ст.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1656"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Vital lung capacity (VLC), mL&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Vital lung capacity (VLC)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Жизненная емкость легких (ЖЕЛ)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Жизненная емкость легких (ЖЕЛ), мл&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1657"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Inhalation breathing delay time (Tin), sec.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Inhalation breathing delay time (Tin)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Время задержки дыхания на вдохе (Твд)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Время задержки дыхания на вдохе (Твд), с&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1658"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Exhalation breathing delay time (Tex), sec.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Exhalation breathing delay time (Tex)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Время задержки дыхания на выдохе (Твыд)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Время задержки дыхания на выдохе (Твыд), с&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1659"/>
@@ -2810,79 +2810,79 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="1663"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Systole blood volume, mL&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Systole blood volume&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Систолический объем крови&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Систолический объем крови, мл&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1664"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Minute blood volume, L/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Minute blood volume&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Минутный объем крови&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Минутный объем крови, л/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1665"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Cardiac index, L/m&lt;sup&gt;2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Cardiac index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Сердечный индекс&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Сердечный индекс, л/м&lt;sup&gt;2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1666"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;General peripheral resistance, din&lt;sup&gt;2&lt;/sup&gt;&amp;times;sec/sm&lt;sup&gt;5&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;General peripheral resistance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Общее периферическое сопротивление сосудов&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Общее периферическое сопротивление сосудов, дин&lt;sup&gt;2&lt;/sup&gt;&amp;times;с/см&lt;sup&gt;5&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1667"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Heart volume, sm&lt;sup&gt;3&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Heart volume&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Объем сердца&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Объем сердца, см&lt;sup&gt;3&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1668"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Robinson Index, cond. units&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Robinson Index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Индекс Робинсона&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Индекс Робинсона, условные единицы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1669"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Circulation of blood economizing coefficient, cond. units&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Circulation of blood economizing coefficient&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Коэффициент экономичности кровообращения&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Коэффициент экономичности кровообращения, условные единицы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1670"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Systolic arterial pressure deviation, mm of m.c.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Systolic arterial pressure deviation&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Отклонение систолического артериального давления&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Отклонение систолического артериального давления, мм рт. ст.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1671"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Diastolic arterial pressure deviation, mm of m.c.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Diastolic arterial pressure deviation&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Отклонение диастолического артериального давления&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Отклонение диастолического артериального давления, мм рт. ст.&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1672"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Hypoxia index, cond. units&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Hypoxia index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Индекс гипоксии&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Индекс гипоксии, условные единицы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1673"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Skibinsky index, cond. units&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Skibinsky index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Индекс Скибинского&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Индекс Скибинского, условные единицы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1674"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Cardio-vascular system functional state level, points&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Cardio-vascular system functional state level&lt;/b&gt;, points&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Уровень функционального состояния сердечно-сосудистой системы&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Уровень функционального состояния сердечно-сосудистой системы, баллы&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1675"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;External breathing system functional state level, points&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;External breathing system functional state level&lt;/b&gt;, points&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation type="unfinished">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Уровень функционального состояния системы внешнего дыхания&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Уровень функционального состояния системы внешнего дыхания, баллы&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
 </context>
 <context>

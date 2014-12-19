@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -982,12 +982,12 @@
         <source>Current language</source>
         <translation>Поточна мова</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="66"/>
         <source>Russian (Русский)</source>
         <translation>Russian (Русский)</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="82"/>
         <source>Ukrainian (Українська)</source>
         <translation>Ukrainian (Українська)</translation>
@@ -2914,13 +2914,13 @@ p, li { white-space: pre-wrap; }
         <location filename="shvsmintegralcreatedialog.cpp" line="1674"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Cardio-vascular system functional state level, points&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Cardio-vascular system functional state level&lt;/b&gt;, points&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Рівень функціонального стану серцево-судинної системи, бали&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Рівень функціонального стану серцево-судинної системи, бали&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1675"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;External breathing system functional state level, points&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;External breathing system functional state level&lt;/b&gt;, points&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Рівень функціонального стану системи зовнішнього дихання, бали&lt;/b&gt;&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Рівень функціонального стану системи зовнішнього дихання, бали&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
 </context>
 <context>

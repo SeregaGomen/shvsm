@@ -1103,10 +1103,10 @@ void SHVSMIntegralCreateDialog::setupForm(void)
     ui->tableView->setColumnHidden(6, true);
     ui->tableView->setColumnHidden(7, true);
     ui->tableView->horizontalHeader()->setResizeMode(1,QHeaderView::Stretch);
-    ui->tableView->horizontalHeader()->resizeSection(2, 60);
+    ui->tableView->horizontalHeader()->resizeSection(2, 100);
     ui->tableView->horizontalHeader()->resizeSection(3, 60);
-    ui->tableView->horizontalHeader()->resizeSection(4, 95);
-    ui->tableView->horizontalHeader()->resizeSection(5, 95);
+    ui->tableView->horizontalHeader()->resizeSection(4, 65);
+    ui->tableView->horizontalHeader()->resizeSection(5, 105);
     ui->tableView->setWordWrap(true);
 
     ui->tableView->verticalHeader()->setDefaultSectionSize(ui->tableView->verticalHeader()->minimumSectionSize());
