@@ -74,7 +74,7 @@
     </font>
    </property>
    <property name="text">
-    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Integrated rapid assessment of functional status and functional training organism (&amp;quot;SHVSM&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Complex express estimation of organism functional preparedness and functional state (&amp;quot;SHVSM&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
@@ -112,7 +112,7 @@
      <x>210</x>
      <y>160</y>
      <width>361</width>
-     <height>16</height>
+     <height>21</height>
     </rect>
    </property>
    <property name="text">

@@ -383,8 +383,8 @@ void SHVSMCreateDialog::setupForm(void)
     ui->tableView->setCurrentIndex(ui->tableView->model()->index(0, 0));
 
 
-    sex = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),6)).toInt();
-    isSportsman = (ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),7)).toInt() == 1) ? true : false;
+//    sex = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),6)).toInt();
+//    isSportsman = (ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),7)).toInt() == 1) ? true : false;
 }
 
 // Расчет параметров "ШВСМ"
@@ -398,6 +398,8 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     QString dob = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),5)).toString();
 
 
+    sex = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),6)).toInt();
+    isSportsman = (ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),7)).toInt() == 1) ? true : false;
 
     if (ui->leWeight->text().trimmed().isEmpty())
     {
@@ -515,7 +517,7 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     else
         pano = panof + 20;
 
-    chsspano = pow(ompk,1.014) + pow(lake,1.012) + pano;
+    chsspano = round(pow(ompk,1.014) + pow(lake,1.012) + pano);
     ome = pano + ompk + alake + lake;
 
     //--------------------------------------------------------
@@ -653,7 +655,7 @@ void SHVSMCreateDialog::slotCalcSHVSM(void)
     ui->labelLAKem->setText(QString("%1").arg(lakem,0,'f',2));
     ui->labelLAKe->setText(QString("%1").arg(lake,0,'f',2));
     ui->labelPANO->setText(QString("%1").arg(pano,0,'f',2));
-    ui->labelCHSSpano->setText(QString("%1").arg(chsspano,0,'f',2));
+    ui->labelCHSSpano->setText(QString("%1").arg(chsspano,0,'f',0));
     ui->labelOME->setText(QString("%1").arg(ome,0,'f',2));
 
     // ---------------------------------- oPWC170 ------------------------------------
@@ -717,7 +719,7 @@ void SHVSMCreateDialog::slotSaveSHVSM(void)
                                  LAKe=%18,PANO=%19,CHSSpano=%20,OME=%21,TE=%22,SE=%23,SPE=%24,SPS=%25,RP=%26,UFP=%27,old=%28 \
                                  WHERE surveyed_id = %1 AND dt = '%2'").arg(surveyed_id).arg(dt).arg(weight).arg(growth).arg(N1,0,'f',0).arg(N2,0,'f',0).arg(n1,0,'f',0).arg(n2,0,'f',0).arg(hr1,0,'f',0).arg(hr2,0,'f',0).\
                                  arg(apwc170,0,'f',2).arg(opwc170,0,'f',2).arg(ampk,0,'f',2).arg(ompk,0,'f',2).arg(alakm,0,'f',2).arg(alake,0,'f',2).arg(lakm,0,'f',2).\
-                                 arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(p_ome,0,'f',2).arg(0.5*(p_opwc170 + p_ompk),0,'f',2).arg(0.5*(p_alakm + p_alake),0,'f',2).\
+                                 arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',0).arg(p_ome,0,'f',2).arg(0.5*(p_opwc170 + p_ompk),0,'f',2).arg(0.5*(p_alakm + p_alake),0,'f',2).\
                                  arg(0.5*(p_lakm + p_lake),0,'f',2).arg(0.5*(p_pano + p_chsspano),0,'f',2).arg(p_ome,0,'f',2).arg(p_ufp,0,'f',2).arg(old)))
             QMessageBox::critical(this, tr("Error"),tr("Error accessing to database!"), QMessageBox::Ok);
 
@@ -728,7 +730,7 @@ void SHVSMCreateDialog::slotSaveSHVSM(void)
     if (!query.exec(QString("INSERT INTO surveySHVSM (surveyed_id,dt,weight,growth,N1,N2,n_1,n_2,HR1,HR2,aPWC170,oPWC170,aMPK,oMPK,ALAKm,ALAKe,LAKm,LAKe,PANO,CHSSpano,OME,TE,SE,SPE,SPS,RP,UFP,old) \
                              VALUES (%1,'%2',%3,%4,%5,%6,%7,%8,%9,%10,%11,%12,%13,%14,%15,%16,%17,%18,%19,%20,%21,%22,%23,%24,%25,%26,%27,%28)").arg(surveyed_id).arg(dt).arg(weight).arg(growth).\
                              arg(N1,0,'f',0).arg(N2,0,'f',0).arg(n1,0,'f',0).arg(n2,0,'f',0).arg(hr1,0,'f',0).arg(hr2,0,'f',0).arg(apwc170,0,'f',2).arg(opwc170,0,'f',2).arg(ampk,0,'f',2).arg(ompk,0,'f',2).arg(alakm,0,'f',2).arg(alake,0,'f',2).\
-                             arg(lakm,0,'f',2).arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',2).arg(ome,0,'f',2).arg(0.5*(p_opwc170 + p_ompk),0,'f',2).arg(0.5*(p_alakm + p_alake),0,'f',2).\
+                             arg(lakm,0,'f',2).arg(lake,0,'f',2).arg(pano,0,'f',2).arg(chsspano,0,'f',0).arg(ome,0,'f',2).arg(0.5*(p_opwc170 + p_ompk),0,'f',2).arg(0.5*(p_alakm + p_alake),0,'f',2).\
                              arg(0.5*(p_lakm + p_lake),0,'f',2).arg(0.5*(p_pano + p_chsspano),0,'f',2).arg(p_ome,0,'f',2).arg(p_ufp,0,'f',2).arg(old)))
         QMessageBox::critical(this, tr("Error"),tr("Error accessing to database!"), QMessageBox::Ok);
 }
@@ -863,13 +865,13 @@ void SHVSMCreateDialog::calcNn12(void)
         n1 = (N1*6.12)/(1.33*0.2*weight);
     if (isSportsman)
     {
-        N2 = (N1 + 0.75*N1);
-        n2 = n1 + n1*0.75;
+        N2 = round(N1 + 0.75*N1);
+        n2 = round(n1 + n1*0.75);
     }
     else
     {
-        N2 = N1 + 0.5*N1;
-        n2 = n1 + n1*0.5;
+        N2 = round(N1 + 0.5*N1);
+        n2 = round(n1 + n1*0.5);
     }
     ui->leN1->setText(QString("%1").arg(int(N1)));
     ui->leN2->setText(QString("%1").arg(int(N2)));
@@ -920,7 +922,7 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">LAKc, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
     text += tr("<tr><td colspan=\"4\">LAKcm, mmol/l</td><td>%1</td><td></td></tr>").arg(ui->labelLAKem->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">AMT, % from aVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
-    text += tr("<tr><td colspan=\"4\">HR<sub>AMT</sub>, sh/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelCHSSpano));
+    text += tr("<tr><td colspan=\"4\">HR<sub>AMT</sub>, sh/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',0).arg(getIndicatorTxt(ui->labelCHSSpano));
     text += tr("<tr><td colspan=\"4\">GMC, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));
 
     text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level, points</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelF6->text());

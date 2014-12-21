@@ -367,7 +367,7 @@ float normalize(float p)
 
 float SHVSMIntegralCreateDialog::nDEV_GEL(float val)
 {
-    return normalize(fabs(100.0*((20.0 - fabs(val)) - 1.0/20.0)));
+    return normalize(50.0 + 50*(1.0 - (20.0 - val)/20.0));
 }
 
 float SHVSMIntegralCreateDialog::nSI(float val)
@@ -384,24 +384,24 @@ float SHVSMIntegralCreateDialog::nIR(float val)
         if (isSportsman)
         {
             if (sex == 1)
-                ret = normalize(100.0*((120.0 - val)/80.0 - 1.0));
+                ret = normalize(100.0*((120.0 - val)/80.0));
             else
-                ret = normalize(100.0*((125.0 - val)/80.0 - 1.0));
+                ret = normalize(100.0*((125.0 - val)/80.0));
         }
         else
         {
             if (sex == 1)
-                ret = normalize(100.0*((130.0 - val)/85.0 - 1.0));
+                ret = normalize(100.0*((130.0 - val)/85.0));
             else
-                ret = normalize(100.0*((135.0 - val)/80.0 - 1.0));
+                ret = normalize(100.0*((135.0 - val)/80.0));
         }
     }
     else
     {
         if (sex == 1)
-            ret = normalize(100.0*((130.0 - val)/80.0 - 1.0));
+            ret = normalize(100.0*((130.0 - val)/80.0));
         else
-            ret = normalize(100.0*((130.0 - val)/90.0 - 1.0));
+            ret = normalize(100.0*((130.0 - val)/90.0));
     }
     return ret;
 }
@@ -409,17 +409,17 @@ float SHVSMIntegralCreateDialog::nIR(float val)
 float SHVSMIntegralCreateDialog::nOADC(float val)
 {
     if (old < 18)
-        return normalize(100.0*((20.0 - val)/20.0 - 1.0));
+        return normalize(100.0*(1.0 - fabs(val)/20.0));
     else
-        return normalize(100.0*((30.0 - val)/30.0 - 1.0));
+        return normalize(100.0*(1.0 - fabs(val)/30.0));
 }
 
 float SHVSMIntegralCreateDialog::nOADD(float val)
 {
     if (old < 18)
-        return normalize(100.0*((20.0 - val)/20.0 - 1.0));
+        return normalize(100.0*(1.0 - fabs(val)/20.0));
     else
-        return normalize(100.0*((30.0 - val)/30.0 - 1.0));
+        return normalize(100.0*(1.0 - fabs(val)/30.0));
 }
 
 float SHVSMIntegralCreateDialog::nDTBE(float val)
@@ -737,7 +737,7 @@ float SHVSMIntegralCreateDialog::nKEK(float val)
         else
             arr = w;
     }
-    return normalize(100.0*((arr[index][0] - val)/arr[index][1] - 1.0));
+    return normalize(100.0*((arr[index][0] - val)/arr[index][1]));
 }
 
 float SHVSMIntegralCreateDialog::nOPSS(float val)
@@ -790,7 +790,7 @@ float SHVSMIntegralCreateDialog::nOPSS(float val)
         else
             arr = w;
     }
-    return normalize(100.0*((arr[index][0] - val)/arr[index][1] - 1.0));
+    return normalize(100.0*((arr[index][0] - val)/arr[index][1]));
 }
 
 float SHVSMIntegralCreateDialog::nVC(float val)
@@ -855,28 +855,28 @@ float SHVSMIntegralCreateDialog::nMOK(float val)
                        { 5, 2.5 },
                        { 5.5, 2.5 },
                        { 6, 3 },
-                       { 10, 7 }},
+                       { 9, 7 }},
           m[7][2] =   {{ 3.5, 2 },
                        { 4, 2.5 },
                        { 4, 2 },
                        { 4.5, 2.5 },
                        { 5, 2.5 },
                        { 5.5, 3 },
-                       { 9, 7 }},
+                       { 8, 6 }},
           w_s[7][2] = {{ 3.5, 2.0 },
                        { 3.5, 2.0 },
                        { 4, 2 },
                        { 4.5, 2 },
                        { 5, 2.5 },
                        { 5.5, 2.5 },
-                       { 8, 5 }},
+                       { 7, 5 }},
           w[7][2]   = {{ 3.5, 2 },
                        { 3.5, 2 },
                        { 4, 2.5 },
                        { 4, 2.5 },
                        { 4.5, 2.5 },
                        { 5, 3 },
-                       { 7, 5}},
+                       { 6, 4}},
          (*arr)[2];
 
 
@@ -984,7 +984,7 @@ void SHVSMIntegralCreateDialog::KEK(float val)
           val4;
 
     getKEK(sex,old,isSportsman,val1,val2,val3,val4);
-    showIndicatorTxt(ui->labelV7,ui->labelT7,val,val1,val2,val3,val4);
+    showIndicatorTxtI(ui->labelV7,ui->labelT7,val,val1,val2,val3,val4);
 }
 
 void SHVSMIntegralCreateDialog::IR(float val)
@@ -995,7 +995,7 @@ void SHVSMIntegralCreateDialog::IR(float val)
           val4;
 
     getIR(sex,old,isSportsman,val1,val2,val3,val4);
-    showIndicatorTxt(ui->labelV6,ui->labelT6,val,val1,val2,val3,val4);
+    showIndicatorTxtI(ui->labelV6,ui->labelT6,val,val1,val2,val3,val4);
 }
 
 void SHVSMIntegralCreateDialog::SOK(float val)
@@ -1029,7 +1029,7 @@ void SHVSMIntegralCreateDialog::OPSS(float val)
           val4;
 
     getOPSS(sex,old,isSportsman,val1,val2,val3,val4);
-    showIndicatorTxt(ui->labelV4,ui->labelT4,val,val1,val2,val3,val4);
+    showIndicatorTxtI(ui->labelV4,ui->labelT4,val,val1,val2,val3,val4);
 }
 
 void SHVSMIntegralCreateDialog::VC(float val)
@@ -1662,7 +1662,7 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
 
     text += tr("<tr><td colspan=\"4\">Systole blood volume, mL</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV1->text().toFloat(),0,'f',2).arg(ui->labelT1->text());
     text += tr("<tr><td colspan=\"4\">Minute blood volume, L/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV2->text().toFloat(),0,'f',2).arg(ui->labelT2->text());
-    text += tr("<tr><td colspan=\"4\">Cardiac index, L/m<sup>2</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelT3->text());
+    text += tr("<tr><td colspan=\"4\">Cardiac index, L/min/m<sup>2</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV3->text().toFloat(),0,'f',2).arg(ui->labelT3->text());
     text += tr("<tr><td colspan=\"4\">General peripheral resistance, din<sup>2</sup>&times;sec/sm<sup>5</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV4->text().toFloat(),0,'f',2).arg(ui->labelT4->text());
     text += tr("<tr><td colspan=\"4\">Heart volume, sm<sup>3</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV5->text().toFloat(),0,'f',2).arg(ui->labelT5->text());
     text += tr("<tr><td colspan=\"4\">Robinson Index, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelT6->text());
