@@ -10,7 +10,8 @@
     </message>
     <message>
         <location filename="aboutdialog.ui" line="77"/>
-        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Integrated rapid assessment of functional status and functional training organism (&amp;quot;SHVSM&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <source>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Complex express estimation of organism functional preparedness and functional state (&amp;quot;SHVSM&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <oldsource>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Integrated rapid assessment of functional status and functional training organism (&amp;quot;SHVSM&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</oldsource>
         <translation>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#00007f;&quot;&gt;Комплексная экспресс-оценка функционального состояния и функциональной подготовленности
 организма (&amp;quot;ШВСМ&amp;quot;)&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
     </message>
@@ -1758,36 +1759,36 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1704"/>
-        <location filename="shvsmcreatedialog.cpp" line="767"/>
-        <location filename="shvsmcreatedialog.cpp" line="799"/>
+        <location filename="shvsmcreatedialog.cpp" line="769"/>
+        <location filename="shvsmcreatedialog.cpp" line="801"/>
         <source>Below the average</source>
         <translation>Ниже среднего</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1729"/>
-        <location filename="shvsmcreatedialog.cpp" line="773"/>
-        <location filename="shvsmcreatedialog.cpp" line="801"/>
+        <location filename="shvsmcreatedialog.cpp" line="775"/>
+        <location filename="shvsmcreatedialog.cpp" line="803"/>
         <source>Average</source>
         <translation>Средний</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1754"/>
-        <location filename="shvsmcreatedialog.cpp" line="779"/>
-        <location filename="shvsmcreatedialog.cpp" line="803"/>
+        <location filename="shvsmcreatedialog.cpp" line="781"/>
+        <location filename="shvsmcreatedialog.cpp" line="805"/>
         <source>Above average</source>
         <translation>Выше среднего</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1779"/>
-        <location filename="shvsmcreatedialog.cpp" line="785"/>
-        <location filename="shvsmcreatedialog.cpp" line="805"/>
+        <location filename="shvsmcreatedialog.cpp" line="787"/>
+        <location filename="shvsmcreatedialog.cpp" line="807"/>
         <source>High</source>
         <translation>Высокий</translation>
     </message>
     <message>
         <location filename="shvsmcreatedialog.ui" line="1804"/>
-        <location filename="shvsmcreatedialog.cpp" line="761"/>
-        <location filename="shvsmcreatedialog.cpp" line="797"/>
+        <location filename="shvsmcreatedialog.cpp" line="763"/>
+        <location filename="shvsmcreatedialog.cpp" line="799"/>
         <source>Low</source>
         <translation>Низкий</translation>
     </message>
@@ -1942,190 +1943,190 @@ p, li { white-space: pre-wrap; }
         <translation>Дата рождения</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="404"/>
-        <location filename="shvsmcreatedialog.cpp" line="411"/>
-        <location filename="shvsmcreatedialog.cpp" line="417"/>
-        <location filename="shvsmcreatedialog.cpp" line="424"/>
-        <location filename="shvsmcreatedialog.cpp" line="431"/>
-        <location filename="shvsmcreatedialog.cpp" line="438"/>
-        <location filename="shvsmcreatedialog.cpp" line="444"/>
-        <location filename="shvsmcreatedialog.cpp" line="453"/>
-        <location filename="shvsmcreatedialog.cpp" line="463"/>
-        <location filename="shvsmcreatedialog.cpp" line="470"/>
-        <location filename="shvsmcreatedialog.cpp" line="477"/>
-        <location filename="shvsmcreatedialog.cpp" line="484"/>
-        <location filename="shvsmcreatedialog.cpp" line="710"/>
-        <location filename="shvsmcreatedialog.cpp" line="722"/>
-        <location filename="shvsmcreatedialog.cpp" line="733"/>
+        <location filename="shvsmcreatedialog.cpp" line="406"/>
+        <location filename="shvsmcreatedialog.cpp" line="413"/>
+        <location filename="shvsmcreatedialog.cpp" line="419"/>
+        <location filename="shvsmcreatedialog.cpp" line="426"/>
+        <location filename="shvsmcreatedialog.cpp" line="433"/>
+        <location filename="shvsmcreatedialog.cpp" line="440"/>
+        <location filename="shvsmcreatedialog.cpp" line="446"/>
+        <location filename="shvsmcreatedialog.cpp" line="455"/>
+        <location filename="shvsmcreatedialog.cpp" line="465"/>
+        <location filename="shvsmcreatedialog.cpp" line="472"/>
+        <location filename="shvsmcreatedialog.cpp" line="479"/>
+        <location filename="shvsmcreatedialog.cpp" line="486"/>
+        <location filename="shvsmcreatedialog.cpp" line="712"/>
+        <location filename="shvsmcreatedialog.cpp" line="724"/>
+        <location filename="shvsmcreatedialog.cpp" line="735"/>
         <source>Error</source>
         <translation>Ошибка</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="404"/>
+        <location filename="shvsmcreatedialog.cpp" line="406"/>
         <source>Do not set the &apos;Weight&apos;!</source>
         <translation>Не задано значение поля &apos;Вес&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="411"/>
+        <location filename="shvsmcreatedialog.cpp" line="413"/>
         <source>Incorrectly set the &apos;Weight&apos;!</source>
         <translation>Некорректно задано значение поля &apos;Вес&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="417"/>
+        <location filename="shvsmcreatedialog.cpp" line="419"/>
         <source>Do not set the &apos;Height&apos;!</source>
         <translation>Не задано значение поля &apos;Рост&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="424"/>
+        <location filename="shvsmcreatedialog.cpp" line="426"/>
         <source>Incorrectly set the &apos;Height&apos;!</source>
         <translation>Некорректно задано значение поля &apos;Рост&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="431"/>
+        <location filename="shvsmcreatedialog.cpp" line="433"/>
         <source>Incorrectly set the &apos;HR1&apos;!</source>
         <translation>Некорректно задано поле &apos;ЧСС1&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="438"/>
+        <location filename="shvsmcreatedialog.cpp" line="440"/>
         <source>Incorrectly set the &apos;HR2&apos;!</source>
         <translation>Некорректно задано поле &apos;ЧСС2&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="444"/>
+        <location filename="shvsmcreatedialog.cpp" line="446"/>
         <source>Incorrectly set the &apos;HR2&apos; (HR2 must be greater HR1)!</source>
         <translation>Некорректно задано поле &apos;ЧСС2&apos; (ЧСС2 должно быть больше ЧСС1)!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="453"/>
+        <location filename="shvsmcreatedialog.cpp" line="455"/>
         <source>Incorrectly set the birthday or date survey!</source>
         <translation>Некорректно задана дата рождения или дата обследования!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="463"/>
+        <location filename="shvsmcreatedialog.cpp" line="465"/>
         <source>Incorrectly set the &apos;N1&apos;!</source>
         <translation>Некорректно задано поле &apos;N1&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="470"/>
+        <location filename="shvsmcreatedialog.cpp" line="472"/>
         <source>Incorrectly set the &apos;N2&apos;!</source>
         <translation>Некорректно задано поле &apos;N2&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="477"/>
+        <location filename="shvsmcreatedialog.cpp" line="479"/>
         <source>Incorrectly set the &apos;n1&apos;!</source>
         <translation>Некорректно задано поле &apos;n1&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="484"/>
+        <location filename="shvsmcreatedialog.cpp" line="486"/>
         <source>Incorrectly set the &apos;n2&apos;!</source>
         <translation>Некорректно задано поле &apos;n2&apos;!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="710"/>
-        <location filename="shvsmcreatedialog.cpp" line="722"/>
-        <location filename="shvsmcreatedialog.cpp" line="733"/>
+        <location filename="shvsmcreatedialog.cpp" line="712"/>
+        <location filename="shvsmcreatedialog.cpp" line="724"/>
+        <location filename="shvsmcreatedialog.cpp" line="735"/>
         <source>Error accessing to database!</source>
         <translation>Ошибка доступа к базе данных!</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="892"/>
+        <location filename="shvsmcreatedialog.cpp" line="894"/>
         <source>M</source>
         <translation>М</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="892"/>
+        <location filename="shvsmcreatedialog.cpp" line="894"/>
         <source>W</source>
         <translation>Ж</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="893"/>
+        <location filename="shvsmcreatedialog.cpp" line="895"/>
         <source>Athlete</source>
         <translation>Спортсмен</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="893"/>
+        <location filename="shvsmcreatedialog.cpp" line="895"/>
         <source>Non-athlete</source>
         <translation>Неспортсмен</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="895"/>
+        <location filename="shvsmcreatedialog.cpp" line="897"/>
         <source>&lt;h1&gt;&lt;center&gt;SHVSM - complex express estimation of functional preparedness&lt;/center&gt;&lt;/h1&gt;</source>
         <translation>&lt;h1&gt;&lt;center&gt;ШВСМ – комплексная экспресс-оценка функциональной подготовленности организма&lt;/center&gt;&lt;/h1&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="896"/>
+        <location filename="shvsmcreatedialog.cpp" line="898"/>
         <source>&lt;center&gt;Malikov N.V, Malikova A.N., Svat&apos;ev A.V.&lt;br&gt;&lt;b&gt;Examination report&lt;/b&gt;&lt;/center&gt;</source>
         <translation>&lt;center&gt;Маликов Н.В. Маликова А.Н. Сватьев А.В.&lt;br&gt;&lt;b&gt;Отчет об обследовании&lt;/b&gt;&lt;/center&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="899"/>
+        <location filename="shvsmcreatedialog.cpp" line="901"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;6&quot;&gt;Date of  examination: &lt;b&gt;%1&lt;/b&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;6&quot;&gt;Дата обследования: &lt;b&gt;%1&lt;/b&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="900"/>
+        <location filename="shvsmcreatedialog.cpp" line="902"/>
         <source>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Status&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Surname&lt;/th&gt;&lt;th&gt;Sex&lt;/th&gt;&lt;th&gt;Age&lt;/th&gt;&lt;th&gt;Qualification&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;length (sm)&lt;/th&gt;&lt;th&gt;Body&lt;br&gt;mass (kg)&lt;/th&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;ФИО&lt;/th&gt;&lt;th&gt;Пол&lt;/th&gt;&lt;th&gt;Возраст&lt;/th&gt;&lt;th&gt;Статус&lt;/th&gt;&lt;th&gt;Длина&lt;br&gt;тела (см)&lt;/th&gt;&lt;th&gt;Масса&lt;br&gt;тела (кг)&lt;/th&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="903"/>
+        <location filename="shvsmcreatedialog.cpp" line="905"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The first loading intensity on the veloergometer N1, watt&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Мощность первой нагрузки на велоэргометре N1, Вт&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="904"/>
+        <location filename="shvsmcreatedialog.cpp" line="906"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The second loading intensity on the veloergometer N2, watt&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Мощность второй нагрузки на велоэргометре N2, Вт&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="905"/>
+        <location filename="shvsmcreatedialog.cpp" line="907"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The first loading ascents on a step amount n1, n/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Количество восхождений на ступеньку при первой нагрузке n1, количество за минуту&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="906"/>
+        <location filename="shvsmcreatedialog.cpp" line="908"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;The second loading ascents on a step amount n2, n/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Количество восхождений на ступеньку при второй нагрузке n2, количество за минуту&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="908"/>
+        <location filename="shvsmcreatedialog.cpp" line="910"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the second loading  HR2, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений после второй нагрузки ЧСС2, уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="909"/>
+        <location filename="shvsmcreatedialog.cpp" line="911"/>
         <source>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Calculation data&lt;/th&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ALAKp&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Результаты расчета&lt;/th&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="917"/>
+        <location filename="shvsmcreatedialog.cpp" line="919"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ALAKp, watt/kg&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;АЛАКм, Вт/кг&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="927"/>
+        <location filename="shvsmcreatedialog.cpp" line="929"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;General endurance, points&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Общая выносливость, баллы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="928"/>
+        <location filename="shvsmcreatedialog.cpp" line="930"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Speed endurance, points&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Скоростная выносливость, баллы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="929"/>
+        <location filename="shvsmcreatedialog.cpp" line="931"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Speed-strength endurance, points&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Скоростно-силовая выносливость, баллы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="930"/>
+        <location filename="shvsmcreatedialog.cpp" line="932"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Energetic system economy, points&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Экономичность системы энергообеспечения, баллы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="931"/>
+        <location filename="shvsmcreatedialog.cpp" line="933"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Reserve capability, points&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Резервные возможности, баллы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
@@ -2138,7 +2139,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЛАКм&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="912"/>
+        <location filename="shvsmcreatedialog.cpp" line="914"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aPWC&lt;sub&gt;170&lt;/sub&gt;, kgm/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;LAKc&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aPWC&lt;sub&gt;170&lt;/sub&gt;, кгм/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
@@ -2148,7 +2149,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">&lt;tr&gt;&lt;th width=&quot;200%&quot;&gt;Ф.И.О.&lt;/th&gt;&lt;th&gt;Пол&lt;/th&gt;&lt;th&gt;Возраст&lt;/th&gt;&lt;th&gt;Квалификация&lt;/th&gt;&lt;th&gt;Длина&lt;br&gt;тела&lt;/th&gt;&lt;th&gt;Масса&lt;br&gt;тела&lt;/th&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="902"/>
+        <location filename="shvsmcreatedialog.cpp" line="904"/>
         <source>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Entrance  calculation data&lt;/th&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;th colspan=&quot;6&quot;&gt;Входные данные для расчета&lt;/th&gt;&lt;/tr&gt;</translation>
     </message>
@@ -2173,7 +2174,7 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений после второй нагрузки ЧСС2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="911"/>
+        <location filename="shvsmcreatedialog.cpp" line="913"/>
         <source>&lt;tr&gt;&lt;th colspan=&quot;4&quot;&gt;Index&lt;/th&gt;&lt;th&gt;Numerical&lt;br&gt;value&lt;/th&gt;&lt;th&gt;Functional&lt;br&gt;estimation&lt;/th&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;th colspan=&quot;4&quot;&gt;Показатель&lt;/th&gt;&lt;th&gt;Числовое&lt;br&gt;значение&lt;/th&gt;&lt;th&gt;Функциональная&lt;br&gt;оценка&lt;/th&gt;&lt;/tr&gt;</translation>
     </message>
@@ -2190,71 +2191,71 @@ p, li { white-space: pre-wrap; }
         <translation type="obsolete">&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;аМПК&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="907"/>
+        <location filename="shvsmcreatedialog.cpp" line="909"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the first loading HR1, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rVO&lt;sub&gt;2max&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений после второй нагрузки ЧСС2, уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="913"/>
+        <location filename="shvsmcreatedialog.cpp" line="915"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rPWC&lt;sub&gt;170&lt;/sub&gt;, kgm/min/kg&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rPWC&lt;sub&gt;170&lt;/sub&gt;, kgm/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rPWC&lt;sub&gt;170&lt;/sub&gt;, кгм/мин/кг&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="914"/>
+        <location filename="shvsmcreatedialog.cpp" line="916"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aVO&lt;sub&gt;2max&lt;/sub&gt;, l/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;HR&lt;sub&gt;AMT&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;аМПК, л/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="915"/>
+        <location filename="shvsmcreatedialog.cpp" line="917"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rVO&lt;sub&gt;2max&lt;/sub&gt;, ml/min/kg&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;GMC&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;оМПК, мл/мин/кг&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="923"/>
+        <location filename="shvsmcreatedialog.cpp" line="925"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;HR&lt;sub&gt;AMT&lt;/sub&gt;, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЧССпано, уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="924"/>
+        <location filename="shvsmcreatedialog.cpp" line="926"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;GMC, cond. units&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ОМЕ, условные единицы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="926"/>
+        <location filename="shvsmcreatedialog.cpp" line="928"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Functional preparedness level, points&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Functional preparedness level&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;&lt;b&gt;Уровень функциональной подготовленности, бали&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%1&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;%2&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="918"/>
+        <location filename="shvsmcreatedialog.cpp" line="920"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ALAKc, mmol/kg&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;General endurance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;АЛАКе, ммоль/кг&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="919"/>
+        <location filename="shvsmcreatedialog.cpp" line="921"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;LAKp, watt&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Speed endurance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЛАКм, Вт/кг&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="920"/>
+        <location filename="shvsmcreatedialog.cpp" line="922"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;LAKc, cond. units&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Speed-strength endurance&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЛАКе, условные единицы&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="921"/>
+        <location filename="shvsmcreatedialog.cpp" line="923"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;LAKcm, mmol/l&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Energetic system economy&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЛАКем, ммоль/л&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
-        <location filename="shvsmcreatedialog.cpp" line="922"/>
+        <location filename="shvsmcreatedialog.cpp" line="924"/>
         <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;AMT, % from aVO&lt;sub&gt;2max&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
         <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Reserve capability&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ПАНО, в % от аМПК&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
@@ -2820,9 +2821,9 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1665"/>
-        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Cardiac index, L/m&lt;sup&gt;2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
-        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Cardiac index&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
-        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Сердечный индекс, л/м&lt;sup&gt;2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Cardiac index, L/min/m&lt;sup&gt;2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Cardiac index, L/m&lt;sup&gt;2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
+        <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;Сердечный индекс, л/мин/м&lt;sup&gt;2&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1666"/>
