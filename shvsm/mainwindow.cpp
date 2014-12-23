@@ -17,6 +17,7 @@
 #include "shvsmintegralcreatedialog.h"
 #include "languagesetupdialog.h"
 #include "aboutdialog.h"
+#include "aboutautorsdialog.h"
 #include "archiveteamshvsmintegraldialog.h"
 #include "archiveteamshvsmdialog.h"
 #include "archivesurveyedshvsmdialog.h"
@@ -355,4 +356,11 @@ void MainWindow::slotArchiveSurveyed(void)
 
     dlg->changeLanguage();
     dlg->exec();
+}
+
+void MainWindow::slotAboutAutors(void)
+{
+    AboutAutorsDialog* adlg = new AboutAutorsDialog(this);
+
+    adlg->exec();
 }

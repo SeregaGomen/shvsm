@@ -1,6 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
+<context>
+    <name>AboutAutorsDialog</name>
+    <message>
+        <location filename="aboutautorsdialog.ui" line="14"/>
+        <source>About autors</source>
+        <translation>Про авторів</translation>
+    </message>
+    <message utf8="true">
+        <location filename="aboutautorsdialog.ui" line="22"/>
+        <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Information about developers&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;The modified version of SHVSM-program was worked Zaporizhzhya national university on 2005. &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Developer:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;Gomeniuk Sergey Ivanovich&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;, Doctor of Sciences (Technical), professor, dean of mathematical faculty of Zaporizhzhya national university .&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;ZAPORIZHZHYA NATIONAL UNIVERSITY&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Rights on distribution of software product belong to authors of program «SHVSM»:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;Malikov Nicolay Vasilievich&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; – Doctor of Sciences (Biology), professor, honoured worker of science and technique of Ukraine, dean the faculty of physical education of Zaporizhzhya national university, member of Ukrainian National Olympic Committee (NOC). &lt;/span&gt;&lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;Malikova Anastasiya Nikolaevna&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; – PhD (Physical education and sport), associate professor of olympic and professional sport department of Zaporizhzhya national university, postdoctoral of Zaporizhzhya national university.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;Svat’ev Andrey Viacheslavovich&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; - Doctor of Sciences (Pedagogy), associate professor, head of olympic and professional sport department of Zaporizhzhya national university, honoured trainer of Ukraine. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Malikov N.V. &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Patent on an invention 50264А&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt; Ukraine, МПК 6 А61В5/02. Methods of estimation of cardiovascular system functional state / Zaporizhzhia government university. -№2001128491; 15.10.2002, Bulletin №10. - 4 p.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Malikov N.V., Svat’ev A.V. Patent on an invention 59691&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Ukraine, МПК 7 А61В5/02. Method of determination of alactate anaerobic power of organism / Zaporizhzhia government university. - &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;№2002119141; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;15.09.2003, Bulletin №9. – 8 p.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Malikov N.V., Konoch A.P. Patent on an invention 5969o&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Ukraine, МПК 7 А61В5/02. Method of determination of lactate anaerobic power of organism / Zaporizhzhia government university. - &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;№2002119140; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;15.09.2003, Bulletin №9. – 9 p.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Malikov N.V., Svat’ev A.V. Patent on an invention 4396&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Ukraine, МПК 7 А61В5/02. Method of determination of alactate anaerobic capacity of organism / Zaporizhzhia government university. - &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;№ 20040503338, 17.01.2005. – &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Bulletin&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; №1. – 4 p.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Malikov N.V., Svat’ev A.V. Patent on an invention 4396&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Ukraine, МПК 7 А61В5/02. Method of determination of lactate anaerobic capacity of organism / Zaporizhzhia government university. - &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;№20040503833, 17.01.2005. – &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Bulletin&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; №1. – 4 p.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Malikov N.V. Testifying is to registration of copyright on work.&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; Computer program «SHVSM»: express-diagnostics of functional preparedness and functional state of organism&amp;quot; - №28365. - 10.04.2009.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;Contacts: &lt;/span&gt;&lt;/p&gt;
+&lt;table border=&quot;0&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px;&quot; width=&quot;593&quot; cellspacing=&quot;0&quot; cellpadding=&quot;1&quot;&gt;
+&lt;tr&gt;
+&lt;td width=&quot;315&quot; style=&quot; vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;Tel.&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; 	&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td width=&quot;274&quot; style=&quot; vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;+38 (061) 228 75 54&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;+38 (061) 271 57 46&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p align=&quot;right&quot; style=&quot; margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;e-mail:&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; 	&lt;/span&gt;&lt;/p&gt;&lt;/td&gt;
+&lt;td style=&quot; vertical-align:top; padding-left:0; padding-right:0; padding-top:0; padding-bottom:0;&quot;&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;a href=&quot;mailto:nvmalikov1957@gmail.com&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; text-decoration: underline; color:#00000a;&quot;&gt;nvmalikov1957@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;anmaliq@gmail.com&lt;/span&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt; &lt;/span&gt;&lt;/p&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</source>
+        <translation>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:&apos;MS Shell Dlg 2&apos;; font-size:8.25pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Інформація про розробників&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Модифіковану версію програми ШВСМ розроблено в Запорізькому національному університеті в 2014 році. &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic; text-decoration: underline;&quot;&gt;Розробник:&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; Гоменюк Сергій Іванович, доктор технічних наук, професор, декан математичного факультету Запорізького національного університету.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; text-transform:uppercase;&quot;&gt;Запорізький національний університет&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Права на розповсюдження програмного продукту належать авторам програми «ШВСМ»:&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;Маліков Микола Васильович&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; – доктор біологічних наук, професор, заслужений діяч науки і техніки України, декан факультету фізичного виховання Запорізького національного університету, член Національного Олімпійського Комітету (НОК) України.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;Малікова Анастасія Миколаївна &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;– кандидат наук з фізичного виховання та спорту, доцент кафедри олімпійського та професійного спорту Запорізького національного університету, докторант Запорізького національного університету.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600;&quot;&gt;Сватьєв Андрій В’ячеславович &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;– доктор педагогічних наук, доцент, завідувач доцент кафедри олімпійського та професійного спорту Запорізького національного університету, заслужений тренер України. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;ul style=&quot;margin-top: 0px; margin-bottom: 0px; margin-left: 0px; margin-right: 0px; -qt-list-indent: 1;&quot;&gt;&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Маліков М.В. Патент на винахід 50264А &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Україна, МПК 6 А61В5/02 Спосіб оцінки функціо­нального стану серцево-су­динної системи органі­зму / Запорі­зький дер­жавний універси­тет. -№2001128491; Опубл. 15.10.2002, Бюл. №10. – 4 с.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Маліков М.В., Сватьєв А.В. Патент на винахід 59691&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt; Україна, МПК 7 А61В5/02 &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;Спосіб визначення алак­тат­ної анаеробної поту­жності організму / За­порізь­кий дер­жавний універси­тет.- №2002119141; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Опубл. 15.09.2003, Бюл. №9. – 8 с.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Маліков М.В., Конох А.П. Патент на винахід 59690&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt; Україна, МПК 7 А61В5/02&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; Спосіб визначення лак­татної анаеробної поту­жності орга­нізму / Запорізь­кий дер­жавний універси­тет.- №2002119140; &lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#000000;&quot;&gt;Опубл. 15.09.2003, Бюл. №9. – 9 с.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Маліков М.В., Сватьєв А.В. Патент на корисну модель 4396.&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; Україна, МПК А61 В5/02. Спосіб визначення алактат­ної анаеробної ємно­сті орга­нізму / За­порі­зький державний університет.- № 20040503338, Опубл. 17.01.2005. – Бюл. №1. – 4 с.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Маліков М.В., Сватьєв А.В. Патент на корисну модель. 4404.&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; Україна, МПК А61 В5/02. Спосіб визначення лак­татної анаеробної ємно­сті органі­зму / За­порі­зький державний університет. - №20040503833, Опубл. 17.01.2005. – Бюл. №1. – 4 с.&lt;/span&gt; &lt;/li&gt;
+&lt;li style=&quot; font-size:8pt;&quot; align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; font-weight:600; font-style:italic;&quot;&gt;Маліков М.В. Свідоцтво про реєст­рацію авторського права на твір.&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt; Комп’ютерна програма «ШВСМ: експрес-діагнос­тика функціональної підго­товленості та функціональ­ного стану організму» - №28365. – 10.04.2009. &lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;Контактна інформація: &lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;	тел. 	(061) 228 75 54&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;		(061) 271 57 46&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/span&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt;&quot;&gt;	e-mail: 	&lt;/span&gt;&lt;a href=&quot;mailto:nvmalikov1957@gmail.com&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; text-decoration: underline; color:#00000a;&quot;&gt;nvmalikov1957@gmail.com&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p align=&quot;justify&quot; style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:100%;&quot;&gt;&lt;span style=&quot; font-family:&apos;Times New Roman, serif&apos;; font-size:12pt; color:#00000a;&quot;&gt;		anmaliq@gmail.com&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:12px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; line-height:115%;&quot;&gt;&lt;span style=&quot; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;br /&gt;&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</translation>
+    </message>
+</context>
 <context>
     <name>AboutDialog</name>
     <message>
@@ -983,12 +1064,12 @@
         <source>Current language</source>
         <translation>Поточна мова</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="languagesetupdialog.ui" line="66"/>
         <source>Russian (Русский)</source>
         <translation>Russian (Русский)</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="languagesetupdialog.ui" line="82"/>
         <source>Ukrainian (Українська)</source>
         <translation>Ukrainian (Українська)</translation>
@@ -1019,7 +1100,7 @@
     </message>
     <message>
         <location filename="mainwindow.ui" line="40"/>
-        <location filename="mainwindow.ui" line="172"/>
+        <location filename="mainwindow.ui" line="173"/>
         <source>Create a new survey &apos;SHVSM&apos;</source>
         <translation>Створити нове дослідження &apos;ШВСМ&apos;</translation>
     </message>
@@ -1050,16 +1131,16 @@
         <translation>&amp;?</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="122"/>
-        <location filename="mainwindow.ui" line="225"/>
-        <location filename="mainwindow.ui" line="247"/>
-        <location filename="mainwindow.ui" line="258"/>
+        <location filename="mainwindow.ui" line="123"/>
+        <location filename="mainwindow.ui" line="226"/>
+        <location filename="mainwindow.ui" line="248"/>
+        <location filename="mainwindow.ui" line="259"/>
         <source>&amp;Team...</source>
         <translation>&amp;Команда...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="125"/>
-        <location filename="mainwindow.ui" line="128"/>
+        <location filename="mainwindow.ui" line="126"/>
+        <location filename="mainwindow.ui" line="129"/>
         <source>Create a new team</source>
         <translation>Створити нову команду</translation>
     </message>
@@ -1068,105 +1149,113 @@
         <translation type="obsolete">&amp;Обследуемый...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="140"/>
-        <location filename="mainwindow.ui" line="143"/>
+        <location filename="mainwindow.ui" line="141"/>
+        <location filename="mainwindow.ui" line="144"/>
         <source>Create a new examinee</source>
         <oldsource>Create a new surveyed</oldsource>
         <translation>Створити нового обстежуваного</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="148"/>
+        <location filename="mainwindow.ui" line="149"/>
         <source>E&amp;xit</source>
         <translation>В&amp;ихід</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="151"/>
-        <location filename="mainwindow.ui" line="154"/>
+        <location filename="mainwindow.ui" line="152"/>
+        <location filename="mainwindow.ui" line="155"/>
         <source>Quit the program</source>
         <translation>Завершити роботу програми</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="166"/>
+        <location filename="mainwindow.ui" line="167"/>
         <source>&amp;SHVSM...</source>
         <translation>&amp;ШВСМ...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="169"/>
+        <location filename="mainwindow.ui" line="170"/>
         <source>Create a new examination &apos;SHVSM&apos;</source>
         <translation>Створення нового обстеження &apos;ШВСМ&apos;</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="181"/>
+        <location filename="mainwindow.ui" line="182"/>
         <source>S&amp;HVSM-complex...</source>
         <oldsource>S&amp;HVSM-integral...</oldsource>
         <translation>Ш&amp;ВСМ-інтеграл...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="184"/>
-        <location filename="mainwindow.ui" line="187"/>
+        <location filename="mainwindow.ui" line="185"/>
+        <location filename="mainwindow.ui" line="188"/>
         <source>Create a new examination &apos;SHVSM-complex&apos;</source>
         <oldsource>Create a new examination &apos;SHVSM-integral&apos;</oldsource>
         <translation>Створення нового обстеження &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="192"/>
+        <location filename="mainwindow.ui" line="193"/>
         <source>&amp;Language...</source>
         <translation>&amp;Мова...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="195"/>
-        <location filename="mainwindow.ui" line="198"/>
+        <location filename="mainwindow.ui" line="196"/>
+        <location filename="mainwindow.ui" line="199"/>
         <source>Select language program</source>
         <translation>Вибір мови програми</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="203"/>
+        <location filename="mainwindow.ui" line="281"/>
+        <source>A&amp;bout autors...</source>
+        <translation>&amp;Про авторів...</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="284"/>
+        <location filename="mainwindow.ui" line="287"/>
+        <source>About of autors SHVSM</source>
+        <translation>Про авторів &quot;ШВСМ&quot;</translation>
+    </message>
+    <message>
         <source>&amp;About...</source>
-        <translation>&amp;Про програму ...</translation>
+        <translation type="obsolete">&amp;Про програму ...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="206"/>
-        <location filename="mainwindow.ui" line="209"/>
         <source>About the program</source>
-        <translation>Вивід відомостей про програму</translation>
+        <translation type="obsolete">Вивід відомостей про програму</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="214"/>
-        <location filename="mainwindow.ui" line="236"/>
-        <location filename="mainwindow.ui" line="269"/>
+        <location filename="mainwindow.ui" line="215"/>
+        <location filename="mainwindow.ui" line="237"/>
+        <location filename="mainwindow.ui" line="270"/>
         <source>&amp;Examinee...</source>
         <translation>&amp;Обстежуваний...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="217"/>
-        <location filename="mainwindow.ui" line="220"/>
+        <location filename="mainwindow.ui" line="218"/>
+        <location filename="mainwindow.ui" line="221"/>
         <source>Archive of examinee &apos;SHVSM-complex&apos;</source>
         <oldsource>Archive of examinee &apos;SHVSM-integral&apos;</oldsource>
         <translation>Архів обстежень людей &apos;ШВСМ-інтеграл&apos;</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="239"/>
-        <location filename="mainwindow.ui" line="242"/>
+        <location filename="mainwindow.ui" line="240"/>
+        <location filename="mainwindow.ui" line="243"/>
         <source>Archive of examinee &apos;SHVSM&apos;</source>
         <oldsource>Archive of surveys of people &apos;ShVSM&apos;</oldsource>
         <translation>Архів обстежень людей &apos;ШВСМ&apos;</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="250"/>
-        <location filename="mainwindow.ui" line="253"/>
+        <location filename="mainwindow.ui" line="251"/>
+        <location filename="mainwindow.ui" line="254"/>
         <source>Archive of examination teams &apos;SHVSM&apos;</source>
         <oldsource>Archive survey teams &apos;SHVSM&apos;</oldsource>
         <translation>Архів обстежень команд &apos;ШВСМ&apos;</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="261"/>
-        <location filename="mainwindow.ui" line="264"/>
+        <location filename="mainwindow.ui" line="262"/>
+        <location filename="mainwindow.ui" line="265"/>
         <source>Archive of teams</source>
         <translation>Архів команд</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="272"/>
-        <location filename="mainwindow.ui" line="275"/>
+        <location filename="mainwindow.ui" line="273"/>
+        <location filename="mainwindow.ui" line="276"/>
         <source>Archive of examinee</source>
         <oldsource>Archive of surveyed</oldsource>
         <translation>Архів обстежень</translation>
@@ -1182,13 +1271,24 @@
         <translation>О&amp;бстеження</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="137"/>
+        <location filename="mainwindow.ui" line="138"/>
         <source>E&amp;xaminee...</source>
         <translation>Обс&amp;тежувані...</translation>
     </message>
     <message>
-        <location filename="mainwindow.ui" line="228"/>
-        <location filename="mainwindow.ui" line="231"/>
+        <location filename="mainwindow.ui" line="204"/>
+        <source>&amp;About SHVSM...</source>
+        <translation>П&amp;ро програму &quot;ШВСМ&quot;...</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="207"/>
+        <location filename="mainwindow.ui" line="210"/>
+        <source>About the program SHVSM</source>
+        <translation>Про програму &quot;ШВСМ&quot;</translation>
+    </message>
+    <message>
+        <location filename="mainwindow.ui" line="229"/>
+        <location filename="mainwindow.ui" line="232"/>
         <source>Archive of examination teams &apos;SHVSM-complex&apos;</source>
         <oldsource>Archive of examination teams &apos;SHVSM-integral&apos;</oldsource>
         <translation>Архів обстежень команд &apos;ШВСМ-інтеграл&apos;</translation>
@@ -1200,37 +1300,37 @@
         <translation>Ш&amp;ВСМ-інтеграл</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="101"/>
-        <location filename="mainwindow.cpp" line="112"/>
-        <location filename="mainwindow.cpp" line="119"/>
-        <location filename="mainwindow.cpp" line="126"/>
-        <location filename="mainwindow.cpp" line="134"/>
-        <location filename="mainwindow.cpp" line="141"/>
-        <location filename="mainwindow.cpp" line="148"/>
-        <location filename="mainwindow.cpp" line="156"/>
-        <location filename="mainwindow.cpp" line="164"/>
-        <location filename="mainwindow.cpp" line="172"/>
-        <location filename="mainwindow.cpp" line="180"/>
+        <location filename="mainwindow.cpp" line="102"/>
+        <location filename="mainwindow.cpp" line="113"/>
+        <location filename="mainwindow.cpp" line="120"/>
+        <location filename="mainwindow.cpp" line="127"/>
+        <location filename="mainwindow.cpp" line="135"/>
+        <location filename="mainwindow.cpp" line="142"/>
+        <location filename="mainwindow.cpp" line="149"/>
+        <location filename="mainwindow.cpp" line="157"/>
+        <location filename="mainwindow.cpp" line="165"/>
+        <location filename="mainwindow.cpp" line="173"/>
+        <location filename="mainwindow.cpp" line="181"/>
         <source>Error creating database!</source>
         <translation>Помилка створення бази даних!</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="117"/>
+        <location filename="mainwindow.cpp" line="118"/>
         <source>Man</source>
         <translation>Ч</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="124"/>
+        <location filename="mainwindow.cpp" line="125"/>
         <source>Woman</source>
         <translation>Ж</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="139"/>
+        <location filename="mainwindow.cpp" line="140"/>
         <source>Athlete</source>
         <translation>Спортсмен</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="146"/>
+        <location filename="mainwindow.cpp" line="147"/>
         <source>Non-athlete</source>
         <translation>Неспортсмен</translation>
     </message>
@@ -1243,23 +1343,23 @@
         <translation type="obsolete">Не спортсмен</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="204"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Error opening database!</source>
         <translation>Помилка відкриття бази даних!</translation>
     </message>
     <message>
-        <location filename="mainwindow.cpp" line="101"/>
-        <location filename="mainwindow.cpp" line="112"/>
-        <location filename="mainwindow.cpp" line="119"/>
-        <location filename="mainwindow.cpp" line="126"/>
-        <location filename="mainwindow.cpp" line="134"/>
-        <location filename="mainwindow.cpp" line="141"/>
-        <location filename="mainwindow.cpp" line="148"/>
-        <location filename="mainwindow.cpp" line="156"/>
-        <location filename="mainwindow.cpp" line="164"/>
-        <location filename="mainwindow.cpp" line="172"/>
-        <location filename="mainwindow.cpp" line="180"/>
-        <location filename="mainwindow.cpp" line="204"/>
+        <location filename="mainwindow.cpp" line="102"/>
+        <location filename="mainwindow.cpp" line="113"/>
+        <location filename="mainwindow.cpp" line="120"/>
+        <location filename="mainwindow.cpp" line="127"/>
+        <location filename="mainwindow.cpp" line="135"/>
+        <location filename="mainwindow.cpp" line="142"/>
+        <location filename="mainwindow.cpp" line="149"/>
+        <location filename="mainwindow.cpp" line="157"/>
+        <location filename="mainwindow.cpp" line="165"/>
+        <location filename="mainwindow.cpp" line="173"/>
+        <location filename="mainwindow.cpp" line="181"/>
+        <location filename="mainwindow.cpp" line="205"/>
         <source>Error</source>
         <translation>Помилка</translation>
     </message>

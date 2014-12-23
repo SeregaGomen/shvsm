@@ -25,6 +25,7 @@ public slots:
     void slotArchiveSurveyedSHVSM(void);
     void slotChangeLanguage(void);
     void slotAboutProgram(void);
+    void slotAboutAutors(void);
     void slotArchiveTeam(void);
     void slotArchiveSurveyed(void);
 
