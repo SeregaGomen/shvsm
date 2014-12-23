@@ -13,13 +13,13 @@ extern float normalize(float);
 
 void getOME(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
+    int index = (age >= 18) ? 0 : 1;
     float m_s[][4] = {{ 150,169.99,210,230 },
                       { 137.50,154.99,190,207.5 }},
           m[][4]   = {{ 125,139.99,170,185 },
                       { 127.5,144.99,180,197.5 }},
           w_s[][4] = {{ 142.5,159.99,195,212.5 },
-                      { 127.5,144.99,180,197.5 }},
+                      { 117.5,134.99,170,187.5 }},
           w[][4] =   {{ 115,129.99,160,175 },
                       { 107.50,124.99,160,177.50 }},
           (*arr)[4];
@@ -46,7 +46,7 @@ void getOME(int sex, int age, bool isSportsman, float& val1, float& val2, float&
 
 void getCHSSpano(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
+    int index = (age >= 18) ? 0 : 1;
     float m_s[][4] = {{ 147,154,170,178 },
                       { 138,144,160,169 }},
           m[][4]   = {{ 85,109,160,173 },
@@ -79,9 +79,9 @@ void getCHSSpano(int sex, int age, bool isSportsman, float& val1, float& val2, f
 
 void getPANO(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
+    int index = (age >= 18) ? 0 : 1;
     float m_s[][4] = {{ 47.50,54.99,70.00,77.50 },
-                      { 42.00,50.00,65.00,72.50 }},
+                      { 42.50,50.00,65.00,72.50 }},
           m[][4]   = {{ 40.00,44.99,55.00,60.00 },
                       { 40.00,45.00,55.00,60.00 }},
           w_s[][4] = {{ 37.50,44.99,60.00,67.50 },
@@ -113,7 +113,7 @@ void getPANO(int sex, int age, bool isSportsman, float& val1, float& val2, float
 
 void getLAKe(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
+    int index = (age >= 18) ? 0 : 1;
     float m_s[][4] = {{ 25.00,29.99,40.00,45.00 },
                       { 17.00,22.00,32.00,37.00 }},
           m[][4]   = {{ 15.00,19.99,30.00,35.00 },
@@ -146,7 +146,7 @@ void getLAKe(int sex, int age, bool isSportsman, float& val1, float& val2, float
 
 void getLAKm(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
+    int index = (age >= 18) ? 0 : 1;
     float m_s[][4] = {{ 2.59,3.66,5.83,6.91 },
                       { 2.22,3.13,4.98,5.91 }},
           m[][4]   = {{ 1.91,2.82,4.67,5.59 },
@@ -179,7 +179,7 @@ void getLAKm(int sex, int age, bool isSportsman, float& val1, float& val2, float
 
 void getALAKe(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
+    int index = (age >= 18) ? 0 : 1;
     float m_s[][4] = {{ 32,37.99,50,56 },
                       { 29.50,33,40,43.50 }},
           m[][4]   = {{ 20.00,24.99,35,40 },
@@ -212,13 +212,13 @@ void getALAKe(int sex, int age, bool isSportsman, float& val1, float& val2, floa
 
 void getALAKm(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
-    float m_s[][4] = {{ 3.91,5.32,8.17,9.69 },
+    int index = (age >= 18) ? 0 : 1;
+    float m_s[][4] = {{ 3.91,5.32,8.17,9.59 },
                       { 3.49,4.51,6.59,7.74 }},
           m[][4]   = {{ 2.41,3.57,5.92,7.09 },
                       { 2.02,3.06,5.17,6.22 }},
           w_s[][4] = {{ 3.59,4.66,6.83,7.91 },
-                      { 3.49,4.51,6.59,7.74 }},
+                      { 3.00,3.97,5.94,6.93 }},
           w[][4] =   {{ 2.34,3.16,4.83,5.66 },
                       { 1.85,2.67,4.33,5.16 }},
           (*arr)[4];
@@ -246,12 +246,12 @@ void getALAKm(int sex, int age, bool isSportsman, float& val1, float& val2, floa
 
 void getoPWC170(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
+    int index = (age >= 18) ? 0 : 1;
     float m_s[][4] = {{ 15.25,18.49,25.00,28.25 },
                       { 14.00,16.00,20.00,22.00 }},
-          m[][4]   = {{ 9.75,12.50,18.00,20.75 },
+          m[][4]   = {{ 9.75,12.49,18.00,20.75 },
                       { 10.00,12.00,16.00,18.00 }},
-          w_s[][4] = {{ 12.00,15.50,22.51,26.00 },
+          w_s[][4] = {{ 12.00,15.49,22.50,26.00 },
                       { 12.00,14.00,18.00,20.00 }},
           w[][4] =   {{ 7.00,9.49,14.50,17.00 },
                       { 8.00,10.00,14.00,16.00 }},
@@ -279,14 +279,14 @@ void getoPWC170(int sex, int age, bool isSportsman, float& val1, float& val2, fl
 
 void getoMPK(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
-    int index = (age < 18) ? 0 : 1;
-    float m_s[][4] = {{ 50,55,65,70 },
+    int index = (age >= 18) ? 0 : 1;
+    float m_s[][4] = {{ 50,54.99,65,70 },
                       { 40,45,55,60 }},
           m[][4]   = {{ 40,44.99,55,60 },
                       { 35,40,50,55 }},
           w_s[][4] = {{ 40,44.99,55,60 },
                       { 35,40.00,50,55}},
-          w[][4] =   {{ 27.5,34.99,55,60 },
+          w[][4] =   {{ 27.5,34.99,55,57.5 },
                       { 32.5,35,45,47.5 }},
           (*arr)[4];
 
@@ -383,8 +383,8 @@ void SHVSMCreateDialog::setupForm(void)
     ui->tableView->setCurrentIndex(ui->tableView->model()->index(0, 0));
 
 
-//    sex = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),6)).toInt();
-//    isSportsman = (ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),7)).toInt() == 1) ? true : false;
+    sex = ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),6)).toInt();
+    isSportsman = (ui->tableView->model()->data(ui->tableView->model()->index(ui->tableView->selectionModel()->currentIndex().row(),7)).toInt() == 1) ? true : false;
 }
 
 // Расчет параметров "ШВСМ"
