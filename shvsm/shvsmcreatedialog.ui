@@ -127,7 +127,7 @@
      <rect>
       <x>95</x>
       <y>60</y>
-      <width>51</width>
+      <width>56</width>
       <height>31</height>
      </rect>
     </property>
@@ -161,7 +161,7 @@
      <rect>
       <x>240</x>
       <y>60</y>
-      <width>51</width>
+      <width>56</width>
       <height>31</height>
      </rect>
     </property>
@@ -774,7 +774,7 @@
      <item>
       <widget class="QLabel" name="label_19">
        <property name="text">
-        <string>ALAKp</string>
+        <string>ALACp</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -824,7 +824,7 @@
      <item>
       <widget class="QLabel" name="label_20">
        <property name="text">
-        <string>ALAKc</string>
+        <string>ALACc</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -874,7 +874,7 @@
      <item>
       <widget class="QLabel" name="label_21">
        <property name="text">
-        <string>LAKp</string>
+        <string>LACp</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -924,7 +924,7 @@
      <item>
       <widget class="QLabel" name="label_22">
        <property name="text">
-        <string>LAKc</string>
+        <string>LACc</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1002,7 +1002,7 @@
      <item>
       <widget class="QLabel" name="label_33">
        <property name="text">
-        <string>LAKcm</string>
+        <string>LACcm</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>

@@ -26,8 +26,7 @@ SOURCES += main.cpp\
     archivesurveyedshvsmintegraldialog.cpp \
     archivetabledialog.cpp \
     qcustomplot.cpp \
-    printreportdialog.cpp \
-    aboutautorsdialog.cpp
+    printreportdialog.cpp
 
 HEADERS  += mainwindow.h \
     teamcreatedialog.h \
@@ -42,8 +41,7 @@ HEADERS  += mainwindow.h \
     archivesurveyedshvsmintegraldialog.h \
     archivetabledialog.h \
     qcustomplot.h \
-    printreportdialog.h \
-    aboutautorsdialog.h
+    printreportdialog.h
 
 FORMS    += mainwindow.ui \
     teamcreatedialog.ui \
@@ -57,8 +55,7 @@ FORMS    += mainwindow.ui \
     archivesurveyedshvsmdialog.ui \
     archivesurveyedshvsmintegraldialog.ui \
     archivetabledialog.ui \
-    printreportdialog.ui \
-    aboutautorsdialog.ui
+    printreportdialog.ui
 
 TRANSLATIONS += shvsm_RU.ts
 

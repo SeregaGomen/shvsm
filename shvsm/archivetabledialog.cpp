@@ -54,7 +54,7 @@ void ArchiveTableDialog::setupForm(void)
         model->setHeaderData(1, Qt::Horizontal, tr("Name"));
         model->setHeaderData(2, Qt::Horizontal, tr("Sex"));
         model->setHeaderData(3, Qt::Horizontal, tr("Team"));
-        model->setHeaderData(4, Qt::Horizontal, tr("Qualification"));
+        model->setHeaderData(4, Qt::Horizontal, tr("Status"));
         model->setHeaderData(5, Qt::Horizontal, tr("DOB"));
         ui->tableView->setItemDelegate(new QSqlRelationalDelegate(ui->tableView));
     }

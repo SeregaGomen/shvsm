@@ -65,8 +65,8 @@ void ArchiveSurveyedSHVSMDialog::setupForm(void)
                                    WHERE surveySHVSM.surveyed_id = surveyed.id AND surveyed.qualification_id = qualification.id AND surveyed.id = %1\
                                    ORDER BY dt").arg(surveyedId));
     modelSurvey->setHeaderData(0, Qt::Horizontal, tr("Date"));
-    modelSurvey->setHeaderData(1, Qt::Horizontal, tr("Qualification"));
-    modelSurvey->setHeaderData(2, Qt::Horizontal, tr("Old"));
+    modelSurvey->setHeaderData(1, Qt::Horizontal, tr("Status"));
+    modelSurvey->setHeaderData(2, Qt::Horizontal, tr("Age"));
     modelSurvey->setHeaderData(3, Qt::Horizontal, tr("Weight"));
     modelSurvey->setHeaderData(4, Qt::Horizontal, tr("Height"));
     modelSurvey->setHeaderData(5, Qt::Horizontal, tr("N1"));
@@ -80,10 +80,10 @@ void ArchiveSurveyedSHVSMDialog::setupForm(void)
     modelSurvey->setHeaderData(12, Qt::Horizontal, tr("rPWC170"));
     modelSurvey->setHeaderData(13, Qt::Horizontal, tr("aVO2max"));
     modelSurvey->setHeaderData(14, Qt::Horizontal, tr("rVO2max"));
-    modelSurvey->setHeaderData(15, Qt::Horizontal, tr("ALAKp"));
-    modelSurvey->setHeaderData(16, Qt::Horizontal, tr("ALAKc"));
-    modelSurvey->setHeaderData(17, Qt::Horizontal, tr("LAKp"));
-    modelSurvey->setHeaderData(18, Qt::Horizontal, tr("LAKc"));
+    modelSurvey->setHeaderData(15, Qt::Horizontal, tr("ALACp"));
+    modelSurvey->setHeaderData(16, Qt::Horizontal, tr("ALACc"));
+    modelSurvey->setHeaderData(17, Qt::Horizontal, tr("LACp"));
+    modelSurvey->setHeaderData(18, Qt::Horizontal, tr("LACc"));
     modelSurvey->setHeaderData(19, Qt::Horizontal, tr("AMT"));
     modelSurvey->setHeaderData(20, Qt::Horizontal, tr("HRamt"));
     modelSurvey->setHeaderData(21, Qt::Horizontal, tr("GMC"));
@@ -311,12 +311,12 @@ void ArchiveSurveyedSHVSMDialog::rePlot(void)
     ui->widgetPlot->yAxis->setRange(0, 100);
     ui->widgetPlot->axisRect()->setupFullAxesBox();
 
-    grName[0] = tr("Total endurance");
+    grName[0] = tr("General endurance");
     grName[1] = tr("Speed endurance");
-    grName[2] = tr("Speed and power endurance");
-    grName[3] = tr("Cost of power supply");
-    grName[4] = tr("Reserve possibilities");
-    grName[5] = tr("UFP");
+    grName[2] = tr("Speed-strength endurance");
+    grName[3] = tr("Energetic system economy");
+    grName[4] = tr("Reserve capability");
+    grName[5] = tr("LFP");
     ui->widgetPlot->xAxis->setTickVectorLabels(dt);
 
     for (unsigned i = 0; i < 6; i++)

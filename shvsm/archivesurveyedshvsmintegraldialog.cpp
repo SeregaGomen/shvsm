@@ -67,31 +67,31 @@ void ArchiveSurveyedSHVSMIntegralDialog::setupForm(void)
                                    surveyed.qualification_id = qualification.id \
                                    ORDER BY dt").arg(surveyedId));
     modelSurvey->setHeaderData(0, Qt::Horizontal, tr("Date"));
-    modelSurvey->setHeaderData(1, Qt::Horizontal, tr("Qualification"));
-    modelSurvey->setHeaderData(2, Qt::Horizontal, tr("Old"));
+    modelSurvey->setHeaderData(1, Qt::Horizontal, tr("Status"));
+    modelSurvey->setHeaderData(2, Qt::Horizontal, tr("Age"));
     modelSurvey->setHeaderData(3, Qt::Horizontal, tr("Weight"));
     modelSurvey->setHeaderData(4, Qt::Horizontal, tr("Height"));
     modelSurvey->setHeaderData(5, Qt::Horizontal, tr("HR"));
     modelSurvey->setHeaderData(6, Qt::Horizontal, tr("SBP"));
     modelSurvey->setHeaderData(7, Qt::Horizontal, tr("DBP"));
-    modelSurvey->setHeaderData(8, Qt::Horizontal, tr("DTE"));
-    modelSurvey->setHeaderData(9, Qt::Horizontal, tr("DTBE"));
-    modelSurvey->setHeaderData(10, Qt::Horizontal, tr("VCL"));
-    modelSurvey->setHeaderData(11, Qt::Horizontal, tr("VCLN"));
-    modelSurvey->setHeaderData(12, Qt::Horizontal, tr("VCLD"));
+    modelSurvey->setHeaderData(8, Qt::Horizontal, tr("IBDT"));
+    modelSurvey->setHeaderData(9, Qt::Horizontal, tr("EBDT"));
+    modelSurvey->setHeaderData(10, Qt::Horizontal, tr("VLC"));
+    modelSurvey->setHeaderData(11, Qt::Horizontal, tr("VLCN"));
+    modelSurvey->setHeaderData(12, Qt::Horizontal, tr("VLCD"));
     modelSurvey->setHeaderData(13, Qt::Horizontal, tr("SBV"));
     modelSurvey->setHeaderData(14, Qt::Horizontal, tr("MVB"));
     modelSurvey->setHeaderData(15, Qt::Horizontal, tr("CI"));
-    modelSurvey->setHeaderData(16, Qt::Horizontal, tr("TPR"));
+    modelSurvey->setHeaderData(16, Qt::Horizontal, tr("GPR"));
     modelSurvey->setHeaderData(17, Qt::Horizontal, tr("VH"));
-    modelSurvey->setHeaderData(18, Qt::Horizontal, tr("IR"));
-    modelSurvey->setHeaderData(19, Qt::Horizontal, tr("CEBC"));
+    modelSurvey->setHeaderData(18, Qt::Horizontal, tr("RI"));
+    modelSurvey->setHeaderData(19, Qt::Horizontal, tr("CBEC"));
     modelSurvey->setHeaderData(20, Qt::Horizontal, tr("DSBP"));
     modelSurvey->setHeaderData(21, Qt::Horizontal, tr("DDBP"));
     modelSurvey->setHeaderData(22, Qt::Horizontal, tr("HI"));
-    modelSurvey->setHeaderData(23, Qt::Horizontal, tr("IS"));
-    modelSurvey->setHeaderData(24, Qt::Horizontal, tr("LFSCS"));
-    modelSurvey->setHeaderData(25, Qt::Horizontal, tr("LFSSER"));
+    modelSurvey->setHeaderData(23, Qt::Horizontal, tr("SI"));
+    modelSurvey->setHeaderData(24, Qt::Horizontal, tr("CVSFSL"));
+    modelSurvey->setHeaderData(25, Qt::Horizontal, tr("EBSFSL"));
 
 
     // -------------------------------------------------------
@@ -309,8 +309,8 @@ void ArchiveSurveyedSHVSMIntegralDialog::rePlot(void)
     ui->widgetPlot->yAxis->setRange(0, 100);
     ui->widgetPlot->axisRect()->setupFullAxesBox();
 
-    grName[0] = tr("Circulatory system");
-    grName[1] = tr("System of external respiration");
+    grName[0] = tr("Cardiovascular system");
+    grName[1] = tr("External breathing system");
     ui->widgetPlot->xAxis->setTickVectorLabels(dt);
 
     for (unsigned i = 0; i < 2; i++)

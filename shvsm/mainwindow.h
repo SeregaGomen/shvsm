@@ -25,7 +25,6 @@ public slots:
     void slotArchiveSurveyedSHVSM(void);
     void slotChangeLanguage(void);
     void slotAboutProgram(void);
-    void slotAboutAutors(void);
     void slotArchiveTeam(void);
     void slotArchiveSurveyed(void);
 
@@ -45,6 +44,7 @@ private:
     void writeSettings(void);
     void openDB(void);
     void closeDB(void);
+    void changeLangDB(void);
     void setupLanguage(void);
     bool checkDB(QString);
     bool createDB(QString);

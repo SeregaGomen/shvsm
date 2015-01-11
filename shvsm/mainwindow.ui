@@ -14,7 +14,7 @@
    <string>SHVSM</string>
   </property>
   <property name="windowIcon">
-   <iconset>
+   <iconset resource="shvsm.qrc">
     <normaloff>:/image/app.ico</normaloff>:/image/app.ico</iconset>
   </property>
   <widget class="QWidget" name="centralWidget"/>
@@ -94,7 +94,6 @@
      <string>&amp;?</string>
     </property>
     <addaction name="action_About"/>
-    <addaction name="action_About_autors"/>
    </widget>
    <addaction name="menu_File"/>
    <addaction name="menu_Setup"/>
@@ -116,7 +115,7 @@
   <widget class="QStatusBar" name="statusBar"/>
   <action name="actionTeam">
    <property name="icon">
-    <iconset>
+    <iconset resource="shvsm.qrc">
      <normaloff>:/image/user_group_colored.png</normaloff>:/image/user_group_colored.png</iconset>
    </property>
    <property name="text">
@@ -131,7 +130,7 @@
   </action>
   <action name="actionSurveyed">
    <property name="icon">
-    <iconset>
+    <iconset resource="shvsm.qrc">
      <normaloff>:/image/user.png</normaloff>:/image/user.png</iconset>
    </property>
    <property name="text">
@@ -160,7 +159,7 @@
   </action>
   <action name="actionSHVSM">
    <property name="icon">
-    <iconset>
+    <iconset resource="shvsm.qrc">
      <normaloff>:/image/chart.png</normaloff>:/image/chart.png</iconset>
    </property>
    <property name="text">
@@ -175,7 +174,7 @@
   </action>
   <action name="actionSHVSM_integral">
    <property name="icon">
-    <iconset>
+    <iconset resource="shvsm.qrc">
      <normaloff>:/image/chart_pie.png</normaloff>:/image/chart_pie.png</iconset>
    </property>
    <property name="text">
@@ -201,7 +200,7 @@
   </action>
   <action name="action_About">
    <property name="text">
-    <string>&amp;About SHVSM...</string>
+    <string>&amp;About...</string>
    </property>
    <property name="toolTip">
     <string>About the program SHVSM</string>
@@ -276,20 +275,11 @@
     <string>Archive of examinee</string>
    </property>
   </action>
-  <action name="action_About_autors">
-   <property name="text">
-    <string>A&amp;bout autors...</string>
-   </property>
-   <property name="toolTip">
-    <string>About of autors SHVSM</string>
-   </property>
-   <property name="statusTip">
-    <string>About of autors SHVSM</string>
-   </property>
-  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources/>
+ <resources>
+  <include location="shvsm.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>actionExit</sender>
@@ -488,22 +478,6 @@
    <signal>triggered()</signal>
    <receiver>MainWindow</receiver>
    <slot>slotArchiveSurveyed()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>297</x>
-     <y>173</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>action_About_autors</sender>
-   <signal>triggered()</signal>
-   <receiver>MainWindow</receiver>
-   <slot>slotAboutAutors()</slot>
    <hints>
     <hint type="sourcelabel">
      <x>-1</x>

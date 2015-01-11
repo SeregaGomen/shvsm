@@ -17,7 +17,6 @@
 #include "shvsmintegralcreatedialog.h"
 #include "languagesetupdialog.h"
 #include "aboutdialog.h"
-#include "aboutautorsdialog.h"
 #include "archiveteamshvsmintegraldialog.h"
 #include "archiveteamshvsmdialog.h"
 #include "archivesurveyedshvsmdialog.h"
@@ -205,6 +204,7 @@ void MainWindow::openDB(void)
         QMessageBox::critical(this, tr("Error"),tr("Error opening database!"), QMessageBox::Ok);
         return;
     }
+    changeLangDB();
     setCursor(Qt::ArrowCursor);
 }
 
@@ -268,6 +268,7 @@ void MainWindow::slotChangeLanguage(void)
             break;
     }
     changeLanguage();
+    changeLangDB();
 }
 
 void MainWindow::setupLanguage(void)
@@ -358,9 +359,34 @@ void MainWindow::slotArchiveSurveyed(void)
     dlg->exec();
 }
 
-void MainWindow::slotAboutAutors(void)
+// Переименование в таблицах справочной информации
+void MainWindow::changeLangDB(void)
 {
-    AboutAutorsDialog* adlg = new AboutAutorsDialog(this);
+    QSqlQuery query;
 
-    adlg->exec();
+    if (!query.exec(QString("UPDATE sex SET name='%1' WHERE id=1").arg(tr("Man"))))
+    {
+        QMessageBox::critical(this, tr("Error"),tr("Error opening database!"), QMessageBox::Ok);
+        qDebug() << query.lastError();
+        return;
+    }
+    if (!query.exec(QString("UPDATE sex SET name='%1' WHERE id=2").arg(tr("Woman"))))
+    {
+        QMessageBox::critical(this, tr("Error"),tr("Error opening database!"), QMessageBox::Ok);
+        qDebug() << query.lastError();
+        return;
+    }
+    if (!query.exec(QString("UPDATE qualification SET name='%1' WHERE id=1").arg(tr("Athlete"))))
+    {
+        QMessageBox::critical(this, tr("Error"),tr("Error opening database!"), QMessageBox::Ok);
+        qDebug() << query.lastError();
+        return;
+    }
+    if (!query.exec(QString("UPDATE qualification SET name='%1' WHERE id=2").arg(tr("Non-athlete"))))
+    {
+        QMessageBox::critical(this, tr("Error"),tr("Error opening database!"), QMessageBox::Ok);
+        qDebug() << query.lastError();
+        return;
+    }
 }
+

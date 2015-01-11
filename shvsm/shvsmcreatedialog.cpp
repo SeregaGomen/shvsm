@@ -916,11 +916,11 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">aVO<sub>2max</sub>, l/min</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">rVO<sub>2max</sub>, ml/min/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloMPK));
 
-    text += tr("<tr><td colspan=\"4\">ALAKp, watt/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
-    text += tr("<tr><td colspan=\"4\">ALAKc, mmol/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
-    text += tr("<tr><td colspan=\"4\">LAKp, watt</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
-    text += tr("<tr><td colspan=\"4\">LAKc, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
-    text += tr("<tr><td colspan=\"4\">LAKcm, mmol/l</td><td>%1</td><td></td></tr>").arg(ui->labelLAKem->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"4\">ALACp, watt/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
+    text += tr("<tr><td colspan=\"4\">ALACc, mmol/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKe));
+    text += tr("<tr><td colspan=\"4\">LACp, watt</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKm));
+    text += tr("<tr><td colspan=\"4\">LACc, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
+    text += tr("<tr><td colspan=\"4\">LACcm, mmol/l</td><td>%1</td><td></td></tr>").arg(ui->labelLAKem->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">AMT, % from aVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
     text += tr("<tr><td colspan=\"4\">HR<sub>AMT</sub>, sh/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',0).arg(getIndicatorTxt(ui->labelCHSSpano));
     text += tr("<tr><td colspan=\"4\">GMC, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));

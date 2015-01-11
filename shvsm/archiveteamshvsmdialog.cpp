@@ -62,8 +62,8 @@ void ArchiveTeamSHVSMDialog::setupForm(void)
                                      ORDER BY dt").arg(team_id).arg(dt));
     modelSurveyed->setHeaderData(0, Qt::Horizontal, tr("Name"));
     modelSurveyed->setHeaderData(1, Qt::Horizontal, tr("Sex"));
-    modelSurveyed->setHeaderData(2, Qt::Horizontal, tr("Qualification"));
-    modelSurveyed->setHeaderData(3, Qt::Horizontal, tr("Old"));
+    modelSurveyed->setHeaderData(2, Qt::Horizontal, tr("Status"));
+    modelSurveyed->setHeaderData(3, Qt::Horizontal, tr("Age"));
     modelSurveyed->setHeaderData(4, Qt::Horizontal, tr("Weight"));
     modelSurveyed->setHeaderData(5, Qt::Horizontal, tr("Height"));
     modelSurveyed->setHeaderData(6, Qt::Horizontal, tr("N1"));
@@ -75,21 +75,21 @@ void ArchiveTeamSHVSMDialog::setupForm(void)
 
     modelSurveyed->setHeaderData(12, Qt::Horizontal, tr("aPWC170"));
     modelSurveyed->setHeaderData(13, Qt::Horizontal, tr("oPWC170"));
-    modelSurveyed->setHeaderData(14, Qt::Horizontal, tr("aMPK"));
-    modelSurveyed->setHeaderData(15, Qt::Horizontal, tr("oMPK"));
-    modelSurveyed->setHeaderData(16, Qt::Horizontal, tr("ALAKm"));
-    modelSurveyed->setHeaderData(17, Qt::Horizontal, tr("ALAKe"));
-    modelSurveyed->setHeaderData(18, Qt::Horizontal, tr("LAKm"));
-    modelSurveyed->setHeaderData(19, Qt::Horizontal, tr("LAKe"));
-    modelSurveyed->setHeaderData(20, Qt::Horizontal, tr("PANO"));
-    modelSurveyed->setHeaderData(21, Qt::Horizontal, tr("CHSSpano"));
-    modelSurveyed->setHeaderData(22, Qt::Horizontal, tr("OME"));
-    modelSurveyed->setHeaderData(23, Qt::Horizontal, tr("TE"));
+    modelSurveyed->setHeaderData(14, Qt::Horizontal, tr("aVO2max"));
+    modelSurveyed->setHeaderData(15, Qt::Horizontal, tr("rVO2max"));
+    modelSurveyed->setHeaderData(16, Qt::Horizontal, tr("ALACp"));
+    modelSurveyed->setHeaderData(17, Qt::Horizontal, tr("ALACc"));
+    modelSurveyed->setHeaderData(18, Qt::Horizontal, tr("LACp"));
+    modelSurveyed->setHeaderData(19, Qt::Horizontal, tr("LACc"));
+    modelSurveyed->setHeaderData(20, Qt::Horizontal, tr("AMT"));
+    modelSurveyed->setHeaderData(21, Qt::Horizontal, tr("HRamt"));
+    modelSurveyed->setHeaderData(22, Qt::Horizontal, tr("GMC"));
+    modelSurveyed->setHeaderData(23, Qt::Horizontal, tr("GE"));
     modelSurveyed->setHeaderData(24, Qt::Horizontal, tr("SE"));
-    modelSurveyed->setHeaderData(25, Qt::Horizontal, tr("SPE"));
-    modelSurveyed->setHeaderData(26, Qt::Horizontal, tr("SPS"));
-    modelSurveyed->setHeaderData(27, Qt::Horizontal, tr("RP"));
-    modelSurveyed->setHeaderData(28, Qt::Horizontal, tr("UFP"));
+    modelSurveyed->setHeaderData(25, Qt::Horizontal, tr("SSE"));
+    modelSurveyed->setHeaderData(26, Qt::Horizontal, tr("ESE"));
+    modelSurveyed->setHeaderData(27, Qt::Horizontal, tr("RC"));
+    modelSurveyed->setHeaderData(28, Qt::Horizontal, tr("LFP"));
 
 
 
