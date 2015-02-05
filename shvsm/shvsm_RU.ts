@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="ru_RU">
+<TS version="2.0" language="ru_RU">
 <context>
     <name>AboutAutorsDialog</name>
     <message>
@@ -125,7 +125,7 @@ p, li { white-space: pre-wrap; }
         <source>Developers</source>
         <translation>Разработчики</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="aboutdialog.ui" line="164"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -204,7 +204,7 @@ p, li { white-space: pre-wrap; }
         <source>Methods</source>
         <translation>Методика</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="aboutdialog.ui" line="223"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -238,7 +238,7 @@ p, li { white-space: pre-wrap; }
         <source>Terms</source>
         <translation>Термины</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="aboutdialog.ui" line="251"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -1390,12 +1390,12 @@ p, li { white-space: pre-wrap; }
         <source>Current language</source>
         <translation>Текущий язык</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="languagesetupdialog.ui" line="66"/>
         <source>Russian (Русский)</source>
         <translation>Russian (Русский)</translation>
     </message>
-    <message>
+    <message utf8="true">
         <location filename="languagesetupdialog.ui" line="82"/>
         <source>Ukrainian (Українська)</source>
         <translation>Ukrainian (Українська)</translation>
@@ -2546,7 +2546,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="910"/>
-        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the second loading  HR2, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the second loading  HR2, b/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the second loading  HR2, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений после второй нагрузки ЧСС2, уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
@@ -2647,8 +2648,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="909"/>
-        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the first loading HR1, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
-        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;rVO&lt;sub&gt;2max&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the first loading HR1, b/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate after the first loading HR1, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений после второй нагрузки ЧСС2, уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
@@ -2659,8 +2660,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="916"/>
-        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aVO&lt;sub&gt;2max&lt;/sub&gt;, l/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</source>
-        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;HR&lt;sub&gt;AMT&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aVO&lt;sub&gt;2max&lt;/sub&gt;, ml/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;aVO&lt;sub&gt;2max&lt;/sub&gt;, l/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;аМПК, л/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
@@ -2671,7 +2672,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmcreatedialog.cpp" line="925"/>
-        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;HR&lt;sub&gt;AMT&lt;/sub&gt;, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;HR&lt;sub&gt;AMT&lt;/sub&gt;, b/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;HR&lt;sub&gt;AMT&lt;/sub&gt;, sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;4&quot;&gt;ЧССпано, уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;td&gt;%2&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>
@@ -3218,8 +3220,8 @@ p, li { white-space: pre-wrap; }
     </message>
     <message>
         <location filename="shvsmintegralcreatedialog.cpp" line="1653"/>
-        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate (HR), sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
-        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate (HR)&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
+        <source>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate (HR), b/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</source>
+        <oldsource>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Heart rate (HR), sh/min&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</oldsource>
         <translation>&lt;tr&gt;&lt;td colspan=&quot;5&quot;&gt;Частота сердечных сокращений (ЧСС), уд/мин&lt;/td&gt;&lt;td&gt;%1&lt;/td&gt;&lt;/tr&gt;</translation>
     </message>
     <message>

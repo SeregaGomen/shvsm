@@ -1589,28 +1589,28 @@ void SHVSMIntegralCreateDialog::showIndicatorTxtI(QLabel* labelF, QLabel* labelT
 
     if (labelF)
         labelF->setText(QString("%1").arg(indicator,0,'f',2));
-    if (indicator > val1)
+    if (indicator > val4)
     {
         if (labelF)
             labelF->setStyleSheet("QLabel { background-color : red; }");
         labelT->setText(tr("Low"));
         labelT->setStyleSheet("QLabel { background-color : red; }");
     }
-    else if (indicator <= val1 && indicator >= val2)
+    else if (indicator <= val4 && indicator >= val3)
     {
         if (labelF)
             labelF->setStyleSheet("QLabel { background-color : gray; }");
         labelT->setText(tr("Below the average"));
         labelT->setStyleSheet("QLabel { background-color : gray; }");
     }
-    else if (indicator < val2 && indicator >= val3)
+    else if (indicator < val3 && indicator >= val2)
     {
         if (labelF)
             labelF->setStyleSheet("QLabel { background-color : yellow; }");
         labelT->setText(tr("Average"));
         labelT->setStyleSheet("QLabel { background-color : yellow; }");
     }
-    else if (indicator < val3 && indicator >= val4)
+    else if (indicator < val2 && indicator >= val1)
     {
         if (labelF)
             labelF->setStyleSheet("QLabel { background-color : aqua; }");
@@ -1650,7 +1650,7 @@ void SHVSMIntegralCreateDialog::genReport(PrintReportDialog* p)
     text += QString("<tr><td>%1</td><td>%2</td><td>%3</td><td>%4</td><td>%5</td><td>%6</td></tr>").arg(name).arg(sex_n).arg(old).arg(qualification_n).arg(ui->leGrowth->text()).arg(ui->leWeight->text());
     text += tr("<tr><th colspan=\"6\">Entrance  calculation data</th></tr>");
 
-    text += tr("<tr><td colspan=\"5\">Heart rate (HR), sh/min</td><td>%1</td></tr>").arg(ui->leHR->text().toFloat(),0,'f',0);
+    text += tr("<tr><td colspan=\"5\">Heart rate (HR), b/min</td><td>%1</td></tr>").arg(ui->leHR->text().toFloat(),0,'f',0);
     text += tr("<tr><td colspan=\"5\">Systolic arterial pressure (APs), mm of m.c.</td><td>%1</td></tr>").arg(ui->leSBP->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">Diastolic arterial pressure (APd), mm of m.c.</td><td>%1</td></tr>").arg(ui->leDBP->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">Vital lung capacity (VLC), mL</td><td>%1</td></tr>").arg(ui->leLActual->text().toFloat(),0,'f',2);

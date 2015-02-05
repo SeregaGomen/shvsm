@@ -906,14 +906,14 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"5\">The second loading intensity on the veloergometer N2, watt</td><td>%1</td></tr>").arg(ui->leN2->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">The first loading ascents on a step amount n1, n/min</td><td>%1</td></tr>").arg(ui->len1->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"5\">The second loading ascents on a step amount n2, n/min</td><td>%1</td></tr>").arg(ui->len2->text().toFloat(),0,'f',2);
-    text += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1, sh/min</td><td>%1</td></tr>").arg(ui->leHR1->text().toFloat(),0,'f',0);
-    text += tr("<tr><td colspan=\"5\">Heart rate after the second loading  HR2, sh/min</td><td>%1</td></tr>").arg(ui->leHR2->text().toFloat(),0,'f',0);
+    text += tr("<tr><td colspan=\"5\">Heart rate after the first loading HR1, b/min</td><td>%1</td></tr>").arg(ui->leHR1->text().toFloat(),0,'f',0);
+    text += tr("<tr><td colspan=\"5\">Heart rate after the second loading  HR2, b/min</td><td>%1</td></tr>").arg(ui->leHR2->text().toFloat(),0,'f',0);
     text += tr("<tr><th colspan=\"6\">Calculation data</th></tr>");
 
     text += tr("<tr><th colspan=\"4\">Index</th><th>Numerical<br>value</th><th>Functional<br>estimation</th></tr>");
     text += tr("<tr><td colspan=\"4\">aPWC<sub>170</sub>, kgm/min</td><td>%1</td><td></td></tr>").arg(ui->labelaPWC170->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">rPWC<sub>170</sub>, kgm/min/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloPWC170->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloPWC170));
-    text += tr("<tr><td colspan=\"4\">aVO<sub>2max</sub>, l/min</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
+    text += tr("<tr><td colspan=\"4\">aVO<sub>2max</sub>, ml/min</td><td>%1</td><td></td></tr>").arg(ui->labelaMPK->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">rVO<sub>2max</sub>, ml/min/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labeloMPK->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labeloMPK));
 
     text += tr("<tr><td colspan=\"4\">ALACp, watt/kg</td><td>%1</td><td>%2</td></tr>").arg(ui->labelALAKm->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelALAKm));
@@ -922,7 +922,7 @@ void SHVSMCreateDialog::genReport(PrintReportDialog* p)
     text += tr("<tr><td colspan=\"4\">LACc, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelLAKe->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelLAKe));
     text += tr("<tr><td colspan=\"4\">LACcm, mmol/l</td><td>%1</td><td></td></tr>").arg(ui->labelLAKem->text().toFloat(),0,'f',2);
     text += tr("<tr><td colspan=\"4\">AMT, % from aVO<sub>2max</td><td>%1</td><td>%2</td></tr>").arg(ui->labelPANO->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelPANO));
-    text += tr("<tr><td colspan=\"4\">HR<sub>AMT</sub>, sh/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',0).arg(getIndicatorTxt(ui->labelCHSSpano));
+    text += tr("<tr><td colspan=\"4\">HR<sub>AMT</sub>, b/min</td><td>%1</td><td>%2</td></tr>").arg(ui->labelCHSSpano->text().toFloat(),0,'f',0).arg(getIndicatorTxt(ui->labelCHSSpano));
     text += tr("<tr><td colspan=\"4\">GMC, cond. units</td><td>%1</td><td>%2</td></tr>").arg(ui->labelOME->text().toFloat(),0,'f',2).arg(getIndicatorTxt(ui->labelOME));
 
     text += tr("<tr><td colspan=\"4\"><b>Functional preparedness level, points</b></td><td><b>%1</b></td><td><b>%2</b></td></tr>").arg(ui->labelV6->text().toFloat(),0,'f',2).arg(ui->labelF6->text());
