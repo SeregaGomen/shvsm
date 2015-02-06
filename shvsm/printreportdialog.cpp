@@ -1,4 +1,5 @@
 #include <QPrinter>
+#include <QFileDialog>
 #include <QPrintDialog>
 #include <QFile>
 #include <QTextStream>
@@ -67,4 +68,21 @@ void PrintReportDialog::setHint(void)
         data = in.readAll();
         ui->textEdit->setText(data);
     }
+}
+
+void PrintReportDialog::slotSaveAs(void)
+{
+    QString fileName = QFileDialog::getSaveFileName(this,tr("Save document"),windowFilePath(),tr("PDF files (*.pdf)"));
+    QPrinter printer;
+
+    if (fileName.isEmpty())
+        return;
+
+    printer.setPageSize(QPrinter::A4);
+    printer.setColorMode(QPrinter::Color);
+    printer.setOutputFormat(QPrinter::PdfFormat);
+    printer.setOutputFileName(fileName);
+
+    ui->textEdit->print(&printer);
+//    self.text.document().print_(printer);
 }

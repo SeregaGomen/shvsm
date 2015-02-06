@@ -19,6 +19,7 @@ public:
 
 private slots:
     void slotPrint(void);
+    void slotSaveAs(void);
 
 private:
     Ui::PrintReportDialog *ui;

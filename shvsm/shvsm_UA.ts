@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="ru_RU">
+<TS version="2.1" language="ru_RU">
 <context>
     <name>AboutAutorsDialog</name>
     <message>
@@ -126,7 +126,7 @@ p, li { white-space: pre-wrap; }
         <source>Developers</source>
         <translation>Автори</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="aboutdialog.ui" line="164"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -219,7 +219,7 @@ p, li { white-space: pre-wrap; }
         <source>Methods</source>
         <translation>Методика</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="aboutdialog.ui" line="223"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -253,7 +253,7 @@ p, li { white-space: pre-wrap; }
         <source>Terms</source>
         <translation>Терміни</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="aboutdialog.ui" line="251"/>
         <source>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
 &lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
@@ -1424,12 +1424,12 @@ p, li { white-space: pre-wrap; }
         <source>Current language</source>
         <translation>Поточна мова</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="66"/>
         <source>Russian (Русский)</source>
         <translation>Russian (Русский)</translation>
     </message>
-    <message utf8="true">
+    <message>
         <location filename="languagesetupdialog.ui" line="82"/>
         <source>Ukrainian (Українська)</source>
         <translation>Ukrainian (Українська)</translation>
@@ -1746,14 +1746,29 @@ p, li { white-space: pre-wrap; }
         <translation>Друк</translation>
     </message>
     <message>
-        <location filename="printreportdialog.cpp" line="34"/>
+        <location filename="printreportdialog.ui" line="58"/>
+        <source>Save As...</source>
+        <translation>Зберегти як...</translation>
+    </message>
+    <message>
+        <location filename="printreportdialog.cpp" line="35"/>
         <source>Print Report</source>
         <translation>Друк звіту</translation>
     </message>
     <message>
-        <location filename="printreportdialog.cpp" line="50"/>
+        <location filename="printreportdialog.cpp" line="51"/>
         <source>Hint</source>
         <translation>Рекомендації</translation>
+    </message>
+    <message>
+        <location filename="printreportdialog.cpp" line="75"/>
+        <source>Save document</source>
+        <translation>Збереження документу</translation>
+    </message>
+    <message>
+        <location filename="printreportdialog.cpp" line="75"/>
+        <source>PDF files (*.pdf)</source>
+        <translation>Файли PDF (*.pdf)</translation>
     </message>
 </context>
 <context>
