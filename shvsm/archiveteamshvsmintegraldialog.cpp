@@ -34,7 +34,7 @@ void ArchiveTeamSHVSMIntegralDialog::setupForm(void)
     modelTeam->setHeaderData(1, Qt::Horizontal, tr("Team"));
     ui->twTeam->setModel(modelTeam);
     ui->twTeam->setColumnHidden(0, true);
-    ui->twTeam->horizontalHeader()->setResizeMode(1,QHeaderView::Stretch);
+    ui->twTeam->horizontalHeader()->setSectionResizeMode(1,QHeaderView::Stretch);
     ui->twTeam->verticalHeader()->setDefaultSectionSize(ui->twTeam->verticalHeader()->minimumSectionSize());
     ui->twTeam->setCurrentIndex(ui->twTeam->model()->index(0, 0));
 
@@ -46,7 +46,7 @@ void ArchiveTeamSHVSMIntegralDialog::setupForm(void)
     modelDate->setHeaderData(1, Qt::Horizontal, tr("Date"));
     ui->twDate->setModel(modelDate);
     ui->twDate->setColumnHidden(0, true);
-    ui->twDate->horizontalHeader()->setResizeMode(1,QHeaderView::Stretch);
+    ui->twDate->horizontalHeader()->setSectionResizeMode(1,QHeaderView::Stretch);
     ui->twDate->verticalHeader()->setDefaultSectionSize(ui->twDate->verticalHeader()->minimumSectionSize());
     ui->twDate->setCurrentIndex(ui->twDate->model()->index(0, 0));
 
@@ -173,8 +173,8 @@ void ColorDelegateSHVSMIntegral::paint(QPainter* painter, const QStyleOptionView
 {
     float val = 0;
 
-    if (qVariantCanConvert<float>(index.data()))
-        val = qVariantValue<float>(index.data());
+    if (index.data().canConvert(QMetaType::Float))
+        val = index.data().value<float>();
     if ((index.column() == 25 || index.column() == 26) && val)
         painter->fillRect(option.rect, ptr->getIndicatorColor(val,33.0,49.6,66.1,82.6));
     QItemDelegate::paint(painter,option,index);

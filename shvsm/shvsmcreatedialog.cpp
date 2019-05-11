@@ -14,14 +14,14 @@ extern float normalize(float);
 void getOME(int sex, int age, bool isSportsman, float& val1, float& val2, float& val3, float& val4)
 {
     int index = (age >= 18) ? 0 : 1;
-    float m_s[][4] = {{ 150,169.99,210,230 },
-                      { 137.50,154.99,190,207.5 }},
-          m[][4]   = {{ 125,139.99,170,185 },
-                      { 127.5,144.99,180,197.5 }},
-          w_s[][4] = {{ 142.5,159.99,195,212.5 },
-                      { 117.5,134.99,170,187.5 }},
-          w[][4] =   {{ 115,129.99,160,175 },
-                      { 107.50,124.99,160,177.50 }},
+    float m_s[][4] = {{ 150,169.99f,210,230 },
+                      { 137.50,154.99f,190,207.5 }},
+          m[][4]   = {{ 125,139.99f,170,185 },
+                      { 127.5,144.99f,180,197.5 }},
+          w_s[][4] = {{ 142.5,159.99f,195,212.5 },
+                      { 117.5,134.99f,170,187.5 }},
+          w[][4] =   {{ 115,129.99f,160,175 },
+                      { 107.50,124.99f,160,177.50 }},
           (*arr)[4];
 
     if (isSportsman)
@@ -372,7 +372,7 @@ void SHVSMCreateDialog::setupForm(void)
     ui->tableView->setColumnHidden(0, true);
     ui->tableView->setColumnHidden(6, true);
     ui->tableView->setColumnHidden(7, true);
-    ui->tableView->horizontalHeader()->setResizeMode(1,QHeaderView::Stretch);
+//    ui->tableView->horizontalHeader()->setResizeMode(1,QHeaderView::Stretch);
     ui->tableView->horizontalHeader()->resizeSection(2, 100);
     ui->tableView->horizontalHeader()->resizeSection(3, 60);
     ui->tableView->horizontalHeader()->resizeSection(4, 60);

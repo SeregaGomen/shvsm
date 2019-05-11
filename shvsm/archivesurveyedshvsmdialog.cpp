@@ -161,8 +161,8 @@ void ColorDelegateSurveyedSHVSM::paint(QPainter* painter, const QStyleOptionView
 {
     float val = 0;
 
-    if (qVariantCanConvert<float>(index.data()))
-        val = qVariantValue<float>(index.data());
+    if (index.data().canConvert(QMetaType::Float))
+        val = index.data().value<float>();
     if (/*val && */((index.column() >= 14 && index.column() <= 27) || index.column() == 12))
         painter->fillRect(option.rect, ptr->getIndicatorColor(index.column(), val));
     QItemDelegate::paint(painter,option,index);
